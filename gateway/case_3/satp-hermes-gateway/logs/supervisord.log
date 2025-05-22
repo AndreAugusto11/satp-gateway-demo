@@ -1,0 +1,40 @@
+2025-05-22 22:20:14,497 INFO Set uid to user 0 succeeded
+2025-05-22 22:20:14,499 INFO supervisord started with pid 1
+2025-05-22 22:20:15,502 INFO spawned: 'satp-gateway' with pid 7
+2025-05-22 22:20:16,504 INFO success: satp-gateway entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-22 22:20:38,778 WARN exited: satp-gateway (exit status 1; not expected)
+2025-05-22 22:20:39,780 INFO spawned: 'satp-gateway' with pid 96
+2025-05-22 22:20:40,782 INFO success: satp-gateway entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-22 22:21:15,426 WARN received SIGTERM indicating exit request
+2025-05-22 22:21:15,426 INFO waiting for satp-gateway to die
+2025-05-22 22:21:15,477 WARN stopped: satp-gateway (exit status 143)
+2025-05-22 22:21:17,701 INFO Set uid to user 0 succeeded
+2025-05-22 22:21:17,702 INFO supervisord started with pid 1
+2025-05-22 22:21:18,705 INFO spawned: 'satp-gateway' with pid 7
+2025-05-22 22:21:19,706 INFO success: satp-gateway entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-22 22:21:36,320 WARN exited: satp-gateway (exit status 1; not expected)
+2025-05-22 22:21:37,323 INFO spawned: 'satp-gateway' with pid 72
+2025-05-22 22:21:38,324 INFO success: satp-gateway entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-22 22:21:51,849 WARN received SIGTERM indicating exit request
+2025-05-22 22:21:51,849 INFO waiting for satp-gateway to die
+2025-05-22 22:21:51,888 WARN stopped: satp-gateway (exit status 143)
+2025-05-22 22:21:54,323 INFO Set uid to user 0 succeeded
+2025-05-22 22:21:54,325 INFO supervisord started with pid 1
+2025-05-22 22:21:55,327 INFO spawned: 'satp-gateway' with pid 7
+2025-05-22 22:21:56,329 INFO success: satp-gateway entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-22 22:22:09,021 WARN exited: satp-gateway (exit status 1; not expected)
+2025-05-22 22:22:10,025 INFO spawned: 'satp-gateway' with pid 72
+2025-05-22 22:22:11,026 INFO success: satp-gateway entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-22 22:26:16,639 WARN exited: satp-gateway (exit status 1; not expected)
+2025-05-22 22:26:17,642 INFO spawned: 'satp-gateway' with pid 946
+2025-05-22 22:26:18,643 INFO success: satp-gateway entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-22 22:36:31,433 WARN received SIGTERM indicating exit request
+2025-05-22 22:36:31,434 INFO waiting for satp-gateway to die
+2025-05-22 22:36:31,519 WARN stopped: satp-gateway (exit status 143)
+2025-05-22 23:14:52,953 INFO Set uid to user 0 succeeded
+2025-05-22 23:14:52,954 INFO supervisord started with pid 1
+2025-05-22 23:14:53,957 INFO spawned: 'satp-gateway' with pid 7
+2025-05-22 23:14:54,958 INFO success: satp-gateway entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-22 23:18:11,089 WARN received SIGTERM indicating exit request
+2025-05-22 23:18:11,089 INFO waiting for satp-gateway to die
+2025-05-22 23:18:11,140 WARN stopped: satp-gateway (exit status 143)
