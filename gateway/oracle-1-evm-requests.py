@@ -1,6 +1,7 @@
 
 import requests
 import json
+from time import sleep
 
 TEST_DATA = "DATA WRITTEN TO THE BLOCKCHAIN"
 DATA_HASH = "0xd2a21947eed980d6266fd60e26f24379032c4fa65ed8c63b323e040ea2b57536"
@@ -82,5 +83,15 @@ def execute_read(file_path):
     return execute_oracle(req_params)
 
 
-print(execute_update("../artifacts/contracts/OracleTestContract.sol/OracleTestContract.json"))
-print(execute_read("../artifacts/contracts/OracleTestContract.sol/OracleTestContract.json"))
+if __name__ == "__main__":
+    print(f"First request will write '{TEST_DATA}' to the blockchain...")
+    sleep(5)
+
+    update_response = execute_update("../EVM/artifacts/contracts/OracleTestContract.sol/OracleTestContract.json")
+    print("Response:", update_response)
+
+    print("Waiting for 5 seconds before reading the data...")
+    sleep(5)
+
+    read_response = execute_read("../EVM/artifacts/contracts/OracleTestContract.sol/OracleTestContract.json")
+    print("Read Response:", read_response)

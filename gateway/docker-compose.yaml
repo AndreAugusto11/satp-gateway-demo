@@ -4,10 +4,8 @@ services:
   satp-hermes-gateway:
     image: aaugusto11/cacti-satp-hermes-gateway:d2bf9f79c-2025-05-21
     volumes:
-      - ./config:/opt/cacti/satp-hermes/config
+      - ./config/config-oracle-1-evm-requests.json:/opt/cacti/satp-hermes/config/config.json
       - ./satp-hermes-gateway/logs:/opt/cacti/satp-hermes/logs
-      - ./satp-hermes-gateway/ontologies:/opt/cacti/satp-hermes/ontologies
-      - ./satp-hermes-gateway/database:/opt/cacti/satp-hermes/database
     ports:
       - 3010:3010/tcp # SERVER_PORT
       - 3011:3011/tcp # CLIENT_PORT
