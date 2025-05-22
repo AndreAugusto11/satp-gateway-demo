@@ -3,9 +3,6 @@ import requests
 import json
 from time import sleep
 
-TEST_DATA = "DATA WRITTEN TO THE BLOCKCHAIN"
-DATA_HASH = "0xd2a21947eed980d6266fd60e26f24379032c4fa65ed8c63b323e040ea2b57536"
-
 def get_status_oracle(params):
     """
     Calls the /api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/execute endpoint
@@ -43,5 +40,5 @@ def get_status(task_id):
     return get_status_oracle(req_params)
 
 if __name__ == "__main__":
-    response = get_status("1ebd1095-3a04-4441-b753-a19ac5608bda")
+    response = get_status("602decd0-cefc-490f-a99d-ed3b9bec50fb")
     print("Response:", response)

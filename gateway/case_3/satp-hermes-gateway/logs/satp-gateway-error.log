@@ -2733,3 +2733,1488 @@ Trace: [2025-05-22T23:18:11.099Z] TRACE (SATPGateway): Entering SATPGateway#veri
     at ApiServer.shutdown (/opt/cacti/satp-hermes/index.js:3869:14)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
 [2025-05-22T23:18:11.104Z] ERROR (GatewayOrchestrator): Disconnect All Not implemented
+(node:7) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:7) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+Trace: [2025-05-22T23:35:39.638Z] TRACE (GatewayOrchestrator): Entering #getGatewaySeeds()
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at getGatewaySeeds (/opt/cacti/satp-hermes/index.js:1004429:12)
+    at new GatewayOrchestrator (/opt/cacti/satp-hermes/index.js:1003299:68)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002179:40)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002010:21)
+Trace: [2025-05-22T23:35:39.638Z] TRACE (GatewayOrchestrator): Entering GatewayOrchestrator#addGateways()
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at GatewayOrchestrator.addGateways (/opt/cacti/satp-hermes/index.js:1003571:21)
+    at new GatewayOrchestrator (/opt/cacti/satp-hermes/index.js:1003305:14)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002179:40)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002010:21)
+[2025-05-22T23:35:39.639Z] WARN (OntologyManager): Ontologies path not provided. Ontologies must be added manually.
+Trace: [2025-05-22T23:35:39.646Z] TRACE (SATPManager): Signer logger level: TRACE
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new SATPService (/opt/cacti/satp-hermes/index.js:991537:21)
+    at new Stage0ServerService (/opt/cacti/satp-hermes/index.js:991598:9)
+    at /opt/cacti/satp-hermes/index.js:1003906:29
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeServices (/opt/cacti/satp-hermes/index.js:1003905:24)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003738:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002212:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002010:21)
+Trace: [2025-05-22T23:35:39.647Z] TRACE (SATPManager): Signer logger level: TRACE
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new SATPService (/opt/cacti/satp-hermes/index.js:991537:21)
+    at new Stage0ClientService (/opt/cacti/satp-hermes/index.js:990141:9)
+    at /opt/cacti/satp-hermes/index.js:1003906:29
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeServices (/opt/cacti/satp-hermes/index.js:1003905:24)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003738:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002212:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002010:21)
+Trace: [2025-05-22T23:35:39.647Z] TRACE (SATPManager): Signer logger level: TRACE
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new SATPService (/opt/cacti/satp-hermes/index.js:991537:21)
+    at new Stage1ServerService (/opt/cacti/satp-hermes/index.js:991980:9)
+    at /opt/cacti/satp-hermes/index.js:1003906:29
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeServices (/opt/cacti/satp-hermes/index.js:1003905:24)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003738:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002212:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002010:21)
+Trace: [2025-05-22T23:35:39.647Z] TRACE (SATPManager): Signer logger level: TRACE
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new SATPService (/opt/cacti/satp-hermes/index.js:991537:21)
+    at new Stage1ClientService (/opt/cacti/satp-hermes/index.js:990431:9)
+    at /opt/cacti/satp-hermes/index.js:1003906:29
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeServices (/opt/cacti/satp-hermes/index.js:1003905:24)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003738:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002212:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002010:21)
+Trace: [2025-05-22T23:35:39.647Z] TRACE (SATPManager): Signer logger level: TRACE
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new SATPService (/opt/cacti/satp-hermes/index.js:991537:21)
+    at new Stage2ServerService (/opt/cacti/satp-hermes/index.js:992381:9)
+    at /opt/cacti/satp-hermes/index.js:1003906:29
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeServices (/opt/cacti/satp-hermes/index.js:1003905:24)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003738:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002212:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002010:21)
+Trace: [2025-05-22T23:35:39.647Z] TRACE (SATPManager): Signer logger level: TRACE
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new SATPService (/opt/cacti/satp-hermes/index.js:991537:21)
+    at new Stage2ClientService (/opt/cacti/satp-hermes/index.js:990763:9)
+    at /opt/cacti/satp-hermes/index.js:1003906:29
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeServices (/opt/cacti/satp-hermes/index.js:1003905:24)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003738:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002212:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002010:21)
+Trace: [2025-05-22T23:35:39.647Z] TRACE (SATPManager): Signer logger level: TRACE
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new SATPService (/opt/cacti/satp-hermes/index.js:991537:21)
+    at new Stage3ServerService (/opt/cacti/satp-hermes/index.js:992543:9)
+    at /opt/cacti/satp-hermes/index.js:1003906:29
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeServices (/opt/cacti/satp-hermes/index.js:1003905:24)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003738:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002212:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002010:21)
+Trace: [2025-05-22T23:35:39.647Z] TRACE (SATPManager): Signer logger level: TRACE
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new SATPService (/opt/cacti/satp-hermes/index.js:991537:21)
+    at new Stage3ClientService (/opt/cacti/satp-hermes/index.js:990996:9)
+    at /opt/cacti/satp-hermes/index.js:1003906:29
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeServices (/opt/cacti/satp-hermes/index.js:1003905:24)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003738:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002212:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002010:21)
+Trace: [2025-05-22T23:35:39.648Z] TRACE (SATPHandler-Stage0): Initialized stage-0-handler
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new Stage0SATPHandler (/opt/cacti/satp-hermes/index.js:989430:21)
+    at /opt/cacti/satp-hermes/index.js:1003963:33
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeHandlers (/opt/cacti/satp-hermes/index.js:1003960:25)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003743:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002212:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002010:21)
+Trace: [2025-05-22T23:35:39.648Z] TRACE (SATPHandler-Stage1): Initialized stage-1-handler
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new Stage1SATPHandler (/opt/cacti/satp-hermes/index.js:989607:21)
+    at /opt/cacti/satp-hermes/index.js:1003963:33
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeHandlers (/opt/cacti/satp-hermes/index.js:1003960:25)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003743:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002212:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002010:21)
+Trace: [2025-05-22T23:35:39.648Z] TRACE (SATPHandler-Stage2): Initialized stage-2-handler
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new Stage2SATPHandler (/opt/cacti/satp-hermes/index.js:989777:21)
+    at /opt/cacti/satp-hermes/index.js:1003963:33
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeHandlers (/opt/cacti/satp-hermes/index.js:1003960:25)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003743:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002212:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002010:21)
+Trace: [2025-05-22T23:35:39.649Z] TRACE (SATPHandler-Stage3): Initialized stage-3-handler
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new Stage3SATPHandler (/opt/cacti/satp-hermes/index.js:989887:21)
+    at /opt/cacti/satp-hermes/index.js:1003963:33
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeHandlers (/opt/cacti/satp-hermes/index.js:1003960:25)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003743:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002212:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002010:21)
+Trace: [2025-05-22T23:35:39.649Z] TRACE (SATPGateway): Entering SATPGateway#startup()
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at SATPGateway.startup (/opt/cacti/satp-hermes/index.js:1002391:21)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002013:23)
+Trace: [2025-05-22T23:35:39.652Z] TRACE (SATPGateway): Entering SATPGateway#startupGOLServer()
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at SATPGateway.startupGOLServer (/opt/cacti/satp-hermes/index.js:1002466:21)
+    at SATPGateway.startup (/opt/cacti/satp-hermes/index.js:1002395:18)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002013:23)
+Trace: [2025-05-22T23:35:39.804Z] TRACE (SATPGateway): Entering SATPGateway#getOrCreateHttpServer()
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at SATPGateway.getOrCreateHttpServer (/opt/cacti/satp-hermes/index.js:1002400:21)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002016:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Trace: [2025-05-22T23:35:42.560Z] TRACE (SATPGateway): Entering SATPGateway#getOrCreateWebServices()
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at SATPGateway.getOrCreateWebServices (/opt/cacti/satp-hermes/index.js:1002254:21)
+    at /opt/cacti/satp-hermes/index.js:4408:47
+    at Array.map (<anonymous>)
+    at AuthorizerFactory.getEndpoints (/opt/cacti/satp-hermes/index.js:4408:34)
+    at AuthorizerFactory.initOnce (/opt/cacti/satp-hermes/index.js:4401:38)
+    at ApiServer.startApiServer (/opt/cacti/satp-hermes/index.js:4180:28)
+    at async ApiServer.start (/opt/cacti/satp-hermes/index.js:3684:36)
+    at async SATPGateway.getOrCreateHttpServer (/opt/cacti/satp-hermes/index.js:1002437:9)
+    at async launchGateway (/opt/cacti/satp-hermes/index.js:1002016:13)
+[2025-05-22T23:35:42.562Z] WARN (AuthorizerFactory): The API server configuration specified no authorization protocol. All endpoints are exposed and unprotected. Do not use this in production!
+Trace: [2025-05-22T23:35:42.562Z] TRACE (SATPGateway): Entering SATPGateway#getOrCreateWebServices()
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at SATPGateway.getOrCreateWebServices (/opt/cacti/satp-hermes/index.js:1002254:21)
+    at /opt/cacti/satp-hermes/index.js:4196:21
+    at Array.map (<anonymous>)
+    at ApiServer.startApiServer (/opt/cacti/satp-hermes/index.js:4194:14)
+    at async ApiServer.start (/opt/cacti/satp-hermes/index.js:3684:36)
+    at async SATPGateway.getOrCreateHttpServer (/opt/cacti/satp-hermes/index.js:1002437:9)
+    at async launchGateway (/opt/cacti/satp-hermes/index.js:1002016:13)
+Trace: [2025-05-22T23:35:42.563Z] TRACE (SATPGateway): Entering SATPGateway#getOrCreateWebServices()
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at SATPGateway.getOrCreateWebServices (/opt/cacti/satp-hermes/index.js:1002254:21)
+    at SATPGateway.registerWebServices (/opt/cacti/satp-hermes/index.js:1002245:40)
+    at /opt/cacti/satp-hermes/index.js:4210:37
+    at async Promise.all (index 0)
+    at async ApiServer.startApiServer (/opt/cacti/satp-hermes/index.js:4213:29)
+    at async ApiServer.start (/opt/cacti/satp-hermes/index.js:3684:36)
+    at async SATPGateway.getOrCreateHttpServer (/opt/cacti/satp-hermes/index.js:1002437:9)
+    at async launchGateway (/opt/cacti/satp-hermes/index.js:1002016:13)
+[2025-05-22T23:36:10.166Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#read() - Error reading entry from oracle implementation ContractExecutionError: Error happened while trying to execute a function inside a smart contract
+    at Web3RequestManager._isReverted (/opt/cacti/satp-hermes/index.js:1326441:19)
+    at Web3RequestManager._processJsonRpcResponse (/opt/cacti/satp-hermes/index.js:1326393:42)
+    at Web3RequestManager.<anonymous> (/opt/cacti/satp-hermes/index.js:1326280:29)
+    at Generator.next (<anonymous>)
+    at fulfilled (/opt/cacti/satp-hermes/index.js:1326134:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+    cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+      cause: undefined,
+      code: undefined,
+      receipt: undefined,
+      data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000'
+    },
+    code: -32603,
+    receipt: undefined,
+    data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000',
+    errorName: 'Error',
+    errorSignature: 'Error(string)',
+    errorArgs: { '0': 'Data not found', __length__: 1, message: 'Data not found' }
+  },
+  code: 310,
+  receipt: undefined
+}
+[2025-05-22T23:36:10.167Z] ERROR (OracleManager): OracleManager#relayOperation: Error relaying operation d69f43e5-f412-40cd-bef6-8141f180e052: TransactionError: OracleExecutionLayer#read(), Transaction failed
+[2025-05-22T23:36:15.114Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#read() - Error reading entry from oracle implementation ContractExecutionError: Error happened while trying to execute a function inside a smart contract
+    at Web3RequestManager._isReverted (/opt/cacti/satp-hermes/index.js:1326441:19)
+    at Web3RequestManager._processJsonRpcResponse (/opt/cacti/satp-hermes/index.js:1326393:42)
+    at Web3RequestManager.<anonymous> (/opt/cacti/satp-hermes/index.js:1326280:29)
+    at Generator.next (<anonymous>)
+    at fulfilled (/opt/cacti/satp-hermes/index.js:1326134:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+    cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+      cause: undefined,
+      code: undefined,
+      receipt: undefined,
+      data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000'
+    },
+    code: -32603,
+    receipt: undefined,
+    data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000',
+    errorName: 'Error',
+    errorSignature: 'Error(string)',
+    errorArgs: { '0': 'Data not found', __length__: 1, message: 'Data not found' }
+  },
+  code: 310,
+  receipt: undefined
+}
+[2025-05-22T23:36:15.115Z] ERROR (OracleManager): OracleManager#relayOperation: Error relaying operation 29818f11-eedf-49b1-9512-f75545d4ab44: TransactionError: OracleExecutionLayer#read(), Transaction failed
+[2025-05-22T23:36:20.110Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#read() - Error reading entry from oracle implementation ContractExecutionError: Error happened while trying to execute a function inside a smart contract
+    at Web3RequestManager._isReverted (/opt/cacti/satp-hermes/index.js:1326441:19)
+    at Web3RequestManager._processJsonRpcResponse (/opt/cacti/satp-hermes/index.js:1326393:42)
+    at Web3RequestManager.<anonymous> (/opt/cacti/satp-hermes/index.js:1326280:29)
+    at Generator.next (<anonymous>)
+    at fulfilled (/opt/cacti/satp-hermes/index.js:1326134:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+    cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+      cause: undefined,
+      code: undefined,
+      receipt: undefined,
+      data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000'
+    },
+    code: -32603,
+    receipt: undefined,
+    data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000',
+    errorName: 'Error',
+    errorSignature: 'Error(string)',
+    errorArgs: { '0': 'Data not found', __length__: 1, message: 'Data not found' }
+  },
+  code: 310,
+  receipt: undefined
+}
+[2025-05-22T23:36:20.111Z] ERROR (OracleManager): OracleManager#relayOperation: Error relaying operation 8273e699-7d6c-4fb0-806b-7e2c479c4310: TransactionError: OracleExecutionLayer#read(), Transaction failed
+[2025-05-22T23:36:25.115Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#read() - Error reading entry from oracle implementation FetchError: request to http://host.docker.internal:8545/ failed, reason: socket hang up
+    at ClientRequest.<anonymous> (/opt/cacti/satp-hermes/index.js:728084:11)
+    at ClientRequest.emit (node:events:520:28)
+    at Socket.socketOnEnd (node:_http_client:526:9)
+    at Socket.emit (node:events:532:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'ECONNRESET',
+  code: 'ECONNRESET'
+}
+[2025-05-22T23:36:25.116Z] ERROR (OracleManager): OracleManager#relayOperation: Error relaying operation 53f8aa15-3f56-4d71-88b3-4b350826e224: TransactionError: OracleExecutionLayer#read(), Transaction failed
+[2025-05-22T23:36:30.112Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#read() - Error reading entry from oracle implementation ContractExecutionError: Error happened while trying to execute a function inside a smart contract
+    at Web3RequestManager._isReverted (/opt/cacti/satp-hermes/index.js:1326441:19)
+    at Web3RequestManager._processJsonRpcResponse (/opt/cacti/satp-hermes/index.js:1326393:42)
+    at Web3RequestManager.<anonymous> (/opt/cacti/satp-hermes/index.js:1326280:29)
+    at Generator.next (<anonymous>)
+    at fulfilled (/opt/cacti/satp-hermes/index.js:1326134:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+    cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+      cause: undefined,
+      code: undefined,
+      receipt: undefined,
+      data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000'
+    },
+    code: -32603,
+    receipt: undefined,
+    data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000',
+    errorName: 'Error',
+    errorSignature: 'Error(string)',
+    errorArgs: { '0': 'Data not found', __length__: 1, message: 'Data not found' }
+  },
+  code: 310,
+  receipt: undefined
+}
+[2025-05-22T23:36:30.112Z] ERROR (OracleManager): OracleManager#relayOperation: Error relaying operation 74a8db5e-927f-4c8a-9f82-9fb77660eaa9: TransactionError: OracleExecutionLayer#read(), Transaction failed
+[2025-05-22T23:36:35.103Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997080:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997457:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997866:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997800:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997691:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:36:40.103Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997080:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997457:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997866:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997800:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997691:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:36:45.104Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997080:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997457:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997866:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997800:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997691:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:36:50.103Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997080:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997457:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997866:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997800:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997691:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:36:55.104Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997080:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997457:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997866:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997800:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997691:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:37:00.104Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997080:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997457:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997866:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997800:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997691:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:37:05.104Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997080:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997457:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997866:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997800:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997691:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:37:10.104Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997080:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997457:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997866:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997800:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997691:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:37:15.104Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997080:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997457:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997866:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997800:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997691:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:37:20.104Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997080:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997457:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997866:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997800:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997691:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:37:25.105Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997080:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997457:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997866:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997800:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997691:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:37:30.105Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997080:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997457:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997866:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997800:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997691:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:37:35.105Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997080:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997457:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997866:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997800:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997691:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:37:40.105Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997080:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997457:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997866:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997800:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997691:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:37:45.105Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997080:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997457:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997866:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997800:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997691:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:37:50.105Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997080:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997457:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997866:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997800:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997691:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:37:55.105Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997080:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997457:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997866:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997800:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997691:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:38:00.105Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997080:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997457:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997866:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997800:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997691:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+Trace: [2025-05-22T23:38:03.741Z] TRACE (SATPGateway): Entering SATPGateway#verifySessionsState()
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at SATPGateway.verifySessionsState (/opt/cacti/satp-hermes/index.js:1002646:21)
+    at SATPGateway.shutdown (/opt/cacti/satp-hermes/index.js:1002536:24)
+    at /opt/cacti/satp-hermes/index.js:3870:35
+    at Array.map (<anonymous>)
+    at ApiServer.shutdown (/opt/cacti/satp-hermes/index.js:3869:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Trace: [2025-05-22T23:38:03.743Z] TRACE (SATPGateway): Entering SATPGateway#verifySessionsState()
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at SATPGateway.verifySessionsState (/opt/cacti/satp-hermes/index.js:1002646:21)
+    at SATPGateway.shutdown (/opt/cacti/satp-hermes/index.js:1002536:24)
+    at /opt/cacti/satp-hermes/index.js:3870:35
+    at Array.map (<anonymous>)
+    at ApiServer.shutdown (/opt/cacti/satp-hermes/index.js:3869:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-05-22T23:38:03.749Z] ERROR (GatewayOrchestrator): Disconnect All Not implemented
+(node:7) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:7) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+Trace: [2025-05-22T23:41:05.499Z] TRACE (GatewayOrchestrator): Entering #getGatewaySeeds()
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at getGatewaySeeds (/opt/cacti/satp-hermes/index.js:1004430:12)
+    at new GatewayOrchestrator (/opt/cacti/satp-hermes/index.js:1003300:68)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002180:40)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002011:21)
+Trace: [2025-05-22T23:41:05.500Z] TRACE (GatewayOrchestrator): Entering GatewayOrchestrator#addGateways()
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at GatewayOrchestrator.addGateways (/opt/cacti/satp-hermes/index.js:1003572:21)
+    at new GatewayOrchestrator (/opt/cacti/satp-hermes/index.js:1003306:14)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002180:40)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002011:21)
+[2025-05-22T23:41:05.500Z] WARN (OntologyManager): Ontologies path not provided. Ontologies must be added manually.
+Trace: [2025-05-22T23:41:05.509Z] TRACE (SATPManager): Signer logger level: TRACE
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new SATPService (/opt/cacti/satp-hermes/index.js:991538:21)
+    at new Stage0ServerService (/opt/cacti/satp-hermes/index.js:991599:9)
+    at /opt/cacti/satp-hermes/index.js:1003907:29
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeServices (/opt/cacti/satp-hermes/index.js:1003906:24)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003739:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002213:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002011:21)
+Trace: [2025-05-22T23:41:05.509Z] TRACE (SATPManager): Signer logger level: TRACE
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new SATPService (/opt/cacti/satp-hermes/index.js:991538:21)
+    at new Stage0ClientService (/opt/cacti/satp-hermes/index.js:990142:9)
+    at /opt/cacti/satp-hermes/index.js:1003907:29
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeServices (/opt/cacti/satp-hermes/index.js:1003906:24)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003739:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002213:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002011:21)
+Trace: [2025-05-22T23:41:05.509Z] TRACE (SATPManager): Signer logger level: TRACE
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new SATPService (/opt/cacti/satp-hermes/index.js:991538:21)
+    at new Stage1ServerService (/opt/cacti/satp-hermes/index.js:991981:9)
+    at /opt/cacti/satp-hermes/index.js:1003907:29
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeServices (/opt/cacti/satp-hermes/index.js:1003906:24)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003739:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002213:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002011:21)
+Trace: [2025-05-22T23:41:05.509Z] TRACE (SATPManager): Signer logger level: TRACE
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new SATPService (/opt/cacti/satp-hermes/index.js:991538:21)
+    at new Stage1ClientService (/opt/cacti/satp-hermes/index.js:990432:9)
+    at /opt/cacti/satp-hermes/index.js:1003907:29
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeServices (/opt/cacti/satp-hermes/index.js:1003906:24)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003739:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002213:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002011:21)
+Trace: [2025-05-22T23:41:05.509Z] TRACE (SATPManager): Signer logger level: TRACE
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new SATPService (/opt/cacti/satp-hermes/index.js:991538:21)
+    at new Stage2ServerService (/opt/cacti/satp-hermes/index.js:992382:9)
+    at /opt/cacti/satp-hermes/index.js:1003907:29
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeServices (/opt/cacti/satp-hermes/index.js:1003906:24)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003739:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002213:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002011:21)
+Trace: [2025-05-22T23:41:05.509Z] TRACE (SATPManager): Signer logger level: TRACE
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new SATPService (/opt/cacti/satp-hermes/index.js:991538:21)
+    at new Stage2ClientService (/opt/cacti/satp-hermes/index.js:990764:9)
+    at /opt/cacti/satp-hermes/index.js:1003907:29
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeServices (/opt/cacti/satp-hermes/index.js:1003906:24)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003739:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002213:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002011:21)
+Trace: [2025-05-22T23:41:05.509Z] TRACE (SATPManager): Signer logger level: TRACE
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new SATPService (/opt/cacti/satp-hermes/index.js:991538:21)
+    at new Stage3ServerService (/opt/cacti/satp-hermes/index.js:992544:9)
+    at /opt/cacti/satp-hermes/index.js:1003907:29
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeServices (/opt/cacti/satp-hermes/index.js:1003906:24)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003739:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002213:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002011:21)
+Trace: [2025-05-22T23:41:05.510Z] TRACE (SATPManager): Signer logger level: TRACE
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new SATPService (/opt/cacti/satp-hermes/index.js:991538:21)
+    at new Stage3ClientService (/opt/cacti/satp-hermes/index.js:990997:9)
+    at /opt/cacti/satp-hermes/index.js:1003907:29
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeServices (/opt/cacti/satp-hermes/index.js:1003906:24)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003739:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002213:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002011:21)
+Trace: [2025-05-22T23:41:05.510Z] TRACE (SATPHandler-Stage0): Initialized stage-0-handler
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new Stage0SATPHandler (/opt/cacti/satp-hermes/index.js:989431:21)
+    at /opt/cacti/satp-hermes/index.js:1003964:33
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeHandlers (/opt/cacti/satp-hermes/index.js:1003961:25)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003744:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002213:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002011:21)
+Trace: [2025-05-22T23:41:05.510Z] TRACE (SATPHandler-Stage1): Initialized stage-1-handler
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new Stage1SATPHandler (/opt/cacti/satp-hermes/index.js:989608:21)
+    at /opt/cacti/satp-hermes/index.js:1003964:33
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeHandlers (/opt/cacti/satp-hermes/index.js:1003961:25)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003744:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002213:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002011:21)
+Trace: [2025-05-22T23:41:05.511Z] TRACE (SATPHandler-Stage2): Initialized stage-2-handler
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new Stage2SATPHandler (/opt/cacti/satp-hermes/index.js:989778:21)
+    at /opt/cacti/satp-hermes/index.js:1003964:33
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeHandlers (/opt/cacti/satp-hermes/index.js:1003961:25)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003744:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002213:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002011:21)
+Trace: [2025-05-22T23:41:05.511Z] TRACE (SATPHandler-Stage3): Initialized stage-3-handler
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new Stage3SATPHandler (/opt/cacti/satp-hermes/index.js:989888:21)
+    at /opt/cacti/satp-hermes/index.js:1003964:33
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeHandlers (/opt/cacti/satp-hermes/index.js:1003961:25)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003744:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002213:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002011:21)
+Trace: [2025-05-22T23:41:05.511Z] TRACE (SATPGateway): Entering SATPGateway#startup()
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at SATPGateway.startup (/opt/cacti/satp-hermes/index.js:1002392:21)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002014:23)
+Trace: [2025-05-22T23:41:05.514Z] TRACE (SATPGateway): Entering SATPGateway#startupGOLServer()
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at SATPGateway.startupGOLServer (/opt/cacti/satp-hermes/index.js:1002467:21)
+    at SATPGateway.startup (/opt/cacti/satp-hermes/index.js:1002396:18)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002014:23)
+Trace: [2025-05-22T23:41:05.593Z] TRACE (SATPGateway): Entering SATPGateway#getOrCreateHttpServer()
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at SATPGateway.getOrCreateHttpServer (/opt/cacti/satp-hermes/index.js:1002401:21)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002017:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Trace: [2025-05-22T23:41:07.186Z] TRACE (SATPGateway): Entering SATPGateway#getOrCreateWebServices()
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at SATPGateway.getOrCreateWebServices (/opt/cacti/satp-hermes/index.js:1002255:21)
+    at /opt/cacti/satp-hermes/index.js:4408:47
+    at Array.map (<anonymous>)
+    at AuthorizerFactory.getEndpoints (/opt/cacti/satp-hermes/index.js:4408:34)
+    at AuthorizerFactory.initOnce (/opt/cacti/satp-hermes/index.js:4401:38)
+    at ApiServer.startApiServer (/opt/cacti/satp-hermes/index.js:4180:28)
+    at async ApiServer.start (/opt/cacti/satp-hermes/index.js:3684:36)
+    at async SATPGateway.getOrCreateHttpServer (/opt/cacti/satp-hermes/index.js:1002438:9)
+    at async launchGateway (/opt/cacti/satp-hermes/index.js:1002017:13)
+[2025-05-22T23:41:07.188Z] WARN (AuthorizerFactory): The API server configuration specified no authorization protocol. All endpoints are exposed and unprotected. Do not use this in production!
+Trace: [2025-05-22T23:41:07.189Z] TRACE (SATPGateway): Entering SATPGateway#getOrCreateWebServices()
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at SATPGateway.getOrCreateWebServices (/opt/cacti/satp-hermes/index.js:1002255:21)
+    at /opt/cacti/satp-hermes/index.js:4196:21
+    at Array.map (<anonymous>)
+    at ApiServer.startApiServer (/opt/cacti/satp-hermes/index.js:4194:14)
+    at async ApiServer.start (/opt/cacti/satp-hermes/index.js:3684:36)
+    at async SATPGateway.getOrCreateHttpServer (/opt/cacti/satp-hermes/index.js:1002438:9)
+    at async launchGateway (/opt/cacti/satp-hermes/index.js:1002017:13)
+Trace: [2025-05-22T23:41:07.189Z] TRACE (SATPGateway): Entering SATPGateway#getOrCreateWebServices()
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at SATPGateway.getOrCreateWebServices (/opt/cacti/satp-hermes/index.js:1002255:21)
+    at SATPGateway.registerWebServices (/opt/cacti/satp-hermes/index.js:1002246:40)
+    at /opt/cacti/satp-hermes/index.js:4210:37
+    at async Promise.all (index 0)
+    at async ApiServer.startApiServer (/opt/cacti/satp-hermes/index.js:4213:29)
+    at async ApiServer.start (/opt/cacti/satp-hermes/index.js:3684:36)
+    at async SATPGateway.getOrCreateHttpServer (/opt/cacti/satp-hermes/index.js:1002438:9)
+    at async launchGateway (/opt/cacti/satp-hermes/index.js:1002017:13)
+[2025-05-22T23:41:22.192Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#read() - Error reading entry from oracle implementation ContractExecutionError: Error happened while trying to execute a function inside a smart contract
+    at Web3RequestManager._isReverted (/opt/cacti/satp-hermes/index.js:1326442:19)
+    at Web3RequestManager._processJsonRpcResponse (/opt/cacti/satp-hermes/index.js:1326394:42)
+    at Web3RequestManager.<anonymous> (/opt/cacti/satp-hermes/index.js:1326281:29)
+    at Generator.next (<anonymous>)
+    at fulfilled (/opt/cacti/satp-hermes/index.js:1326135:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+    cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+      cause: undefined,
+      code: undefined,
+      receipt: undefined,
+      data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000'
+    },
+    code: -32603,
+    receipt: undefined,
+    data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000',
+    errorName: 'Error',
+    errorSignature: 'Error(string)',
+    errorArgs: { '0': 'Data not found', __length__: 1, message: 'Data not found' }
+  },
+  code: 310,
+  receipt: undefined
+}
+[2025-05-22T23:41:22.193Z] ERROR (OracleManager): OracleManager#relayOperation: Error relaying operation 8d7c5a26-7aeb-4554-b79a-54352237dbbe: TransactionError: OracleExecutionLayer#read(), Transaction failed
+[2025-05-22T23:41:27.168Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#read() - Error reading entry from oracle implementation ContractExecutionError: Error happened while trying to execute a function inside a smart contract
+    at Web3RequestManager._isReverted (/opt/cacti/satp-hermes/index.js:1326442:19)
+    at Web3RequestManager._processJsonRpcResponse (/opt/cacti/satp-hermes/index.js:1326394:42)
+    at Web3RequestManager.<anonymous> (/opt/cacti/satp-hermes/index.js:1326281:29)
+    at Generator.next (<anonymous>)
+    at fulfilled (/opt/cacti/satp-hermes/index.js:1326135:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+    cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+      cause: undefined,
+      code: undefined,
+      receipt: undefined,
+      data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000'
+    },
+    code: -32603,
+    receipt: undefined,
+    data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000',
+    errorName: 'Error',
+    errorSignature: 'Error(string)',
+    errorArgs: { '0': 'Data not found', __length__: 1, message: 'Data not found' }
+  },
+  code: 310,
+  receipt: undefined
+}
+[2025-05-22T23:41:27.168Z] ERROR (OracleManager): OracleManager#relayOperation: Error relaying operation 038a8e77-5e08-48d5-9da5-8cd3600f2f8e: TransactionError: OracleExecutionLayer#read(), Transaction failed
+[2025-05-22T23:41:32.176Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#read() - Error reading entry from oracle implementation FetchError: request to http://host.docker.internal:8545/ failed, reason: socket hang up
+    at ClientRequest.<anonymous> (/opt/cacti/satp-hermes/index.js:728084:11)
+    at ClientRequest.emit (node:events:520:28)
+    at Socket.socketOnEnd (node:_http_client:526:9)
+    at Socket.emit (node:events:532:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'ECONNRESET',
+  code: 'ECONNRESET'
+}
+[2025-05-22T23:41:32.177Z] ERROR (OracleManager): OracleManager#relayOperation: Error relaying operation 9ac6d888-c559-4f00-bfd0-85b28d15a1f8: TransactionError: OracleExecutionLayer#read(), Transaction failed
+[2025-05-22T23:41:37.172Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#read() - Error reading entry from oracle implementation ContractExecutionError: Error happened while trying to execute a function inside a smart contract
+    at Web3RequestManager._isReverted (/opt/cacti/satp-hermes/index.js:1326442:19)
+    at Web3RequestManager._processJsonRpcResponse (/opt/cacti/satp-hermes/index.js:1326394:42)
+    at Web3RequestManager.<anonymous> (/opt/cacti/satp-hermes/index.js:1326281:29)
+    at Generator.next (<anonymous>)
+    at fulfilled (/opt/cacti/satp-hermes/index.js:1326135:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+    cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+      cause: undefined,
+      code: undefined,
+      receipt: undefined,
+      data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000'
+    },
+    code: -32603,
+    receipt: undefined,
+    data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000',
+    errorName: 'Error',
+    errorSignature: 'Error(string)',
+    errorArgs: { '0': 'Data not found', __length__: 1, message: 'Data not found' }
+  },
+  code: 310,
+  receipt: undefined
+}
+[2025-05-22T23:41:37.172Z] ERROR (OracleManager): OracleManager#relayOperation: Error relaying operation 320a94dd-60ac-41ab-b1ec-4bb298cfec90: TransactionError: OracleExecutionLayer#read(), Transaction failed
+[2025-05-22T23:41:37.995Z] ERROR (GetOracleStatusEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/status Failed to get status: {"name":"TaskNotFoundError","stack":"RuntimeError: Task with 0b0435a8-62e7-4f7b-b1ab-4a8aabfc56f4 not found\n    at OracleManager.getTask (/opt/cacti/satp-hermes/index.js:997776:19)\n    at getTaskStatus (/opt/cacti/satp-hermes/index.js:986206:34)\n    at BLODispatcher.OracleGetTaskStatus (/opt/cacti/satp-hermes/index.js:985870:76)\n    at GetOracleStatusEndpointV1.handleRequest (/opt/cacti/satp-hermes/index.js:986174:58)\n    at Layer.handleRequest (/opt/cacti/satp-hermes/index.js:136802:17)\n    at next (/opt/cacti/satp-hermes/index.js:137062:13)\n    at /opt/cacti/satp-hermes/index.js:248101:14\n    at Layer.handleRequest (/opt/cacti/satp-hermes/index.js:136802:17)\n    at next (/opt/cacti/satp-hermes/index.js:137062:13)\n    at Route.dispatch (/opt/cacti/satp-hermes/index.js:137022:3)\n    at handle (/opt/cacti/satp-hermes/index.js:136329:11)\n    at Layer.handleRequest (/opt/cacti/satp-hermes/index.js:136802:17)\n    at /opt/cacti/satp-hermes/index.js:136189:15\n    at processParams (/opt/cacti/satp-hermes/index.js:136476:12)\n    at next (/opt/cacti/satp-hermes/index.js:136185:5)\n    at jsonParser (/opt/cacti/satp-hermes/index.js:38859:7)\n    at Layer.handleRequest (/opt/cacti/satp-hermes/index.js:136802:17)\n    at trimPrefix (/opt/cacti/satp-hermes/index.js:136236:13)\n    at /opt/cacti/satp-hermes/index.js:136191:9\n    at processParams (/opt/cacti/satp-hermes/index.js:136476:12)\n    at next (/opt/cacti/satp-hermes/index.js:136185:5)\n    at cors (/opt/cacti/satp-hermes/index.js:46634:7)","message":"Task with 0b0435a8-62e7-4f7b-b1ab-4a8aabfc56f4 not found","cause":null,"code":404}
+[2025-05-22T23:41:42.170Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#read() - Error reading entry from oracle implementation ContractExecutionError: Error happened while trying to execute a function inside a smart contract
+    at Web3RequestManager._isReverted (/opt/cacti/satp-hermes/index.js:1326442:19)
+    at Web3RequestManager._processJsonRpcResponse (/opt/cacti/satp-hermes/index.js:1326394:42)
+    at Web3RequestManager.<anonymous> (/opt/cacti/satp-hermes/index.js:1326281:29)
+    at Generator.next (<anonymous>)
+    at fulfilled (/opt/cacti/satp-hermes/index.js:1326135:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+    cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+      cause: undefined,
+      code: undefined,
+      receipt: undefined,
+      data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000'
+    },
+    code: -32603,
+    receipt: undefined,
+    data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000',
+    errorName: 'Error',
+    errorSignature: 'Error(string)',
+    errorArgs: { '0': 'Data not found', __length__: 1, message: 'Data not found' }
+  },
+  code: 310,
+  receipt: undefined
+}
+[2025-05-22T23:41:42.171Z] ERROR (OracleManager): OracleManager#relayOperation: Error relaying operation 87132245-648d-4c2a-859b-f3d75b9c20f0: TransactionError: OracleExecutionLayer#read(), Transaction failed
+[2025-05-22T23:41:47.168Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#read() - Error reading entry from oracle implementation ContractExecutionError: Error happened while trying to execute a function inside a smart contract
+    at Web3RequestManager._isReverted (/opt/cacti/satp-hermes/index.js:1326442:19)
+    at Web3RequestManager._processJsonRpcResponse (/opt/cacti/satp-hermes/index.js:1326394:42)
+    at Web3RequestManager.<anonymous> (/opt/cacti/satp-hermes/index.js:1326281:29)
+    at Generator.next (<anonymous>)
+    at fulfilled (/opt/cacti/satp-hermes/index.js:1326135:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+    cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+      cause: undefined,
+      code: undefined,
+      receipt: undefined,
+      data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000'
+    },
+    code: -32603,
+    receipt: undefined,
+    data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000',
+    errorName: 'Error',
+    errorSignature: 'Error(string)',
+    errorArgs: { '0': 'Data not found', __length__: 1, message: 'Data not found' }
+  },
+  code: 310,
+  receipt: undefined
+}
+[2025-05-22T23:41:47.168Z] ERROR (OracleManager): OracleManager#relayOperation: Error relaying operation ca2c47bd-bf76-465d-b2e7-54179672f91b: TransactionError: OracleExecutionLayer#read(), Transaction failed
+[2025-05-22T23:41:52.170Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#read() - Error reading entry from oracle implementation ContractExecutionError: Error happened while trying to execute a function inside a smart contract
+    at Web3RequestManager._isReverted (/opt/cacti/satp-hermes/index.js:1326442:19)
+    at Web3RequestManager._processJsonRpcResponse (/opt/cacti/satp-hermes/index.js:1326394:42)
+    at Web3RequestManager.<anonymous> (/opt/cacti/satp-hermes/index.js:1326281:29)
+    at Generator.next (<anonymous>)
+    at fulfilled (/opt/cacti/satp-hermes/index.js:1326135:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+    cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+      cause: undefined,
+      code: undefined,
+      receipt: undefined,
+      data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000'
+    },
+    code: -32603,
+    receipt: undefined,
+    data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000',
+    errorName: 'Error',
+    errorSignature: 'Error(string)',
+    errorArgs: { '0': 'Data not found', __length__: 1, message: 'Data not found' }
+  },
+  code: 310,
+  receipt: undefined
+}
+[2025-05-22T23:41:52.170Z] ERROR (OracleManager): OracleManager#relayOperation: Error relaying operation c338d041-2330-4b0a-8566-aac48ba776f9: TransactionError: OracleExecutionLayer#read(), Transaction failed
+[2025-05-22T23:41:57.168Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#read() - Error reading entry from oracle implementation ContractExecutionError: Error happened while trying to execute a function inside a smart contract
+    at Web3RequestManager._isReverted (/opt/cacti/satp-hermes/index.js:1326442:19)
+    at Web3RequestManager._processJsonRpcResponse (/opt/cacti/satp-hermes/index.js:1326394:42)
+    at Web3RequestManager.<anonymous> (/opt/cacti/satp-hermes/index.js:1326281:29)
+    at Generator.next (<anonymous>)
+    at fulfilled (/opt/cacti/satp-hermes/index.js:1326135:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+    cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+      cause: undefined,
+      code: undefined,
+      receipt: undefined,
+      data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000'
+    },
+    code: -32603,
+    receipt: undefined,
+    data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000',
+    errorName: 'Error',
+    errorSignature: 'Error(string)',
+    errorArgs: { '0': 'Data not found', __length__: 1, message: 'Data not found' }
+  },
+  code: 310,
+  receipt: undefined
+}
+[2025-05-22T23:41:57.168Z] ERROR (OracleManager): OracleManager#relayOperation: Error relaying operation 0a50365f-c490-4ced-86c7-004abb1686c7: TransactionError: OracleExecutionLayer#read(), Transaction failed
+[2025-05-22T23:42:02.161Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997081:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997458:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997867:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997801:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997692:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:42:07.161Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997081:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997458:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997867:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997801:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997692:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:42:12.161Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997081:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997458:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997867:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997801:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997692:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:42:17.161Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997081:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997458:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997867:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997801:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997692:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:42:22.161Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997081:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997458:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997867:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997801:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997692:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:42:27.161Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997081:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997458:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997867:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997801:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997692:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:42:32.161Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997081:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997458:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997867:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997801:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997692:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:42:37.162Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997081:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997458:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997867:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997801:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997692:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:42:42.162Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997081:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997458:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997867:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997801:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997692:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:42:47.162Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997081:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997458:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997867:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997801:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997692:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:42:52.162Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997081:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997458:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997867:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997801:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997692:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:42:57.163Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997081:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997458:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997867:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997801:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997692:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:43:02.162Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997081:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997458:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997867:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997801:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997692:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:43:07.163Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997081:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997458:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997867:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997801:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997692:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:43:12.163Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997081:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997458:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997867:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997801:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997692:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:43:17.164Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997081:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997458:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997867:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997801:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997692:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:43:22.164Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997081:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997458:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997867:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997801:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997692:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+[2025-05-22T23:43:27.164Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#convertOperationToEntry - Conversion from Operation to blockchain transaction failed Error: OracleEVM#convertOperationToEntry: Missing contract ABI in contract
+    at OracleEVM.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997081:19)
+    at OracleExecutionLayer.convertOperationToEntry (/opt/cacti/satp-hermes/index.js:997458:36)
+    at OracleManager.relayOperation (/opt/cacti/satp-hermes/index.js:997867:34)
+    at OracleManager.processTask (/opt/cacti/satp-hermes/index.js:997801:24)
+    at Timeout._onTimeout (/opt/cacti/satp-hermes/index.js:997692:36)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+Trace: [2025-05-22T23:43:29.868Z] TRACE (SATPGateway): Entering SATPGateway#verifySessionsState()
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at SATPGateway.verifySessionsState (/opt/cacti/satp-hermes/index.js:1002647:21)
+    at SATPGateway.shutdown (/opt/cacti/satp-hermes/index.js:1002537:24)
+    at /opt/cacti/satp-hermes/index.js:3870:35
+    at Array.map (<anonymous>)
+    at ApiServer.shutdown (/opt/cacti/satp-hermes/index.js:3869:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Trace: [2025-05-22T23:43:29.869Z] TRACE (SATPGateway): Entering SATPGateway#verifySessionsState()
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at SATPGateway.verifySessionsState (/opt/cacti/satp-hermes/index.js:1002647:21)
+    at SATPGateway.shutdown (/opt/cacti/satp-hermes/index.js:1002537:24)
+    at /opt/cacti/satp-hermes/index.js:3870:35
+    at Array.map (<anonymous>)
+    at ApiServer.shutdown (/opt/cacti/satp-hermes/index.js:3869:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-05-22T23:43:29.872Z] ERROR (GatewayOrchestrator): Disconnect All Not implemented
+(node:7) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:7) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+Trace: [2025-05-22T23:50:49.414Z] TRACE (GatewayOrchestrator): Entering #getGatewaySeeds()
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at getGatewaySeeds (/opt/cacti/satp-hermes/index.js:1004445:12)
+    at new GatewayOrchestrator (/opt/cacti/satp-hermes/index.js:1003315:68)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002195:40)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002026:21)
+Trace: [2025-05-22T23:50:49.414Z] TRACE (GatewayOrchestrator): Entering GatewayOrchestrator#addGateways()
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at GatewayOrchestrator.addGateways (/opt/cacti/satp-hermes/index.js:1003587:21)
+    at new GatewayOrchestrator (/opt/cacti/satp-hermes/index.js:1003321:14)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002195:40)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002026:21)
+[2025-05-22T23:50:49.414Z] WARN (OntologyManager): Ontologies path not provided. Ontologies must be added manually.
+Trace: [2025-05-22T23:50:49.420Z] TRACE (SATPManager): Signer logger level: TRACE
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new SATPService (/opt/cacti/satp-hermes/index.js:991553:21)
+    at new Stage0ServerService (/opt/cacti/satp-hermes/index.js:991614:9)
+    at /opt/cacti/satp-hermes/index.js:1003922:29
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeServices (/opt/cacti/satp-hermes/index.js:1003921:24)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003754:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002228:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002026:21)
+Trace: [2025-05-22T23:50:49.420Z] TRACE (SATPManager): Signer logger level: TRACE
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new SATPService (/opt/cacti/satp-hermes/index.js:991553:21)
+    at new Stage0ClientService (/opt/cacti/satp-hermes/index.js:990157:9)
+    at /opt/cacti/satp-hermes/index.js:1003922:29
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeServices (/opt/cacti/satp-hermes/index.js:1003921:24)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003754:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002228:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002026:21)
+Trace: [2025-05-22T23:50:49.420Z] TRACE (SATPManager): Signer logger level: TRACE
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new SATPService (/opt/cacti/satp-hermes/index.js:991553:21)
+    at new Stage1ServerService (/opt/cacti/satp-hermes/index.js:991996:9)
+    at /opt/cacti/satp-hermes/index.js:1003922:29
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeServices (/opt/cacti/satp-hermes/index.js:1003921:24)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003754:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002228:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002026:21)
+Trace: [2025-05-22T23:50:49.421Z] TRACE (SATPManager): Signer logger level: TRACE
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new SATPService (/opt/cacti/satp-hermes/index.js:991553:21)
+    at new Stage1ClientService (/opt/cacti/satp-hermes/index.js:990447:9)
+    at /opt/cacti/satp-hermes/index.js:1003922:29
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeServices (/opt/cacti/satp-hermes/index.js:1003921:24)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003754:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002228:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002026:21)
+Trace: [2025-05-22T23:50:49.421Z] TRACE (SATPManager): Signer logger level: TRACE
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new SATPService (/opt/cacti/satp-hermes/index.js:991553:21)
+    at new Stage2ServerService (/opt/cacti/satp-hermes/index.js:992397:9)
+    at /opt/cacti/satp-hermes/index.js:1003922:29
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeServices (/opt/cacti/satp-hermes/index.js:1003921:24)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003754:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002228:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002026:21)
+Trace: [2025-05-22T23:50:49.421Z] TRACE (SATPManager): Signer logger level: TRACE
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new SATPService (/opt/cacti/satp-hermes/index.js:991553:21)
+    at new Stage2ClientService (/opt/cacti/satp-hermes/index.js:990779:9)
+    at /opt/cacti/satp-hermes/index.js:1003922:29
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeServices (/opt/cacti/satp-hermes/index.js:1003921:24)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003754:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002228:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002026:21)
+Trace: [2025-05-22T23:50:49.421Z] TRACE (SATPManager): Signer logger level: TRACE
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new SATPService (/opt/cacti/satp-hermes/index.js:991553:21)
+    at new Stage3ServerService (/opt/cacti/satp-hermes/index.js:992559:9)
+    at /opt/cacti/satp-hermes/index.js:1003922:29
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeServices (/opt/cacti/satp-hermes/index.js:1003921:24)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003754:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002228:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002026:21)
+Trace: [2025-05-22T23:50:49.421Z] TRACE (SATPManager): Signer logger level: TRACE
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new SATPService (/opt/cacti/satp-hermes/index.js:991553:21)
+    at new Stage3ClientService (/opt/cacti/satp-hermes/index.js:991012:9)
+    at /opt/cacti/satp-hermes/index.js:1003922:29
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeServices (/opt/cacti/satp-hermes/index.js:1003921:24)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003754:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002228:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002026:21)
+Trace: [2025-05-22T23:50:49.422Z] TRACE (SATPHandler-Stage0): Initialized stage-0-handler
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new Stage0SATPHandler (/opt/cacti/satp-hermes/index.js:989446:21)
+    at /opt/cacti/satp-hermes/index.js:1003979:33
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeHandlers (/opt/cacti/satp-hermes/index.js:1003976:25)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003759:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002228:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002026:21)
+Trace: [2025-05-22T23:50:49.422Z] TRACE (SATPHandler-Stage1): Initialized stage-1-handler
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new Stage1SATPHandler (/opt/cacti/satp-hermes/index.js:989623:21)
+    at /opt/cacti/satp-hermes/index.js:1003979:33
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeHandlers (/opt/cacti/satp-hermes/index.js:1003976:25)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003759:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002228:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002026:21)
+Trace: [2025-05-22T23:50:49.422Z] TRACE (SATPHandler-Stage2): Initialized stage-2-handler
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new Stage2SATPHandler (/opt/cacti/satp-hermes/index.js:989793:21)
+    at /opt/cacti/satp-hermes/index.js:1003979:33
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeHandlers (/opt/cacti/satp-hermes/index.js:1003976:25)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003759:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002228:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002026:21)
+Trace: [2025-05-22T23:50:49.422Z] TRACE (SATPHandler-Stage3): Initialized stage-3-handler
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at new Stage3SATPHandler (/opt/cacti/satp-hermes/index.js:989903:21)
+    at /opt/cacti/satp-hermes/index.js:1003979:33
+    at Array.forEach (<anonymous>)
+    at SATPManager.initializeHandlers (/opt/cacti/satp-hermes/index.js:1003976:25)
+    at new SATPManager (/opt/cacti/satp-hermes/index.js:1003759:14)
+    at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
+    at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002228:30)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002026:21)
+Trace: [2025-05-22T23:50:49.422Z] TRACE (SATPGateway): Entering SATPGateway#startup()
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at SATPGateway.startup (/opt/cacti/satp-hermes/index.js:1002407:21)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002029:23)
+Trace: [2025-05-22T23:50:49.425Z] TRACE (SATPGateway): Entering SATPGateway#startupGOLServer()
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at SATPGateway.startupGOLServer (/opt/cacti/satp-hermes/index.js:1002482:21)
+    at SATPGateway.startup (/opt/cacti/satp-hermes/index.js:1002411:18)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002029:23)
+Trace: [2025-05-22T23:50:49.500Z] TRACE (SATPGateway): Entering SATPGateway#getOrCreateHttpServer()
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at SATPGateway.getOrCreateHttpServer (/opt/cacti/satp-hermes/index.js:1002416:21)
+    at launchGateway (/opt/cacti/satp-hermes/index.js:1002032:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Trace: [2025-05-22T23:50:50.245Z] TRACE (SATPGateway): Entering SATPGateway#getOrCreateWebServices()
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at SATPGateway.getOrCreateWebServices (/opt/cacti/satp-hermes/index.js:1002270:21)
+    at /opt/cacti/satp-hermes/index.js:4408:47
+    at Array.map (<anonymous>)
+    at AuthorizerFactory.getEndpoints (/opt/cacti/satp-hermes/index.js:4408:34)
+    at AuthorizerFactory.initOnce (/opt/cacti/satp-hermes/index.js:4401:38)
+    at ApiServer.startApiServer (/opt/cacti/satp-hermes/index.js:4180:28)
+    at async ApiServer.start (/opt/cacti/satp-hermes/index.js:3684:36)
+    at async SATPGateway.getOrCreateHttpServer (/opt/cacti/satp-hermes/index.js:1002453:9)
+    at async launchGateway (/opt/cacti/satp-hermes/index.js:1002032:13)
+[2025-05-22T23:50:50.246Z] WARN (AuthorizerFactory): The API server configuration specified no authorization protocol. All endpoints are exposed and unprotected. Do not use this in production!
+Trace: [2025-05-22T23:50:50.247Z] TRACE (SATPGateway): Entering SATPGateway#getOrCreateWebServices()
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at SATPGateway.getOrCreateWebServices (/opt/cacti/satp-hermes/index.js:1002270:21)
+    at /opt/cacti/satp-hermes/index.js:4196:21
+    at Array.map (<anonymous>)
+    at ApiServer.startApiServer (/opt/cacti/satp-hermes/index.js:4194:14)
+    at async ApiServer.start (/opt/cacti/satp-hermes/index.js:3684:36)
+    at async SATPGateway.getOrCreateHttpServer (/opt/cacti/satp-hermes/index.js:1002453:9)
+    at async launchGateway (/opt/cacti/satp-hermes/index.js:1002032:13)
+Trace: [2025-05-22T23:50:50.247Z] TRACE (SATPGateway): Entering SATPGateway#getOrCreateWebServices()
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at SATPGateway.getOrCreateWebServices (/opt/cacti/satp-hermes/index.js:1002270:21)
+    at SATPGateway.registerWebServices (/opt/cacti/satp-hermes/index.js:1002261:40)
+    at /opt/cacti/satp-hermes/index.js:4210:37
+    at async Promise.all (index 0)
+    at async ApiServer.startApiServer (/opt/cacti/satp-hermes/index.js:4213:29)
+    at async ApiServer.start (/opt/cacti/satp-hermes/index.js:3684:36)
+    at async SATPGateway.getOrCreateHttpServer (/opt/cacti/satp-hermes/index.js:1002453:9)
+    at async launchGateway (/opt/cacti/satp-hermes/index.js:1002032:13)
+[2025-05-22T23:51:02.068Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#read() - Error reading entry from oracle implementation ContractExecutionError: Error happened while trying to execute a function inside a smart contract
+    at Web3RequestManager._isReverted (/opt/cacti/satp-hermes/index.js:1326457:19)
+    at Web3RequestManager._processJsonRpcResponse (/opt/cacti/satp-hermes/index.js:1326409:42)
+    at Web3RequestManager.<anonymous> (/opt/cacti/satp-hermes/index.js:1326296:29)
+    at Generator.next (<anonymous>)
+    at fulfilled (/opt/cacti/satp-hermes/index.js:1326150:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+    cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+      cause: undefined,
+      code: undefined,
+      receipt: undefined,
+      data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000'
+    },
+    code: -32603,
+    receipt: undefined,
+    data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000',
+    errorName: 'Error',
+    errorSignature: 'Error(string)',
+    errorArgs: { '0': 'Data not found', __length__: 1, message: 'Data not found' }
+  },
+  code: 310,
+  receipt: undefined
+}
+[2025-05-22T23:51:02.069Z] ERROR (OracleManager): OracleManager#relayOperation: Error relaying operation fdee342b-9cb9-4588-8cb6-9f571c87bcc3: TransactionError: OracleExecutionLayer#read(), Transaction failed
+[2025-05-22T23:51:07.040Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#read() - Error reading entry from oracle implementation ContractExecutionError: Error happened while trying to execute a function inside a smart contract
+    at Web3RequestManager._isReverted (/opt/cacti/satp-hermes/index.js:1326457:19)
+    at Web3RequestManager._processJsonRpcResponse (/opt/cacti/satp-hermes/index.js:1326409:42)
+    at Web3RequestManager.<anonymous> (/opt/cacti/satp-hermes/index.js:1326296:29)
+    at Generator.next (<anonymous>)
+    at fulfilled (/opt/cacti/satp-hermes/index.js:1326150:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+    cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+      cause: undefined,
+      code: undefined,
+      receipt: undefined,
+      data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000'
+    },
+    code: -32603,
+    receipt: undefined,
+    data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000',
+    errorName: 'Error',
+    errorSignature: 'Error(string)',
+    errorArgs: { '0': 'Data not found', __length__: 1, message: 'Data not found' }
+  },
+  code: 310,
+  receipt: undefined
+}
+[2025-05-22T23:51:07.041Z] ERROR (OracleManager): OracleManager#relayOperation: Error relaying operation cafc80d2-308b-43bf-a5d1-98e2bc8e9509: TransactionError: OracleExecutionLayer#read(), Transaction failed
+[2025-05-22T23:51:12.039Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#read() - Error reading entry from oracle implementation ContractExecutionError: Error happened while trying to execute a function inside a smart contract
+    at Web3RequestManager._isReverted (/opt/cacti/satp-hermes/index.js:1326457:19)
+    at Web3RequestManager._processJsonRpcResponse (/opt/cacti/satp-hermes/index.js:1326409:42)
+    at Web3RequestManager.<anonymous> (/opt/cacti/satp-hermes/index.js:1326296:29)
+    at Generator.next (<anonymous>)
+    at fulfilled (/opt/cacti/satp-hermes/index.js:1326150:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+    cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+      cause: undefined,
+      code: undefined,
+      receipt: undefined,
+      data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000'
+    },
+    code: -32603,
+    receipt: undefined,
+    data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000',
+    errorName: 'Error',
+    errorSignature: 'Error(string)',
+    errorArgs: { '0': 'Data not found', __length__: 1, message: 'Data not found' }
+  },
+  code: 310,
+  receipt: undefined
+}
+[2025-05-22T23:51:12.040Z] ERROR (OracleManager): OracleManager#relayOperation: Error relaying operation 9f67eaf5-721b-467e-b89c-66c5eea02697: TransactionError: OracleExecutionLayer#read(), Transaction failed
+[2025-05-22T23:51:14.563Z] ERROR (GetOracleStatusEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/status Failed to get status: {"name":"TaskNotFoundError","stack":"RuntimeError: Task with 3bbadb82-e2cf-4dfc-8136-c9f2700cb7c3 not found\n    at OracleManager.getTask (/opt/cacti/satp-hermes/index.js:997791:19)\n    at getTaskStatus (/opt/cacti/satp-hermes/index.js:986206:26)\n    at BLODispatcher.OracleGetTaskStatus (/opt/cacti/satp-hermes/index.js:985870:76)\n    at GetOracleStatusEndpointV1.handleRequest (/opt/cacti/satp-hermes/index.js:986174:58)\n    at Layer.handleRequest (/opt/cacti/satp-hermes/index.js:136802:17)\n    at next (/opt/cacti/satp-hermes/index.js:137062:13)\n    at /opt/cacti/satp-hermes/index.js:248101:14\n    at Layer.handleRequest (/opt/cacti/satp-hermes/index.js:136802:17)\n    at next (/opt/cacti/satp-hermes/index.js:137062:13)\n    at Route.dispatch (/opt/cacti/satp-hermes/index.js:137022:3)\n    at handle (/opt/cacti/satp-hermes/index.js:136329:11)\n    at Layer.handleRequest (/opt/cacti/satp-hermes/index.js:136802:17)\n    at /opt/cacti/satp-hermes/index.js:136189:15\n    at processParams (/opt/cacti/satp-hermes/index.js:136476:12)\n    at next (/opt/cacti/satp-hermes/index.js:136185:5)\n    at jsonParser (/opt/cacti/satp-hermes/index.js:38859:7)\n    at Layer.handleRequest (/opt/cacti/satp-hermes/index.js:136802:17)\n    at trimPrefix (/opt/cacti/satp-hermes/index.js:136236:13)\n    at /opt/cacti/satp-hermes/index.js:136191:9\n    at processParams (/opt/cacti/satp-hermes/index.js:136476:12)\n    at next (/opt/cacti/satp-hermes/index.js:136185:5)\n    at cors (/opt/cacti/satp-hermes/index.js:46634:7)","message":"Task with 3bbadb82-e2cf-4dfc-8136-c9f2700cb7c3 not found","cause":null,"code":404}
+[2025-05-22T23:51:17.043Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#read() - Error reading entry from oracle implementation ContractExecutionError: Error happened while trying to execute a function inside a smart contract
+    at Web3RequestManager._isReverted (/opt/cacti/satp-hermes/index.js:1326457:19)
+    at Web3RequestManager._processJsonRpcResponse (/opt/cacti/satp-hermes/index.js:1326409:42)
+    at Web3RequestManager.<anonymous> (/opt/cacti/satp-hermes/index.js:1326296:29)
+    at Generator.next (<anonymous>)
+    at fulfilled (/opt/cacti/satp-hermes/index.js:1326150:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+    cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+      cause: undefined,
+      code: undefined,
+      receipt: undefined,
+      data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000'
+    },
+    code: -32603,
+    receipt: undefined,
+    data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000',
+    errorName: 'Error',
+    errorSignature: 'Error(string)',
+    errorArgs: { '0': 'Data not found', __length__: 1, message: 'Data not found' }
+  },
+  code: 310,
+  receipt: undefined
+}
+[2025-05-22T23:51:17.044Z] ERROR (OracleManager): OracleManager#relayOperation: Error relaying operation cec83089-5f22-4418-bd6d-00dba1a77bb7: TransactionError: OracleExecutionLayer#read(), Transaction failed
+[2025-05-22T23:51:22.041Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#read() - Error reading entry from oracle implementation ContractExecutionError: Error happened while trying to execute a function inside a smart contract
+    at Web3RequestManager._isReverted (/opt/cacti/satp-hermes/index.js:1326457:19)
+    at Web3RequestManager._processJsonRpcResponse (/opt/cacti/satp-hermes/index.js:1326409:42)
+    at Web3RequestManager.<anonymous> (/opt/cacti/satp-hermes/index.js:1326296:29)
+    at Generator.next (<anonymous>)
+    at fulfilled (/opt/cacti/satp-hermes/index.js:1326150:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+    cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+      cause: undefined,
+      code: undefined,
+      receipt: undefined,
+      data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000'
+    },
+    code: -32603,
+    receipt: undefined,
+    data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000',
+    errorName: 'Error',
+    errorSignature: 'Error(string)',
+    errorArgs: { '0': 'Data not found', __length__: 1, message: 'Data not found' }
+  },
+  code: 310,
+  receipt: undefined
+}
+[2025-05-22T23:51:22.042Z] ERROR (OracleManager): OracleManager#relayOperation: Error relaying operation 093e8f0b-c3d7-49e9-8351-b8a6deb1f325: TransactionError: OracleExecutionLayer#read(), Transaction failed
+[2025-05-22T23:51:27.041Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#read() - Error reading entry from oracle implementation ContractExecutionError: Error happened while trying to execute a function inside a smart contract
+    at Web3RequestManager._isReverted (/opt/cacti/satp-hermes/index.js:1326457:19)
+    at Web3RequestManager._processJsonRpcResponse (/opt/cacti/satp-hermes/index.js:1326409:42)
+    at Web3RequestManager.<anonymous> (/opt/cacti/satp-hermes/index.js:1326296:29)
+    at Generator.next (<anonymous>)
+    at fulfilled (/opt/cacti/satp-hermes/index.js:1326150:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+    cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+      cause: undefined,
+      code: undefined,
+      receipt: undefined,
+      data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000'
+    },
+    code: -32603,
+    receipt: undefined,
+    data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000',
+    errorName: 'Error',
+    errorSignature: 'Error(string)',
+    errorArgs: { '0': 'Data not found', __length__: 1, message: 'Data not found' }
+  },
+  code: 310,
+  receipt: undefined
+}
+[2025-05-22T23:51:27.041Z] ERROR (OracleManager): OracleManager#relayOperation: Error relaying operation cc08c1f0-dc77-4455-8842-d21d4ad0a1f7: TransactionError: OracleExecutionLayer#read(), Transaction failed
+[2025-05-22T23:51:32.040Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#read() - Error reading entry from oracle implementation ContractExecutionError: Error happened while trying to execute a function inside a smart contract
+    at Web3RequestManager._isReverted (/opt/cacti/satp-hermes/index.js:1326457:19)
+    at Web3RequestManager._processJsonRpcResponse (/opt/cacti/satp-hermes/index.js:1326409:42)
+    at Web3RequestManager.<anonymous> (/opt/cacti/satp-hermes/index.js:1326296:29)
+    at Generator.next (<anonymous>)
+    at fulfilled (/opt/cacti/satp-hermes/index.js:1326150:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+    cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+      cause: undefined,
+      code: undefined,
+      receipt: undefined,
+      data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000'
+    },
+    code: -32603,
+    receipt: undefined,
+    data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000',
+    errorName: 'Error',
+    errorSignature: 'Error(string)',
+    errorArgs: { '0': 'Data not found', __length__: 1, message: 'Data not found' }
+  },
+  code: 310,
+  receipt: undefined
+}
+[2025-05-22T23:51:32.041Z] ERROR (OracleManager): OracleManager#relayOperation: Error relaying operation f9d1398f-6396-4d58-a294-9b0d3adb371d: TransactionError: OracleExecutionLayer#read(), Transaction failed
+[2025-05-22T23:51:37.043Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#read() - Error reading entry from oracle implementation ContractExecutionError: Error happened while trying to execute a function inside a smart contract
+    at Web3RequestManager._isReverted (/opt/cacti/satp-hermes/index.js:1326457:19)
+    at Web3RequestManager._processJsonRpcResponse (/opt/cacti/satp-hermes/index.js:1326409:42)
+    at Web3RequestManager.<anonymous> (/opt/cacti/satp-hermes/index.js:1326296:29)
+    at Generator.next (<anonymous>)
+    at fulfilled (/opt/cacti/satp-hermes/index.js:1326150:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+    cause: [Eip838ExecutionError: Error: VM Exception while processing transaction: reverted with reason string 'Data not found'] {
+      cause: undefined,
+      code: undefined,
+      receipt: undefined,
+      data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000'
+    },
+    code: -32603,
+    receipt: undefined,
+    data: '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e44617461206e6f7420666f756e64000000000000000000000000000000000000',
+    errorName: 'Error',
+    errorSignature: 'Error(string)',
+    errorArgs: { '0': 'Data not found', __length__: 1, message: 'Data not found' }
+  },
+  code: 310,
+  receipt: undefined
+}
+[2025-05-22T23:51:37.044Z] ERROR (OracleManager): OracleManager#relayOperation: Error relaying operation 8b2febf6-db78-406b-9ec7-1edf7d378ec3: TransactionError: OracleExecutionLayer#read(), Transaction failed
+[2025-05-22T23:51:52.043Z] ERROR (OracleExecutionLayer): OracleExecutionLayer#read() - Error reading entry from oracle implementation FetchError: request to http://host.docker.internal:8545/ failed, reason: socket hang up
+    at ClientRequest.<anonymous> (/opt/cacti/satp-hermes/index.js:728084:11)
+    at ClientRequest.emit (node:events:520:28)
+    at Socket.socketOnEnd (node:_http_client:526:9)
+    at Socket.emit (node:events:532:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'ECONNRESET',
+  code: 'ECONNRESET'
+}
+[2025-05-22T23:51:52.044Z] ERROR (OracleManager): OracleManager#relayOperation: Error relaying operation 5216e884-1e0e-41dc-9600-e4e52f449b81: TransactionError: OracleExecutionLayer#read(), Transaction failed
+Trace: [2025-05-22T23:51:54.048Z] TRACE (SATPGateway): Entering SATPGateway#verifySessionsState()
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at SATPGateway.verifySessionsState (/opt/cacti/satp-hermes/index.js:1002662:21)
+    at SATPGateway.shutdown (/opt/cacti/satp-hermes/index.js:1002552:24)
+    at /opt/cacti/satp-hermes/index.js:3870:35
+    at Array.map (<anonymous>)
+    at ApiServer.shutdown (/opt/cacti/satp-hermes/index.js:3869:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Trace: [2025-05-22T23:51:54.049Z] TRACE (SATPGateway): Entering SATPGateway#verifySessionsState()
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
+    at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
+    at SATPGateway.verifySessionsState (/opt/cacti/satp-hermes/index.js:1002662:21)
+    at SATPGateway.shutdown (/opt/cacti/satp-hermes/index.js:1002552:24)
+    at /opt/cacti/satp-hermes/index.js:3870:35
+    at Array.map (<anonymous>)
+    at ApiServer.shutdown (/opt/cacti/satp-hermes/index.js:3869:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2025-05-22T23:51:54.051Z] ERROR (GatewayOrchestrator): Disconnect All Not implemented
