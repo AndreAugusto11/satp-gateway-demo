@@ -85,7 +85,5 @@
         ]
       }
     ]
-  },
-  "enableCrashRecovery": false,
-  "ontologyPath": "/opt/cacti/satp-hermes/ontologies"
+  }
 }

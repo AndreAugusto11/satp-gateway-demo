@@ -54802,3 +54802,928 @@
   links: []
 }
 [2025-05-22T18:00:41.031Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-22T22:08:44.083Z] DEBUG (SATP-Gateway): Checking for configuration file...
+[2025-05-22T22:08:44.084Z] DEBUG (SATP-Gateway): Reading configuration from: /config/config.json
+[2025-05-22T22:08:44.087Z] DEBUG (SATP-Gateway): Configuration read OK
+[2025-05-22T22:08:44.088Z] DEBUG (SATP-Gateway): Validating SATP Gateway instanceId...
+[2025-05-22T22:08:44.088Z] DEBUG (SATP-Gateway): SATP Gateway instanceId is valid.
+[2025-05-22T22:08:44.088Z] DEBUG (SATP-Gateway): Validating SATP Gateway Identity...
+[2025-05-22T22:08:44.088Z] DEBUG (SATP-Gateway): Valid SATP Gateway Identity
+[2025-05-22T22:08:44.088Z] DEBUG (SATP-Gateway): Validating SATP Counter Party Gateways...
+[2025-05-22T22:08:44.088Z] DEBUG (SATP-Gateway): Valid SATP Counter Party Gateways
+[2025-05-22T22:08:44.088Z] DEBUG (SATP-Gateway): Validating SATP Log Level...
+[2025-05-22T22:08:44.088Z] DEBUG (SATP-Gateway): SATP Log Level is valid.
+[2025-05-22T22:08:44.089Z] DEBUG (SATP-Gateway): Validating SATP Environment...
+[2025-05-22T22:08:44.089Z] DEBUG (SATP-Gateway): SATP Environment is valid.
+[2025-05-22T22:08:44.089Z] DEBUG (SATP-Gateway): Validating SATP Validation Options...
+[2025-05-22T22:08:44.089Z] DEBUG (SATP-Gateway): SATP Validation Options is valid.
+[2025-05-22T22:08:44.089Z] DEBUG (SATP-Gateway): Validating SATP Privacy Policies...
+[2025-05-22T22:08:44.089Z] DEBUG (SATP-Gateway): SATP Privacy Policies is valid.
+[2025-05-22T22:08:44.089Z] DEBUG (SATP-Gateway): Validating SATP Merge Policies...
+[2025-05-22T22:08:44.089Z] DEBUG (SATP-Gateway): SATP Merge Policies is valid.
+[2025-05-22T22:08:44.089Z] DEBUG (SATP-Gateway): Validating SATP KeyPair...
+[2025-05-22T22:08:44.089Z] DEBUG (SATP-Gateway): SATP KeyPair is valid.
+[2025-05-22T22:08:44.089Z] DEBUG (SATP-Gateway): Validating Cross Chain Config...
+[2025-05-22T22:08:44.090Z] DEBUG (SATP-Gateway): Cross Chain Config is valid.
+[2025-05-22T22:08:44.090Z] DEBUG (SATP-Gateway): Validating Local Repository Config...
+[2025-05-22T22:08:44.090Z] DEBUG (SATP-Gateway): Local Repository Config is valid.
+[2025-05-22T22:08:44.090Z] DEBUG (SATP-Gateway): Validating Remote Repository Config...
+[2025-05-22T22:08:44.090Z] DEBUG (SATP-Gateway): Remote Repository Config is valid.
+[2025-05-22T22:08:44.090Z] DEBUG (SATP-Gateway): Validating SATP Enable Crash Recovery...
+[2025-05-22T22:08:44.090Z] DEBUG (SATP-Gateway): SATP Enable Crash Recovery is valid.
+[2025-05-22T22:08:44.090Z] DEBUG (SATP-Gateway): SATP Bridges Config is valid.
+[2025-05-22T22:08:44.090Z] DEBUG (SATP-Gateway): Validating Ontologies Path...
+[2025-05-22T22:08:44.090Z] DEBUG (SATP-Gateway): SATP Gateway instanceId is valid.
+[2025-05-22T22:08:44.090Z] DEBUG (SATP-Gateway): Creating SATPGatewayConfig...
+[2025-05-22T22:08:44.090Z] DEBUG (SATP-Gateway): SATPGatewayConfig created successfully
+[2025-05-22T22:08:44.099Z] INFO (SATPGateway): Initializing Gateway Coordinator
+[2025-05-22T22:08:44.106Z] INFO (SATPGateway): Gateway's public key: 023ee92936eb1ebce26d91cc207778ad2d9cc2882933bb099581fe9fc4b652814c
+[2025-05-22T22:08:44.106Z] INFO (SATPGateway): Gateway's claim format: DEFAULT
+[2025-05-22T22:08:44.106Z] INFO (SATPGateway): Initializing gateway connection manager with seed gateways
+[2025-05-22T22:08:44.107Z] INFO (GatewayOrchestrator): Initializing Gateway Connection Manager
+[2025-05-22T22:08:44.107Z] INFO (GatewayOrchestrator): Gateway Coordinator initialized
+[2025-05-22T22:08:44.107Z] INFO (GatewayOrchestrator): Crash recovery set to: false
+[2025-05-22T22:08:44.107Z] INFO (GatewayOrchestrator): Initializing gateway connection manager with  seed gateways
+[2025-05-22T22:08:44.107Z] INFO (GatewayOrchestrator): Gateway Connection Manager bootstrapped with 0 gateways
+[2025-05-22T22:08:44.107Z] INFO (GatewayOrchestrator): Connecting to gateway
+[2025-05-22T22:08:44.107Z] DEBUG (GatewayOrchestrator): Added 0 gateways: 
+[2025-05-22T22:08:44.107Z] INFO (GatewayOrchestrator): GatewayOrchestrator#connectToCounterPartyGateways(), No new gateways to connect to
+[2025-05-22T22:08:44.108Z] INFO (OracleManager): OracleManager#constructor(): Initializing OracleManager
+[2025-05-22T22:08:44.108Z] INFO (OracleSchedulerManager): OracleSchedulerManager#constructor(): Initializing OracleSchedulerManager
+[2025-05-22T22:08:44.108Z] INFO (BLODispatcher): Instantiated BLODispatcher OK
+[2025-05-22T22:08:44.108Z] INFO (SATPManager): Instantiated SATPManager OK
+[2025-05-22T22:08:44.108Z] INFO (SATPLogger): SATPLogger initialized.
+[2025-05-22T22:08:44.108Z] DEBUG (SATPManager): SATPManager#constructor() dbLogger initialized: true
+[2025-05-22T22:08:44.109Z] INFO (MonitorService): Initializing MonitorService...
+[2025-05-22T22:08:44.112Z] INFO (MonitorService): Initialization complete
+[2025-05-22T22:08:44.113Z] INFO (SATPManager): SATPManager#initializeServiceOptions(), Initializing services options...
+[2025-05-22T22:08:44.113Z] INFO (SATPManager): Initializing 8 services options...
+[2025-05-22T22:08:44.113Z] DEBUG (SATPCrossChainManager): SATPCrossChainManager#getClientBridgeManagerInterface(), Getting Bridge Manager Interface...
+[2025-05-22T22:08:44.113Z] DEBUG (SATPCrossChainManager): SATPCrossChainManager#getClientBridgeManagerInterface(), Getting Bridge Manager Interface...
+[2025-05-22T22:08:44.113Z] DEBUG (SATPCrossChainManager): SATPCrossChainManager#getClientBridgeManagerInterface(), Getting Bridge Manager Interface...
+[2025-05-22T22:08:44.113Z] DEBUG (SATPCrossChainManager): SATPCrossChainManager#getClientBridgeManagerInterface(), Getting Bridge Manager Interface...
+[2025-05-22T22:08:44.113Z] DEBUG (SATPCrossChainManager): SATPCrossChainManager#getClientBridgeManagerInterface(), Getting Bridge Manager Interface...
+[2025-05-22T22:08:44.113Z] DEBUG (SATPCrossChainManager): SATPCrossChainManager#getClientBridgeManagerInterface(), Getting Bridge Manager Interface...
+[2025-05-22T22:08:44.113Z] DEBUG (SATPCrossChainManager): SATPCrossChainManager#getClientBridgeManagerInterface(), Getting Bridge Manager Interface...
+[2025-05-22T22:08:44.113Z] DEBUG (SATPCrossChainManager): SATPCrossChainManager#getClientBridgeManagerInterface(), Getting Bridge Manager Interface...
+[2025-05-22T22:08:44.113Z] INFO (SATPManager): SATPManager#initializeServices(), Initializing services...
+[2025-05-22T22:08:44.114Z] INFO (SATPManager): SATPManager#initializeHandlerOptions(), Initializing handlers options...
+[2025-05-22T22:08:44.114Z] DEBUG (SATPCrossChainManager): SATPCrossChainManager#getClientBridgeManagerInterface(), Getting Bridge Manager Interface...
+[2025-05-22T22:08:44.114Z] DEBUG (SATPCrossChainManager): SATPCrossChainManager#getClientBridgeManagerInterface(), Getting Bridge Manager Interface...
+[2025-05-22T22:08:44.114Z] DEBUG (SATPCrossChainManager): SATPCrossChainManager#getClientBridgeManagerInterface(), Getting Bridge Manager Interface...
+[2025-05-22T22:08:44.114Z] DEBUG (SATPCrossChainManager): SATPCrossChainManager#getClientBridgeManagerInterface(), Getting Bridge Manager Interface...
+[2025-05-22T22:08:44.114Z] INFO (SATPManager): SATPManager#initializeHandlers(), Initializing handlers...
+[2025-05-22T22:08:44.115Z] DEBUG (SATPCrossChainManager): SATPCrossChainManager#getClientBridgeManagerInterface(), Getting Bridge Manager Interface...
+[2025-05-22T22:08:44.115Z] INFO (SATPGateway): CrashManager is disabled!
+[2025-05-22T22:08:44.115Z] INFO (SATP-Gateway): Starting SATP Gateway...
+[2025-05-22T22:08:44.115Z] INFO (SATPGateway): SATPGateway#createDBRepository(): Creating migration source
+[2025-05-22T22:08:44.115Z] DEBUG (SATPCrossChainManager): SATPCrossChainManager#deployCCMechanisms(), Deploying Cross Chain Mechanisms...
+[2025-05-22T22:08:44.115Z] DEBUG (SATPCrossChainManager): SATPCrossChainManager#deployBridgeFromConfig(), Deploying Bridge...
+[2025-05-22T22:08:44.116Z] DEBUG (GatewayOrchestrator): Creating clients for gateway {"address":"http://localhost","connectedDLTs":[],"gatewayClientPort":3011,"gatewayOapiPort":4010,"gatewayServerPort":3010,"id":"mockID","name":"CustomGateway","proofID":"mockProofID10","pubKey":"023ee92936eb1ebce26d91cc207778ad2d9cc2882933bb099581fe9fc4b652814c","version":[{"Architecture":"v02","Core":"v02","Crash":"v02"}]}
+[2025-05-22T22:08:44.116Z] DEBUG (GatewayOrchestrator): Transport:http://localhost:3010/stage-0
+[2025-05-22T22:08:44.116Z] DEBUG (GatewayOrchestrator): Creating stage 0 service client, with transport:  { unary: [AsyncFunction: unary], stream: [AsyncFunction: stream] }
+[2025-05-22T22:08:44.118Z] DEBUG (GatewayOrchestrator): Creating stage 1 service client, with transport:  { unary: [AsyncFunction: unary], stream: [AsyncFunction: stream] }
+[2025-05-22T22:08:44.118Z] DEBUG (GatewayOrchestrator): Creating stage 2 service client, with transport:  { unary: [AsyncFunction: unary], stream: [AsyncFunction: stream] }
+[2025-05-22T22:08:44.118Z] DEBUG (GatewayOrchestrator): Creating stage 3 service client, with transport:  { unary: [AsyncFunction: unary], stream: [AsyncFunction: stream] }
+[2025-05-22T22:08:44.118Z] INFO (GatewayOrchestrator): Created channel to gateway mockID 
+ reachable DLTs: 
+[2025-05-22T22:08:44.118Z] INFO (SATPGateway): Starting GOL server
+[2025-05-22T22:08:44.119Z] INFO (GatewayOrchestrator): Setting up routes for stage /stage-0
+[2025-05-22T22:08:44.122Z] INFO (GatewayOrchestrator): Setting up routes for stage /stage-1
+[2025-05-22T22:08:44.122Z] INFO (GatewayOrchestrator): Setting up routes for stage /stage-2
+[2025-05-22T22:08:44.122Z] INFO (GatewayOrchestrator): Setting up routes for stage /stage-3
+[2025-05-22T22:08:44.124Z] DEBUG (MonitorService): Created metric: satp.active_sessions
+[2025-05-22T22:08:44.124Z] INFO (SATPGateway): SATPGateway#createDBRepository(): Created migration source: {}
+[2025-05-22T22:08:44.127Z] DEBUG (SATPCrossChainManager): SATPCrossChainManager#deployOracleFromConfig(), Deploying Oracles...
+[2025-05-22T22:08:44.127Z] DEBUG (OracleManager): OracleManager#deployOracle(), Deploying Oracle...
+[2025-05-22T22:08:44.127Z] DEBUG (OracleManager): OracleManager#deployOracle(), Oracle Network Options: {"networkIdentification":{"id":"HardhatTestNetwork1","ledgerType":"ETHEREUM"},"signingCredential":{"ethAccount":"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266","secret":"0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80","type":"PRIVATE_KEY_HEX"},"connectorOptions":{"rpcApiHttpHost":"http://host.docker.internal:8545"},"claimFormats":[2],"gasConfig":{"gas":"6721975","gasPrice":"20000000000"}}
+[2025-05-22T22:08:44.127Z] DEBUG (OracleManager): OracleManager#deployOracle(), Deploying Ethereum Oracle...
+[2025-05-22T22:08:44.127Z] DEBUG (OracleManager): OracleManager#deployOracle(), Ethereum Oracle Network Options: {"networkIdentification":{"id":"HardhatTestNetwork1","ledgerType":"ETHEREUM"},"signingCredential":{"ethAccount":"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266","secret":"0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80","type":"PRIVATE_KEY_HEX"},"connectorOptions":{"rpcApiHttpHost":"http://host.docker.internal:8545"},"claimFormats":[2],"gasConfig":{"gas":"6721975","gasPrice":"20000000000"}}
+[2025-05-22T22:08:44.140Z] DEBUG (MonitorService): Created metric: satp.transfer.count
+[2025-05-22T22:08:44.146Z] DEBUG (MonitorService): Created metric: satp.transfer.success
+[2025-05-22T22:08:44.146Z] DEBUG (OracleManager): OracleManager#deployOracle(), Deploying Oracle...
+[2025-05-22T22:08:44.146Z] DEBUG (OracleManager): OracleManager#deployOracle(), Oracle Network Options: {"networkIdentification":{"id":"HardhatTestNetwork2","ledgerType":"ETHEREUM"},"signingCredential":{"ethAccount":"0x70997970C51812dc3A010C7d01b50e0d17dc79C8","secret":"0x59c6995e998f97a5a0044966f0945389dc9e86dae88c7a8412f4603b6b78690d","type":"PRIVATE_KEY_HEX"},"connectorOptions":{"rpcApiHttpHost":"http://host.docker.internal:8546"},"claimFormats":[2],"gasConfig":{"gas":"6721975","gasPrice":"20000000000"}}
+[2025-05-22T22:08:44.146Z] DEBUG (OracleManager): OracleManager#deployOracle(), Deploying Ethereum Oracle...
+[2025-05-22T22:08:44.146Z] DEBUG (OracleManager): OracleManager#deployOracle(), Ethereum Oracle Network Options: {"networkIdentification":{"id":"HardhatTestNetwork2","ledgerType":"ETHEREUM"},"signingCredential":{"ethAccount":"0x70997970C51812dc3A010C7d01b50e0d17dc79C8","secret":"0x59c6995e998f97a5a0044966f0945389dc9e86dae88c7a8412f4603b6b78690d","type":"PRIVATE_KEY_HEX"},"connectorOptions":{"rpcApiHttpHost":"http://host.docker.internal:8546"},"claimFormats":[2],"gasConfig":{"gas":"6721975","gasPrice":"20000000000"}}
+[2025-05-22T22:08:44.151Z] DEBUG (MonitorService): Created metric: satp.transfer.failure
+[2025-05-22T22:08:44.151Z] INFO (SATPManager): SATPManager#initializeMonitorService() Monitoring service initialized
+[2025-05-22T22:08:44.152Z] INFO (SATPGateway): GOL server started and listening on 0.0.0.0:3010
+[2025-05-22T22:08:44.190Z] INFO (SATP-Gateway): Gateway OpenAPI Server Active
+[2025-05-22T22:08:45.753Z] INFO (config-service): Configuration validation OK.
+[2025-05-22T22:08:45.762Z] INFO (api-server): Registered async-exit-hook for cmd-api-server shutdown.
+[2025-05-22T22:08:45.763Z] DEBUG (api-server): pluginsPath: '/tmp/org/hyperledger/cactus/plugins'
+[2025-05-22T22:08:45.763Z] INFO (api-server): Setting tls.DEFAULT_MAX_VERSION to TLSv1.3...
+[2025-05-22T22:08:45.763Z] INFO (api-server): getOrInitPluginRegistry() re-using injected one...
+[2025-05-22T22:08:45.763Z] DEBUG (api-server): Installing crpc services of IPluginCrpcService instances...
+[2025-05-22T22:08:45.763Z] DEBUG (api-server): ApiServer#startCrpcServer() skipping @hyperledger/cactus-plugin-satp-hermes instance
+[2025-05-22T22:08:45.764Z] DEBUG (api-server): ApiServer#registerCrpcServices()} Obtained 0 Crpc registrations.
+[2025-05-22T22:08:45.764Z] DEBUG (api-server): ApiServer#registerCrpcServices()} expressConnectMiddleware() routes handler
+[2025-05-22T22:08:45.764Z] INFO (api-server): Registered 0 Crpc services OK
+[2025-05-22T22:08:45.766Z] DEBUG (AuthorizerFactory): Instantiated AuthorizerFactory OK
+[2025-05-22T22:08:45.766Z] DEBUG (AuthorizerFactory): Initializing AuthorizerFactory...
+[2025-05-22T22:08:45.766Z] INFO (BLODispatcher): BLODispatcher#getOrCreateWebServices(), Registering webservices on instanceId=mockID
+[2025-05-22T22:08:45.767Z] DEBUG (AuthorizerFactory): Initialized AuthorizerFactory OK
+[2025-05-22T22:08:45.768Z] INFO (api-server): Starting to install web services...
+[2025-05-22T22:08:45.768Z] INFO (api-server): openApiValidationOffPkgs:  []
+[2025-05-22T22:08:45.768Z] INFO (BLODispatcher): BLODispatcher#getOrCreateWebServices(), Registering webservices on instanceId=mockID
+[2025-05-22T22:08:45.768Z] DEBUG (api-server): Skipped OpenAPI validator install {"pkgName":"@hyperledger/cactus-plugin-satp-hermes","hasSpec":false,"oApiValidationOn":true}
+[2025-05-22T22:08:45.768Z] INFO (BLODispatcher): BLODispatcher#getOrCreateWebServices(), Registering webservices on instanceId=mockID
+[2025-05-22T22:08:45.769Z] DEBUG (SATPGateway): Registering service /api/v1/@hyperledger/cactus-plugin-satp-hermes/status
+[2025-05-22T22:08:45.769Z] DEBUG (SATPGateway): Registering service /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+[2025-05-22T22:08:45.769Z] DEBUG (SATPGateway): Registering service /api/v1/@hyperledger/cactus-plugin-satp-hermes/integrations
+[2025-05-22T22:08:45.769Z] DEBUG (SATPGateway): Registering service /api/v1/@hyperledger/cactus-plugin-satp-hermes/get-sessions-ids
+[2025-05-22T22:08:45.769Z] DEBUG (SATPGateway): Registering service /api/v1/@hyperledger/cactus-plugin-satp-hermes/approve-address
+[2025-05-22T22:08:45.770Z] DEBUG (SATPGateway): Registering service /api/v1/@hyperledger/cactus-plugin-satp-hermes/transact
+[2025-05-22T22:08:45.770Z] DEBUG (SATPGateway): Registering service /api/v1/@hyperledger/cactus-plugin-satp-hermes/add-counterparty-gateway
+[2025-05-22T22:08:45.770Z] DEBUG (SATPGateway): Registering service /api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/execute
+[2025-05-22T22:08:45.770Z] DEBUG (SATPGateway): Registering service /api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/register
+[2025-05-22T22:08:45.770Z] DEBUG (SATPGateway): Registering service /api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/unregister
+[2025-05-22T22:08:45.770Z] DEBUG (SATPGateway): Registering service /api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/status
+[2025-05-22T22:08:45.775Z] INFO (api-server): Installed 1 web service(s) OK
+[2025-05-22T22:08:45.776Z] INFO (api-server): Endpoint={path=/api/v1/@hyperledger/cactus-plugin-satp-hermes/status}
+[2025-05-22T22:08:45.776Z] INFO (api-server): Endpoint={path=/api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck}
+[2025-05-22T22:08:45.776Z] INFO (api-server): Endpoint={path=/api/v1/@hyperledger/cactus-plugin-satp-hermes/integrations}
+[2025-05-22T22:08:45.776Z] INFO (api-server): Endpoint={path=/api/v1/@hyperledger/cactus-plugin-satp-hermes/get-sessions-ids}
+[2025-05-22T22:08:45.776Z] INFO (api-server): Endpoint={path=/api/v1/@hyperledger/cactus-plugin-satp-hermes/approve-address}
+[2025-05-22T22:08:45.776Z] INFO (api-server): Endpoint={path=/api/v1/@hyperledger/cactus-plugin-satp-hermes/transact}
+[2025-05-22T22:08:45.776Z] INFO (api-server): Endpoint={path=/api/v1/@hyperledger/cactus-plugin-satp-hermes/add-counterparty-gateway}
+[2025-05-22T22:08:45.776Z] INFO (api-server): Endpoint={path=/api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/execute}
+[2025-05-22T22:08:45.776Z] INFO (api-server): Endpoint={path=/api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/register}
+[2025-05-22T22:08:45.776Z] INFO (api-server): Endpoint={path=/api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/unregister}
+[2025-05-22T22:08:45.776Z] INFO (api-server): Endpoint={path=/api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/status}
+[2025-05-22T22:08:45.776Z] INFO (api-server): Cactus API net.AddressInfo { address: '0.0.0.0', family: 'IPv4', port: 4010 }
+[2025-05-22T22:08:45.778Z] DEBUG (api-server): Installing gRPC services of IPluginGrpcService instances...
+[2025-05-22T22:08:45.778Z] DEBUG (api-server): ApiServer#startGrpcServer() skipping @hyperledger/cactus-plugin-satp-hermes instance
+[2025-05-22T22:08:45.778Z] DEBUG (api-server): ApiServer#startGrpcServer() Installed all IPluginGrpcService instances OK
+[2025-05-22T22:08:45.805Z] INFO (api-server): ApiServer#startGrpcServer() gRPC server bound to port 37207 OK
+[2025-05-22T22:08:45.805Z] INFO (api-server): ApiServer#startGrpcServer() boundGrpcHostPort=127.0.0.1:37207
+[2025-05-22T22:08:45.805Z] DEBUG (api-server): Installing crpc services of IPluginCrpcService instances...
+[2025-05-22T22:08:45.805Z] DEBUG (api-server): ApiServer#startCrpcServer() skipping @hyperledger/cactus-plugin-satp-hermes instance
+[2025-05-22T22:08:45.805Z] DEBUG (api-server): ApiServer#registerCrpcServices()} Obtained 0 Crpc registrations.
+[2025-05-22T22:08:45.805Z] DEBUG (api-server): ApiServer#startCrpcServer() Registering 0 CRPC routes handler(s).
+[2025-05-22T22:08:45.810Z] DEBUG (api-server): ApiServer#registerCrpcServices()} expressConnectMiddleware() routes handler
+[2025-05-22T22:08:45.811Z] DEBUG (api-server): ApiServer#startCrpcServer() Fastify CRPC service registration OK
+[2025-05-22T22:08:45.812Z] DEBUG (api-server): ApiServer#startCrpcServer() Fastify listen() crpcUrl: http://127.0.0.1:41453
+[2025-05-22T22:08:45.812Z] DEBUG (api-server): ApiServer#startCrpcServer() server is listening at { address: '127.0.0.1', family: 'IPv4', port: 41453 } []
+[2025-05-22T22:08:45.812Z] DEBUG (api-server): Cacti CRPC reachable http://127.0.0.1:41453
+[2025-05-22T22:08:45.812Z] INFO (api-server): Cactus gRPC reachable 127.0.0.1:37207
+[2025-05-22T22:08:45.812Z] INFO (api-server): Cactus API reachable http://0.0.0.0:4010
+[2025-05-22T22:08:45.812Z] INFO (SATP-Gateway): SATP Gateway started successfully
+[2025-05-22T22:08:45.817Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'a594baf92869151ad76da0b54ecc7963',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'd9db85f700807596',
+  kind: 0,
+  timestamp: 1747951725818000,
+  duration: 248.75,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-22T22:08:45.819Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-22T22:08:50.909Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '2f4fff55e2a94631b6c180f6bf5677d6',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '50df6592d5600796',
+  kind: 0,
+  timestamp: 1747951730910000,
+  duration: 15.659,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-22T22:08:50.910Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-22T22:08:56.003Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '1d9a4b692b02e944e5b94fa60b70698b',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '3dce886894ab302c',
+  kind: 0,
+  timestamp: 1747951736003000,
+  duration: 19.679,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-22T22:08:56.003Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-22T22:08:58.832Z] DEBUG (OracleExecuteTaskEndpointV1): post - /api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/execute
+[2025-05-22T22:08:58.832Z] DEBUG (OracleExecuteTaskEndpointV1): reqBody:  {
+  destinationNetworkId: { id: 'HardhatTestNetwork1', ledgerType: 'ETHEREUM' },
+  destinationContract: {
+    contractAbi: [
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object]
+    ],
+    contractName: 'OracleTestContract',
+    contractBytecode: '0x6080604052600060025534801561001557600080fd5b506100296000801b3361006060201b60201c565b5061005a7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef13361006060201b60201c565b506101cf565b6000610072838361015d60201b60201c565b61015257600160008085815260200190815260200160002060000160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055506100ef6101c760201b60201c565b73ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16847f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d60405160405180910390a460019050610157565b600090505b92915050565b600080600084815260200190815260200160002060000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b600033905090565b6111e6806101de6000396000f3fe608060405234801561001057600080fd5b50600436106100a95760003560e01c806347064d6a1161007157806347064d6a1461016457806354f6127f1461018057806391d14854146101b0578063a217fddf146101e0578063d087d288146101fe578063d547741f1461021c576100a9565b806301ffc9a7146100ae57806307e2cea5146100de578063248a9ca3146100fc5780632f2ff15d1461012c57806336568abe14610148575b600080fd5b6100c860048036038101906100c39190610987565b610238565b6040516100d591906109cf565b60405180910390f35b6100e66102b2565b6040516100f39190610a03565b60405180910390f35b61011660048036038101906101119190610a4a565b6102d6565b6040516101239190610a03565b60405180910390f35b61014660048036038101906101419190610ad5565b6102f5565b005b610162600480360381019061015d9190610ad5565b610317565b005b61017e60048036038101906101799190610c5b565b610392565b005b61019a60048036038101906101959190610a4a565b61047c565b6040516101a79190610d23565b60405180910390f35b6101ca60048036038101906101c59190610ad5565b61057f565b6040516101d791906109cf565b60405180910390f35b6101e86105e9565b6040516101f59190610a03565b60405180910390f35b6102066105f0565b6040516102139190610d5e565b60405180910390f35b61023660048036038101906102319190610ad5565b6105fa565b005b60007f7965db0b000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff191614806102ab57506102aa8261061c565b5b9050919050565b7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef181565b6000806000838152602001908152602001600020600101549050919050565b6102fe826102d6565b61030781610686565b610311838361069a565b50505050565b61031f61078b565b73ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614610383576040517f6697b23200000000000000000000000000000000000000000000000000000000815260040160405180910390fd5b61038d8282610793565b505050565b7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef16103bc81610686565b6000826040516020016103cf9190610d23565b6040516020818303038152906040528051906020012090506040518060400160405280828152602001848152506001600083815260200190815260200160002060008201518160000155602082015181600101908161042e9190610f85565b5090505061043a610885565b7f5b3a25e3ed3193b2faaddbd057f69843f115c62a4cd660ef6e67bb5397e111bf818460025460405161046f93929190611057565b60405180910390a1505050565b60606000801b6001600084815260200190815260200160002060000154036104d9576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016104d0906110e1565b60405180910390fd5b6001600083815260200190815260200160002060010180546104fa90610da8565b80601f016020809104026020016040519081016040528092919081815260200182805461052690610da8565b80156105735780601f1061054857610100808354040283529160200191610573565b820191906000526020600020905b81548152906001019060200180831161055657829003601f168201915b50505050509050919050565b600080600084815260200190815260200160002060000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b6000801b81565b6000600254905090565b610603826102d6565b61060c81610686565b6106168383610793565b50505050565b60007f01ffc9a7000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916149050919050565b6106978161069261078b565b6108ca565b50565b60006106a6838361057f565b61078057600160008085815260200190815260200160002060000160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555061071d61078b565b73ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16847f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d60405160405180910390a460019050610785565b600090505b92915050565b600033905090565b600061079f838361057f565b1561087a57600080600085815260200190815260200160002060000160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555061081761078b565b73ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16847ff6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b60405160405180910390a46001905061087f565b600090505b92915050565b7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef16108af81610686565b600260008154809291906108c290611130565b919050555050565b6108d4828261057f565b6109175780826040517fe2517d3f00000000000000000000000000000000000000000000000000000000815260040161090e929190611187565b60405180910390fd5b5050565b6000604051905090565b600080fd5b600080fd5b60007fffffffff0000000000000000000000000000000000000000000000000000000082169050919050565b6109648161092f565b811461096f57600080fd5b50565b6000813590506109818161095b565b92915050565b60006020828403121561099d5761099c610925565b5b60006109ab84828501610972565b91505092915050565b60008115159050919050565b6109c9816109b4565b82525050565b60006020820190506109e460008301846109c0565b92915050565b6000819050919050565b6109fd816109ea565b82525050565b6000602082019050610a1860008301846109f4565b92915050565b610a27816109ea565b8114610a3257600080fd5b50565b600081359050610a4481610a1e565b92915050565b600060208284031215610a6057610a5f610925565b5b6000610a6e84828501610a35565b91505092915050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000610aa282610a77565b9050919050565b610ab281610a97565b8114610abd57600080fd5b50565b600081359050610acf81610aa9565b92915050565b60008060408385031215610aec57610aeb610925565b5b6000610afa85828601610a35565b9250506020610b0b85828601610ac0565b9150509250929050565b600080fd5b600080fd5b6000601f19601f8301169050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b610b6882610b1f565b810181811067ffffffffffffffff82111715610b8757610b86610b30565b5b80604052505050565b6000610b9a61091b565b9050610ba68282610b5f565b919050565b600067ffffffffffffffff821115610bc657610bc5610b30565b5b610bcf82610b1f565b9050602081019050919050565b82818337600083830152505050565b6000610bfe610bf984610bab565b610b90565b905082815260208101848484011115610c1a57610c19610b1a565b5b610c25848285610bdc565b509392505050565b600082601f830112610c4257610c41610b15565b5b8135610c52848260208601610beb565b91505092915050565b600060208284031215610c7157610c70610925565b5b600082013567ffffffffffffffff811115610c8f57610c8e61092a565b5b610c9b84828501610c2d565b91505092915050565b600081519050919050565b600082825260208201905092915050565b60005b83811015610cde578082015181840152602081019050610cc3565b60008484015250505050565b6000610cf582610ca4565b610cff8185610caf565b9350610d0f818560208601610cc0565b610d1881610b1f565b840191505092915050565b60006020820190508181036000830152610d3d8184610cea565b905092915050565b6000819050919050565b610d5881610d45565b82525050565b6000602082019050610d736000830184610d4f565b92915050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b60006002820490506001821680610dc057607f821691505b602082108103610dd357610dd2610d79565b5b50919050565b60008190508160005260206000209050919050565b60006020601f8301049050919050565b600082821b905092915050565b600060088302610e3b7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff82610dfe565b610e458683610dfe565b95508019841693508086168417925050509392505050565b6000819050919050565b6000610e82610e7d610e7884610d45565b610e5d565b610d45565b9050919050565b6000819050919050565b610e9c83610e67565b610eb0610ea882610e89565b848454610e0b565b825550505050565b600090565b610ec5610eb8565b610ed0818484610e93565b505050565b5b81811015610ef457610ee9600082610ebd565b600181019050610ed6565b5050565b601f821115610f3957610f0a81610dd9565b610f1384610dee565b81016020851015610f22578190505b610f36610f2e85610dee565b830182610ed5565b50505b505050565b600082821c905092915050565b6000610f5c60001984600802610f3e565b1980831691505092915050565b6000610f758383610f4b565b9150826002028217905092915050565b610f8e82610ca4565b67ffffffffffffffff811115610fa757610fa6610b30565b5b610fb18254610da8565b610fbc828285610ef8565b600060209050601f831160018114610fef5760008415610fdd578287015190505b610fe78582610f69565b86555061104f565b601f198416610ffd86610dd9565b60005b8281101561102557848901518255600182019150602085019450602081019050611000565b86831015611042578489015161103e601f891682610f4b565b8355505b6001600288020188555050505b505050505050565b600060608201905061106c60008301866109f4565b818103602083015261107e8185610cea565b905061108d6040830184610d4f565b949350505050565b7f44617461206e6f7420666f756e64000000000000000000000000000000000000600082015250565b60006110cb600e83610caf565b91506110d682611095565b602082019050919050565b600060208201905081810360008301526110fa816110be565b9050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b600061113b82610d45565b91507fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff820361116d5761116c611101565b5b600182019050919050565b61118181610a97565b82525050565b600060408201905061119c6000830185611178565b6111a960208301846109f456'... 122 more characters,
+    contractAddress: '0x5FbDB2315678afecb367f032d93F642f64180aa3',
+    methodName: 'setData',
+    params: [ 'DATA WRITTEN TO THE BLOCKCHAIN' ]
+  },
+  taskType: 'UPDATE'
+}
+[2025-05-22T22:08:58.832Z] INFO (BLODispatcher): Oracle Execute Task request: {"destinationContract":{"contractAbi":[{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"inputs":[],"name":"AccessControlBadConfirmation","type":"error"},{"inputs":[{"internalType":"address","name":"account","type":"address"},{"internalType":"bytes32","name":"neededRole","type":"bytes32"}],"name":"AccessControlUnauthorizedAccount","type":"error"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"bytes32","name":"role","type":"bytes32"},{"indexed":true,"internalType":"bytes32","name":"previousAdminRole","type":"bytes32"},{"indexed":true,"internalType":"bytes32","name":"newAdminRole","type":"bytes32"}],"name":"RoleAdminChanged","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"bytes32","name":"role","type":"bytes32"},{"indexed":true,"internalType":"address","name":"account","type":"address"},{"indexed":true,"internalType":"address","name":"sender","type":"address"}],"name":"RoleGranted","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"bytes32","name":"role","type":"bytes32"},{"indexed":true,"internalType":"address","name":"account","type":"address"},{"indexed":true,"internalType":"address","name":"sender","type":"address"}],"name":"RoleRevoked","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"bytes32","name":"id","type":"bytes32"},{"indexed":false,"internalType":"string","name":"data","type":"string"},{"indexed":false,"internalType":"uint256","name":"nonce","type":"uint256"}],"name":"UpdatedData","type":"event"},{"inputs":[],"name":"DEFAULT_ADMIN_ROLE","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"ORACLE_ROLE","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes32","name":"id","type":"bytes32"}],"name":"getData","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getNonce","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"}],"name":"getRoleAdmin","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"},{"internalType":"address","name":"account","type":"address"}],"name":"grantRole","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"},{"internalType":"address","name":"account","type":"address"}],"name":"hasRole","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"},{"internalType":"address","name":"callerConfirmation","type":"address"}],"name":"renounceRole","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"},{"internalType":"address","name":"account","type":"address"}],"name":"revokeRole","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"string","name":"data","type":"string"}],"name":"setData","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bytes4","name":"interfaceId","type":"bytes4"}],"name":"supportsInterface","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"}],"contractAddress":"0x5FbDB2315678afecb367f032d93F642f64180aa3","contractBytecode":"0x6080604052600060025534801561001557600080fd5b506100296000801b3361006060201b60201c565b5061005a7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef13361006060201b60201c565b506101cf565b6000610072838361015d60201b60201c565b61015257600160008085815260200190815260200160002060000160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055506100ef6101c760201b60201c565b73ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16847f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d60405160405180910390a460019050610157565b600090505b92915050565b600080600084815260200190815260200160002060000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b600033905090565b6111e6806101de6000396000f3fe608060405234801561001057600080fd5b50600436106100a95760003560e01c806347064d6a1161007157806347064d6a1461016457806354f6127f1461018057806391d14854146101b0578063a217fddf146101e0578063d087d288146101fe578063d547741f1461021c576100a9565b806301ffc9a7146100ae57806307e2cea5146100de578063248a9ca3146100fc5780632f2ff15d1461012c57806336568abe14610148575b600080fd5b6100c860048036038101906100c39190610987565b610238565b6040516100d591906109cf565b60405180910390f35b6100e66102b2565b6040516100f39190610a03565b60405180910390f35b61011660048036038101906101119190610a4a565b6102d6565b6040516101239190610a03565b60405180910390f35b61014660048036038101906101419190610ad5565b6102f5565b005b610162600480360381019061015d9190610ad5565b610317565b005b61017e60048036038101906101799190610c5b565b610392565b005b61019a60048036038101906101959190610a4a565b61047c565b6040516101a79190610d23565b60405180910390f35b6101ca60048036038101906101c59190610ad5565b61057f565b6040516101d791906109cf565b60405180910390f35b6101e86105e9565b6040516101f59190610a03565b60405180910390f35b6102066105f0565b6040516102139190610d5e565b60405180910390f35b61023660048036038101906102319190610ad5565b6105fa565b005b60007f7965db0b000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff191614806102ab57506102aa8261061c565b5b9050919050565b7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef181565b6000806000838152602001908152602001600020600101549050919050565b6102fe826102d6565b61030781610686565b610311838361069a565b50505050565b61031f61078b565b73ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614610383576040517f6697b23200000000000000000000000000000000000000000000000000000000815260040160405180910390fd5b61038d8282610793565b505050565b7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef16103bc81610686565b6000826040516020016103cf9190610d23565b6040516020818303038152906040528051906020012090506040518060400160405280828152602001848152506001600083815260200190815260200160002060008201518160000155602082015181600101908161042e9190610f85565b5090505061043a610885565b7f5b3a25e3ed3193b2faaddbd057f69843f115c62a4cd660ef6e67bb5397e111bf818460025460405161046f93929190611057565b60405180910390a1505050565b60606000801b6001600084815260200190815260200160002060000154036104d9576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016104d0906110e1565b60405180910390fd5b6001600083815260200190815260200160002060010180546104fa90610da8565b80601f016020809104026020016040519081016040528092919081815260200182805461052690610da8565b80156105735780601f1061054857610100808354040283529160200191610573565b820191906000526020600020905b81548152906001019060200180831161055657829003601f168201915b50505050509050919050565b600080600084815260200190815260200160002060000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b6000801b81565b6000600254905090565b610603826102d6565b61060c81610686565b6106168383610793565b50505050565b60007f01ffc9a7000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916149050919050565b6106978161069261078b565b6108ca565b50565b60006106a6838361057f565b61078057600160008085815260200190815260200160002060000160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555061071d61078b565b73ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16847f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d60405160405180910390a460019050610785565b600090505b92915050565b600033905090565b600061079f838361057f565b1561087a57600080600085815260200190815260200160002060000160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555061081761078b565b73ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16847ff6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b60405160405180910390a46001905061087f565b600090505b92915050565b7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef16108af81610686565b600260008154809291906108c290611130565b919050555050565b6108d4828261057f565b6109175780826040517fe2517d3f00000000000000000000000000000000000000000000000000000000815260040161090e929190611187565b60405180910390fd5b5050565b6000604051905090565b600080fd5b600080fd5b60007fffffffff0000000000000000000000000000000000000000000000000000000082169050919050565b6109648161092f565b811461096f57600080fd5b50565b6000813590506109818161095b565b92915050565b60006020828403121561099d5761099c610925565b5b60006109ab84828501610972565b91505092915050565b60008115159050919050565b6109c9816109b4565b82525050565b60006020820190506109e460008301846109c0565b92915050565b6000819050919050565b6109fd816109ea565b82525050565b6000602082019050610a1860008301846109f4565b92915050565b610a27816109ea565b8114610a3257600080fd5b50565b600081359050610a4481610a1e565b92915050565b600060208284031215610a6057610a5f610925565b5b6000610a6e84828501610a35565b91505092915050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000610aa282610a77565b9050919050565b610ab281610a97565b8114610abd57600080fd5b50565b600081359050610acf81610aa9565b92915050565b60008060408385031215610aec57610aeb610925565b5b6000610afa85828601610a35565b9250506020610b0b85828601610ac0565b9150509250929050565b600080fd5b600080fd5b6000601f19601f8301169050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b610b6882610b1f565b810181811067ffffffffffffffff82111715610b8757610b86610b30565b5b80604052505050565b6000610b9a61091b565b9050610ba68282610b5f565b919050565b600067ffffffffffffffff821115610bc657610bc5610b30565b5b610bcf82610b1f565b9050602081019050919050565b82818337600083830152505050565b6000610bfe610bf984610bab565b610b90565b905082815260208101848484011115610c1a57610c19610b1a565b5b610c25848285610bdc565b509392505050565b600082601f830112610c4257610c41610b15565b5b8135610c52848260208601610beb565b91505092915050565b600060208284031215610c7157610c70610925565b5b600082013567ffffffffffffffff811115610c8f57610c8e61092a565b5b610c9b84828501610c2d565b91505092915050565b600081519050919050565b600082825260208201905092915050565b60005b83811015610cde578082015181840152602081019050610cc3565b60008484015250505050565b6000610cf582610ca4565b610cff8185610caf565b9350610d0f818560208601610cc0565b610d1881610b1f565b840191505092915050565b60006020820190508181036000830152610d3d8184610cea565b905092915050565b6000819050919050565b610d5881610d45565b82525050565b6000602082019050610d736000830184610d4f565b92915050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b60006002820490506001821680610dc057607f821691505b602082108103610dd357610dd2610d79565b5b50919050565b60008190508160005260206000209050919050565b60006020601f8301049050919050565b600082821b905092915050565b600060088302610e3b7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff82610dfe565b610e458683610dfe565b95508019841693508086168417925050509392505050565b6000819050919050565b6000610e82610e7d610e7884610d45565b610e5d565b610d45565b9050919050565b6000819050919050565b610e9c83610e67565b610eb0610ea882610e89565b848454610e0b565b825550505050565b600090565b610ec5610eb8565b610ed0818484610e93565b505050565b5b81811015610ef457610ee9600082610ebd565b600181019050610ed6565b5050565b601f821115610f3957610f0a81610dd9565b610f1384610dee565b81016020851015610f22578190505b610f36610f2e85610dee565b830182610ed5565b50505b505050565b600082821c905092915050565b6000610f5c60001984600802610f3e565b1980831691505092915050565b6000610f758383610f4b565b9150826002028217905092915050565b610f8e82610ca4565b67ffffffffffffffff811115610fa757610fa6610b30565b5b610fb18254610da8565b610fbc828285610ef8565b600060209050601f831160018114610fef5760008415610fdd578287015190505b610fe78582610f69565b86555061104f565b601f198416610ffd86610dd9565b60005b8281101561102557848901518255600182019150602085019450602081019050611000565b86831015611042578489015161103e601f891682610f4b565b8355505b6001600288020188555050505b505050505050565b600060608201905061106c60008301866109f4565b818103602083015261107e8185610cea565b905061108d6040830184610d4f565b949350505050565b7f44617461206e6f7420666f756e64000000000000000000000000000000000000600082015250565b60006110cb600e83610caf565b91506110d682611095565b602082019050919050565b600060208201905081810360008301526110fa816110be565b9050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b600061113b82610d45565b91507fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff820361116d5761116c611101565b5b600182019050919050565b61118181610a97565b82525050565b600060408201905061119c6000830185611178565b6111a960208301846109f4565b939250505056fea264697066735822122081eb840dfe798222e90005a9a64746d2168143d2803b254ef32a58812644019464736f6c634300081c0033","contractName":"OracleTestContract","methodName":"setData","params":["DATA WRITTEN TO THE BLOCKCHAIN"]},"destinationNetworkId":{"id":"HardhatTestNetwork1","ledgerType":"ETHEREUM"},"taskType":"UPDATE"}
+[2025-05-22T22:08:58.833Z] INFO (executeTask()): executeTask(), executing task execution endpoint
+[2025-05-22T22:08:58.833Z] INFO (OracleManager): OracleManager#executeTask(): Executing task with id aba97249-8bb3-4b90-9a25-d27790fd2021
+[2025-05-22T22:08:58.833Z] DEBUG (OracleManager): OracleManager#processTask: Processing task aba97249-8bb3-4b90-9a25-d27790fd2021
+[2025-05-22T22:08:58.833Z] DEBUG (OracleManager): OracleManager#relayOperation: Relaying operation ea42c62f-8ef4-4d0d-9da6-540f8ecf1a04 to network {"id":"HardhatTestNetwork1","ledgerType":"ETHEREUM"}
+[2025-05-22T22:08:58.833Z] DEBUG (OracleManager): OracleManager#getOracleExecutionLayer(), Getting Oracle Execution Layer...
+[2025-05-22T22:08:58.833Z] DEBUG (OracleManager): OracleManager#getNetworkOracle(), Getting Oracle for Network ID: {"id":"HardhatTestNetwork1","ledgerType":"ETHEREUM"}
+[2025-05-22T22:08:58.923Z] DEBUG (OracleManager): OracleManager#relayOperation: Operation ea42c62f-8ef4-4d0d-9da6-540f8ecf1a04 relayed successfully
+[2025-05-22T22:08:58.923Z] DEBUG (OracleManager): OracleManager#processTask: Task aba97249-8bb3-4b90-9a25-d27790fd2021 processed.
+[2025-05-22T22:08:58.923Z] INFO (OracleManager): OracleManager#executeTask(): Task executed successfully
+[2025-05-22T22:09:01.108Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '65319dc9466a8acacd85f3dddbaaf6a0',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'c79d1052461db315',
+  kind: 0,
+  timestamp: 1747951741108000,
+  duration: 78.073,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-22T22:09:01.109Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-22T22:09:03.930Z] DEBUG (OracleExecuteTaskEndpointV1): post - /api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/execute
+[2025-05-22T22:09:03.930Z] DEBUG (OracleExecuteTaskEndpointV1): reqBody:  {
+  sourceNetworkId: { id: 'HardhatTestNetwork1', ledgerType: 'ETHEREUM' },
+  sourceContract: {
+    contractAbi: [
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object]
+    ],
+    contractName: 'OracleTestContract',
+    contractBytecode: '0x6080604052600060025534801561001557600080fd5b506100296000801b3361006060201b60201c565b5061005a7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef13361006060201b60201c565b506101cf565b6000610072838361015d60201b60201c565b61015257600160008085815260200190815260200160002060000160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055506100ef6101c760201b60201c565b73ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16847f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d60405160405180910390a460019050610157565b600090505b92915050565b600080600084815260200190815260200160002060000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b600033905090565b6111e6806101de6000396000f3fe608060405234801561001057600080fd5b50600436106100a95760003560e01c806347064d6a1161007157806347064d6a1461016457806354f6127f1461018057806391d14854146101b0578063a217fddf146101e0578063d087d288146101fe578063d547741f1461021c576100a9565b806301ffc9a7146100ae57806307e2cea5146100de578063248a9ca3146100fc5780632f2ff15d1461012c57806336568abe14610148575b600080fd5b6100c860048036038101906100c39190610987565b610238565b6040516100d591906109cf565b60405180910390f35b6100e66102b2565b6040516100f39190610a03565b60405180910390f35b61011660048036038101906101119190610a4a565b6102d6565b6040516101239190610a03565b60405180910390f35b61014660048036038101906101419190610ad5565b6102f5565b005b610162600480360381019061015d9190610ad5565b610317565b005b61017e60048036038101906101799190610c5b565b610392565b005b61019a60048036038101906101959190610a4a565b61047c565b6040516101a79190610d23565b60405180910390f35b6101ca60048036038101906101c59190610ad5565b61057f565b6040516101d791906109cf565b60405180910390f35b6101e86105e9565b6040516101f59190610a03565b60405180910390f35b6102066105f0565b6040516102139190610d5e565b60405180910390f35b61023660048036038101906102319190610ad5565b6105fa565b005b60007f7965db0b000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff191614806102ab57506102aa8261061c565b5b9050919050565b7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef181565b6000806000838152602001908152602001600020600101549050919050565b6102fe826102d6565b61030781610686565b610311838361069a565b50505050565b61031f61078b565b73ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614610383576040517f6697b23200000000000000000000000000000000000000000000000000000000815260040160405180910390fd5b61038d8282610793565b505050565b7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef16103bc81610686565b6000826040516020016103cf9190610d23565b6040516020818303038152906040528051906020012090506040518060400160405280828152602001848152506001600083815260200190815260200160002060008201518160000155602082015181600101908161042e9190610f85565b5090505061043a610885565b7f5b3a25e3ed3193b2faaddbd057f69843f115c62a4cd660ef6e67bb5397e111bf818460025460405161046f93929190611057565b60405180910390a1505050565b60606000801b6001600084815260200190815260200160002060000154036104d9576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016104d0906110e1565b60405180910390fd5b6001600083815260200190815260200160002060010180546104fa90610da8565b80601f016020809104026020016040519081016040528092919081815260200182805461052690610da8565b80156105735780601f1061054857610100808354040283529160200191610573565b820191906000526020600020905b81548152906001019060200180831161055657829003601f168201915b50505050509050919050565b600080600084815260200190815260200160002060000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b6000801b81565b6000600254905090565b610603826102d6565b61060c81610686565b6106168383610793565b50505050565b60007f01ffc9a7000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916149050919050565b6106978161069261078b565b6108ca565b50565b60006106a6838361057f565b61078057600160008085815260200190815260200160002060000160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555061071d61078b565b73ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16847f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d60405160405180910390a460019050610785565b600090505b92915050565b600033905090565b600061079f838361057f565b1561087a57600080600085815260200190815260200160002060000160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555061081761078b565b73ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16847ff6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b60405160405180910390a46001905061087f565b600090505b92915050565b7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef16108af81610686565b600260008154809291906108c290611130565b919050555050565b6108d4828261057f565b6109175780826040517fe2517d3f00000000000000000000000000000000000000000000000000000000815260040161090e929190611187565b60405180910390fd5b5050565b6000604051905090565b600080fd5b600080fd5b60007fffffffff0000000000000000000000000000000000000000000000000000000082169050919050565b6109648161092f565b811461096f57600080fd5b50565b6000813590506109818161095b565b92915050565b60006020828403121561099d5761099c610925565b5b60006109ab84828501610972565b91505092915050565b60008115159050919050565b6109c9816109b4565b82525050565b60006020820190506109e460008301846109c0565b92915050565b6000819050919050565b6109fd816109ea565b82525050565b6000602082019050610a1860008301846109f4565b92915050565b610a27816109ea565b8114610a3257600080fd5b50565b600081359050610a4481610a1e565b92915050565b600060208284031215610a6057610a5f610925565b5b6000610a6e84828501610a35565b91505092915050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000610aa282610a77565b9050919050565b610ab281610a97565b8114610abd57600080fd5b50565b600081359050610acf81610aa9565b92915050565b60008060408385031215610aec57610aeb610925565b5b6000610afa85828601610a35565b9250506020610b0b85828601610ac0565b9150509250929050565b600080fd5b600080fd5b6000601f19601f8301169050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b610b6882610b1f565b810181811067ffffffffffffffff82111715610b8757610b86610b30565b5b80604052505050565b6000610b9a61091b565b9050610ba68282610b5f565b919050565b600067ffffffffffffffff821115610bc657610bc5610b30565b5b610bcf82610b1f565b9050602081019050919050565b82818337600083830152505050565b6000610bfe610bf984610bab565b610b90565b905082815260208101848484011115610c1a57610c19610b1a565b5b610c25848285610bdc565b509392505050565b600082601f830112610c4257610c41610b15565b5b8135610c52848260208601610beb565b91505092915050565b600060208284031215610c7157610c70610925565b5b600082013567ffffffffffffffff811115610c8f57610c8e61092a565b5b610c9b84828501610c2d565b91505092915050565b600081519050919050565b600082825260208201905092915050565b60005b83811015610cde578082015181840152602081019050610cc3565b60008484015250505050565b6000610cf582610ca4565b610cff8185610caf565b9350610d0f818560208601610cc0565b610d1881610b1f565b840191505092915050565b60006020820190508181036000830152610d3d8184610cea565b905092915050565b6000819050919050565b610d5881610d45565b82525050565b6000602082019050610d736000830184610d4f565b92915050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b60006002820490506001821680610dc057607f821691505b602082108103610dd357610dd2610d79565b5b50919050565b60008190508160005260206000209050919050565b60006020601f8301049050919050565b600082821b905092915050565b600060088302610e3b7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff82610dfe565b610e458683610dfe565b95508019841693508086168417925050509392505050565b6000819050919050565b6000610e82610e7d610e7884610d45565b610e5d565b610d45565b9050919050565b6000819050919050565b610e9c83610e67565b610eb0610ea882610e89565b848454610e0b565b825550505050565b600090565b610ec5610eb8565b610ed0818484610e93565b505050565b5b81811015610ef457610ee9600082610ebd565b600181019050610ed6565b5050565b601f821115610f3957610f0a81610dd9565b610f1384610dee565b81016020851015610f22578190505b610f36610f2e85610dee565b830182610ed5565b50505b505050565b600082821c905092915050565b6000610f5c60001984600802610f3e565b1980831691505092915050565b6000610f758383610f4b565b9150826002028217905092915050565b610f8e82610ca4565b67ffffffffffffffff811115610fa757610fa6610b30565b5b610fb18254610da8565b610fbc828285610ef8565b600060209050601f831160018114610fef5760008415610fdd578287015190505b610fe78582610f69565b86555061104f565b601f198416610ffd86610dd9565b60005b8281101561102557848901518255600182019150602085019450602081019050611000565b86831015611042578489015161103e601f891682610f4b565b8355505b6001600288020188555050505b505050505050565b600060608201905061106c60008301866109f4565b818103602083015261107e8185610cea565b905061108d6040830184610d4f565b949350505050565b7f44617461206e6f7420666f756e64000000000000000000000000000000000000600082015250565b60006110cb600e83610caf565b91506110d682611095565b602082019050919050565b600060208201905081810360008301526110fa816110be565b9050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b600061113b82610d45565b91507fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff820361116d5761116c611101565b5b600182019050919050565b61118181610a97565b82525050565b600060408201905061119c6000830185611178565b6111a960208301846109f456'... 122 more characters,
+    contractAddress: '0x5FbDB2315678afecb367f032d93F642f64180aa3',
+    methodName: 'getData',
+    params: [
+      '0xd2a21947eed980d6266fd60e26f24379032c4fa65ed8c63b323e040ea2b57536'
+    ]
+  },
+  destinationNetworkId: { id: 'HardhatTestNetwork2', ledgerType: 'ETHEREUM' },
+  destinationContract: {
+    contractAbi: [
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object]
+    ],
+    contractName: 'OracleTestContract',
+    contractBytecode: '0x6080604052600060025534801561001557600080fd5b506100296000801b3361006060201b60201c565b5061005a7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef13361006060201b60201c565b506101cf565b6000610072838361015d60201b60201c565b61015257600160008085815260200190815260200160002060000160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055506100ef6101c760201b60201c565b73ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16847f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d60405160405180910390a460019050610157565b600090505b92915050565b600080600084815260200190815260200160002060000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b600033905090565b6111e6806101de6000396000f3fe608060405234801561001057600080fd5b50600436106100a95760003560e01c806347064d6a1161007157806347064d6a1461016457806354f6127f1461018057806391d14854146101b0578063a217fddf146101e0578063d087d288146101fe578063d547741f1461021c576100a9565b806301ffc9a7146100ae57806307e2cea5146100de578063248a9ca3146100fc5780632f2ff15d1461012c57806336568abe14610148575b600080fd5b6100c860048036038101906100c39190610987565b610238565b6040516100d591906109cf565b60405180910390f35b6100e66102b2565b6040516100f39190610a03565b60405180910390f35b61011660048036038101906101119190610a4a565b6102d6565b6040516101239190610a03565b60405180910390f35b61014660048036038101906101419190610ad5565b6102f5565b005b610162600480360381019061015d9190610ad5565b610317565b005b61017e60048036038101906101799190610c5b565b610392565b005b61019a60048036038101906101959190610a4a565b61047c565b6040516101a79190610d23565b60405180910390f35b6101ca60048036038101906101c59190610ad5565b61057f565b6040516101d791906109cf565b60405180910390f35b6101e86105e9565b6040516101f59190610a03565b60405180910390f35b6102066105f0565b6040516102139190610d5e565b60405180910390f35b61023660048036038101906102319190610ad5565b6105fa565b005b60007f7965db0b000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff191614806102ab57506102aa8261061c565b5b9050919050565b7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef181565b6000806000838152602001908152602001600020600101549050919050565b6102fe826102d6565b61030781610686565b610311838361069a565b50505050565b61031f61078b565b73ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614610383576040517f6697b23200000000000000000000000000000000000000000000000000000000815260040160405180910390fd5b61038d8282610793565b505050565b7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef16103bc81610686565b6000826040516020016103cf9190610d23565b6040516020818303038152906040528051906020012090506040518060400160405280828152602001848152506001600083815260200190815260200160002060008201518160000155602082015181600101908161042e9190610f85565b5090505061043a610885565b7f5b3a25e3ed3193b2faaddbd057f69843f115c62a4cd660ef6e67bb5397e111bf818460025460405161046f93929190611057565b60405180910390a1505050565b60606000801b6001600084815260200190815260200160002060000154036104d9576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016104d0906110e1565b60405180910390fd5b6001600083815260200190815260200160002060010180546104fa90610da8565b80601f016020809104026020016040519081016040528092919081815260200182805461052690610da8565b80156105735780601f1061054857610100808354040283529160200191610573565b820191906000526020600020905b81548152906001019060200180831161055657829003601f168201915b50505050509050919050565b600080600084815260200190815260200160002060000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b6000801b81565b6000600254905090565b610603826102d6565b61060c81610686565b6106168383610793565b50505050565b60007f01ffc9a7000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916149050919050565b6106978161069261078b565b6108ca565b50565b60006106a6838361057f565b61078057600160008085815260200190815260200160002060000160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555061071d61078b565b73ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16847f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d60405160405180910390a460019050610785565b600090505b92915050565b600033905090565b600061079f838361057f565b1561087a57600080600085815260200190815260200160002060000160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555061081761078b565b73ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16847ff6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b60405160405180910390a46001905061087f565b600090505b92915050565b7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef16108af81610686565b600260008154809291906108c290611130565b919050555050565b6108d4828261057f565b6109175780826040517fe2517d3f00000000000000000000000000000000000000000000000000000000815260040161090e929190611187565b60405180910390fd5b5050565b6000604051905090565b600080fd5b600080fd5b60007fffffffff0000000000000000000000000000000000000000000000000000000082169050919050565b6109648161092f565b811461096f57600080fd5b50565b6000813590506109818161095b565b92915050565b60006020828403121561099d5761099c610925565b5b60006109ab84828501610972565b91505092915050565b60008115159050919050565b6109c9816109b4565b82525050565b60006020820190506109e460008301846109c0565b92915050565b6000819050919050565b6109fd816109ea565b82525050565b6000602082019050610a1860008301846109f4565b92915050565b610a27816109ea565b8114610a3257600080fd5b50565b600081359050610a4481610a1e565b92915050565b600060208284031215610a6057610a5f610925565b5b6000610a6e84828501610a35565b91505092915050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000610aa282610a77565b9050919050565b610ab281610a97565b8114610abd57600080fd5b50565b600081359050610acf81610aa9565b92915050565b60008060408385031215610aec57610aeb610925565b5b6000610afa85828601610a35565b9250506020610b0b85828601610ac0565b9150509250929050565b600080fd5b600080fd5b6000601f19601f8301169050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b610b6882610b1f565b810181811067ffffffffffffffff82111715610b8757610b86610b30565b5b80604052505050565b6000610b9a61091b565b9050610ba68282610b5f565b919050565b600067ffffffffffffffff821115610bc657610bc5610b30565b5b610bcf82610b1f565b9050602081019050919050565b82818337600083830152505050565b6000610bfe610bf984610bab565b610b90565b905082815260208101848484011115610c1a57610c19610b1a565b5b610c25848285610bdc565b509392505050565b600082601f830112610c4257610c41610b15565b5b8135610c52848260208601610beb565b91505092915050565b600060208284031215610c7157610c70610925565b5b600082013567ffffffffffffffff811115610c8f57610c8e61092a565b5b610c9b84828501610c2d565b91505092915050565b600081519050919050565b600082825260208201905092915050565b60005b83811015610cde578082015181840152602081019050610cc3565b60008484015250505050565b6000610cf582610ca4565b610cff8185610caf565b9350610d0f818560208601610cc0565b610d1881610b1f565b840191505092915050565b60006020820190508181036000830152610d3d8184610cea565b905092915050565b6000819050919050565b610d5881610d45565b82525050565b6000602082019050610d736000830184610d4f565b92915050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b60006002820490506001821680610dc057607f821691505b602082108103610dd357610dd2610d79565b5b50919050565b60008190508160005260206000209050919050565b60006020601f8301049050919050565b600082821b905092915050565b600060088302610e3b7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff82610dfe565b610e458683610dfe565b95508019841693508086168417925050509392505050565b6000819050919050565b6000610e82610e7d610e7884610d45565b610e5d565b610d45565b9050919050565b6000819050919050565b610e9c83610e67565b610eb0610ea882610e89565b848454610e0b565b825550505050565b600090565b610ec5610eb8565b610ed0818484610e93565b505050565b5b81811015610ef457610ee9600082610ebd565b600181019050610ed6565b5050565b601f821115610f3957610f0a81610dd9565b610f1384610dee565b81016020851015610f22578190505b610f36610f2e85610dee565b830182610ed5565b50505b505050565b600082821c905092915050565b6000610f5c60001984600802610f3e565b1980831691505092915050565b6000610f758383610f4b565b9150826002028217905092915050565b610f8e82610ca4565b67ffffffffffffffff811115610fa757610fa6610b30565b5b610fb18254610da8565b610fbc828285610ef8565b600060209050601f831160018114610fef5760008415610fdd578287015190505b610fe78582610f69565b86555061104f565b601f198416610ffd86610dd9565b60005b8281101561102557848901518255600182019150602085019450602081019050611000565b86831015611042578489015161103e601f891682610f4b565b8355505b6001600288020188555050505b505050505050565b600060608201905061106c60008301866109f4565b818103602083015261107e8185610cea565b905061108d6040830184610d4f565b949350505050565b7f44617461206e6f7420666f756e64000000000000000000000000000000000000600082015250565b60006110cb600e83610caf565b91506110d682611095565b602082019050919050565b600060208201905081810360008301526110fa816110be565b9050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b600061113b82610d45565b91507fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff820361116d5761116c611101565b5b600182019050919050565b61118181610a97565b82525050565b600060408201905061119c6000830185611178565b6111a960208301846109f456'... 122 more characters,
+    contractAddress: '0x8464135c8F25Da09e49BC8782676a84730C318bC',
+    methodName: 'setData'
+  },
+  taskType: 'READ_AND_UPDATE'
+}
+[2025-05-22T22:09:03.931Z] INFO (BLODispatcher): Oracle Execute Task request: {"destinationContract":{"contractAbi":[{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"inputs":[],"name":"AccessControlBadConfirmation","type":"error"},{"inputs":[{"internalType":"address","name":"account","type":"address"},{"internalType":"bytes32","name":"neededRole","type":"bytes32"}],"name":"AccessControlUnauthorizedAccount","type":"error"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"bytes32","name":"role","type":"bytes32"},{"indexed":true,"internalType":"bytes32","name":"previousAdminRole","type":"bytes32"},{"indexed":true,"internalType":"bytes32","name":"newAdminRole","type":"bytes32"}],"name":"RoleAdminChanged","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"bytes32","name":"role","type":"bytes32"},{"indexed":true,"internalType":"address","name":"account","type":"address"},{"indexed":true,"internalType":"address","name":"sender","type":"address"}],"name":"RoleGranted","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"bytes32","name":"role","type":"bytes32"},{"indexed":true,"internalType":"address","name":"account","type":"address"},{"indexed":true,"internalType":"address","name":"sender","type":"address"}],"name":"RoleRevoked","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"bytes32","name":"id","type":"bytes32"},{"indexed":false,"internalType":"string","name":"data","type":"string"},{"indexed":false,"internalType":"uint256","name":"nonce","type":"uint256"}],"name":"UpdatedData","type":"event"},{"inputs":[],"name":"DEFAULT_ADMIN_ROLE","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"ORACLE_ROLE","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes32","name":"id","type":"bytes32"}],"name":"getData","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getNonce","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"}],"name":"getRoleAdmin","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"},{"internalType":"address","name":"account","type":"address"}],"name":"grantRole","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"},{"internalType":"address","name":"account","type":"address"}],"name":"hasRole","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"},{"internalType":"address","name":"callerConfirmation","type":"address"}],"name":"renounceRole","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"},{"internalType":"address","name":"account","type":"address"}],"name":"revokeRole","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"string","name":"data","type":"string"}],"name":"setData","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bytes4","name":"interfaceId","type":"bytes4"}],"name":"supportsInterface","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"}],"contractAddress":"0x8464135c8F25Da09e49BC8782676a84730C318bC","contractBytecode":"0x6080604052600060025534801561001557600080fd5b506100296000801b3361006060201b60201c565b5061005a7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef13361006060201b60201c565b506101cf565b6000610072838361015d60201b60201c565b61015257600160008085815260200190815260200160002060000160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055506100ef6101c760201b60201c565b73ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16847f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d60405160405180910390a460019050610157565b600090505b92915050565b600080600084815260200190815260200160002060000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b600033905090565b6111e6806101de6000396000f3fe608060405234801561001057600080fd5b50600436106100a95760003560e01c806347064d6a1161007157806347064d6a1461016457806354f6127f1461018057806391d14854146101b0578063a217fddf146101e0578063d087d288146101fe578063d547741f1461021c576100a9565b806301ffc9a7146100ae57806307e2cea5146100de578063248a9ca3146100fc5780632f2ff15d1461012c57806336568abe14610148575b600080fd5b6100c860048036038101906100c39190610987565b610238565b6040516100d591906109cf565b60405180910390f35b6100e66102b2565b6040516100f39190610a03565b60405180910390f35b61011660048036038101906101119190610a4a565b6102d6565b6040516101239190610a03565b60405180910390f35b61014660048036038101906101419190610ad5565b6102f5565b005b610162600480360381019061015d9190610ad5565b610317565b005b61017e60048036038101906101799190610c5b565b610392565b005b61019a60048036038101906101959190610a4a565b61047c565b6040516101a79190610d23565b60405180910390f35b6101ca60048036038101906101c59190610ad5565b61057f565b6040516101d791906109cf565b60405180910390f35b6101e86105e9565b6040516101f59190610a03565b60405180910390f35b6102066105f0565b6040516102139190610d5e565b60405180910390f35b61023660048036038101906102319190610ad5565b6105fa565b005b60007f7965db0b000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff191614806102ab57506102aa8261061c565b5b9050919050565b7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef181565b6000806000838152602001908152602001600020600101549050919050565b6102fe826102d6565b61030781610686565b610311838361069a565b50505050565b61031f61078b565b73ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614610383576040517f6697b23200000000000000000000000000000000000000000000000000000000815260040160405180910390fd5b61038d8282610793565b505050565b7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef16103bc81610686565b6000826040516020016103cf9190610d23565b6040516020818303038152906040528051906020012090506040518060400160405280828152602001848152506001600083815260200190815260200160002060008201518160000155602082015181600101908161042e9190610f85565b5090505061043a610885565b7f5b3a25e3ed3193b2faaddbd057f69843f115c62a4cd660ef6e67bb5397e111bf818460025460405161046f93929190611057565b60405180910390a1505050565b60606000801b6001600084815260200190815260200160002060000154036104d9576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016104d0906110e1565b60405180910390fd5b6001600083815260200190815260200160002060010180546104fa90610da8565b80601f016020809104026020016040519081016040528092919081815260200182805461052690610da8565b80156105735780601f1061054857610100808354040283529160200191610573565b820191906000526020600020905b81548152906001019060200180831161055657829003601f168201915b50505050509050919050565b600080600084815260200190815260200160002060000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b6000801b81565b6000600254905090565b610603826102d6565b61060c81610686565b6106168383610793565b50505050565b60007f01ffc9a7000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916149050919050565b6106978161069261078b565b6108ca565b50565b60006106a6838361057f565b61078057600160008085815260200190815260200160002060000160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555061071d61078b565b73ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16847f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d60405160405180910390a460019050610785565b600090505b92915050565b600033905090565b600061079f838361057f565b1561087a57600080600085815260200190815260200160002060000160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555061081761078b565b73ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16847ff6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b60405160405180910390a46001905061087f565b600090505b92915050565b7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef16108af81610686565b600260008154809291906108c290611130565b919050555050565b6108d4828261057f565b6109175780826040517fe2517d3f00000000000000000000000000000000000000000000000000000000815260040161090e929190611187565b60405180910390fd5b5050565b6000604051905090565b600080fd5b600080fd5b60007fffffffff0000000000000000000000000000000000000000000000000000000082169050919050565b6109648161092f565b811461096f57600080fd5b50565b6000813590506109818161095b565b92915050565b60006020828403121561099d5761099c610925565b5b60006109ab84828501610972565b91505092915050565b60008115159050919050565b6109c9816109b4565b82525050565b60006020820190506109e460008301846109c0565b92915050565b6000819050919050565b6109fd816109ea565b82525050565b6000602082019050610a1860008301846109f4565b92915050565b610a27816109ea565b8114610a3257600080fd5b50565b600081359050610a4481610a1e565b92915050565b600060208284031215610a6057610a5f610925565b5b6000610a6e84828501610a35565b91505092915050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000610aa282610a77565b9050919050565b610ab281610a97565b8114610abd57600080fd5b50565b600081359050610acf81610aa9565b92915050565b60008060408385031215610aec57610aeb610925565b5b6000610afa85828601610a35565b9250506020610b0b85828601610ac0565b9150509250929050565b600080fd5b600080fd5b6000601f19601f8301169050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b610b6882610b1f565b810181811067ffffffffffffffff82111715610b8757610b86610b30565b5b80604052505050565b6000610b9a61091b565b9050610ba68282610b5f565b919050565b600067ffffffffffffffff821115610bc657610bc5610b30565b5b610bcf82610b1f565b9050602081019050919050565b82818337600083830152505050565b6000610bfe610bf984610bab565b610b90565b905082815260208101848484011115610c1a57610c19610b1a565b5b610c25848285610bdc565b509392505050565b600082601f830112610c4257610c41610b15565b5b8135610c52848260208601610beb565b91505092915050565b600060208284031215610c7157610c70610925565b5b600082013567ffffffffffffffff811115610c8f57610c8e61092a565b5b610c9b84828501610c2d565b91505092915050565b600081519050919050565b600082825260208201905092915050565b60005b83811015610cde578082015181840152602081019050610cc3565b60008484015250505050565b6000610cf582610ca4565b610cff8185610caf565b9350610d0f818560208601610cc0565b610d1881610b1f565b840191505092915050565b60006020820190508181036000830152610d3d8184610cea565b905092915050565b6000819050919050565b610d5881610d45565b82525050565b6000602082019050610d736000830184610d4f565b92915050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b60006002820490506001821680610dc057607f821691505b602082108103610dd357610dd2610d79565b5b50919050565b60008190508160005260206000209050919050565b60006020601f8301049050919050565b600082821b905092915050565b600060088302610e3b7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff82610dfe565b610e458683610dfe565b95508019841693508086168417925050509392505050565b6000819050919050565b6000610e82610e7d610e7884610d45565b610e5d565b610d45565b9050919050565b6000819050919050565b610e9c83610e67565b610eb0610ea882610e89565b848454610e0b565b825550505050565b600090565b610ec5610eb8565b610ed0818484610e93565b505050565b5b81811015610ef457610ee9600082610ebd565b600181019050610ed6565b5050565b601f821115610f3957610f0a81610dd9565b610f1384610dee565b81016020851015610f22578190505b610f36610f2e85610dee565b830182610ed5565b50505b505050565b600082821c905092915050565b6000610f5c60001984600802610f3e565b1980831691505092915050565b6000610f758383610f4b565b9150826002028217905092915050565b610f8e82610ca4565b67ffffffffffffffff811115610fa757610fa6610b30565b5b610fb18254610da8565b610fbc828285610ef8565b600060209050601f831160018114610fef5760008415610fdd578287015190505b610fe78582610f69565b86555061104f565b601f198416610ffd86610dd9565b60005b8281101561102557848901518255600182019150602085019450602081019050611000565b86831015611042578489015161103e601f891682610f4b565b8355505b6001600288020188555050505b505050505050565b600060608201905061106c60008301866109f4565b818103602083015261107e8185610cea565b905061108d6040830184610d4f565b949350505050565b7f44617461206e6f7420666f756e64000000000000000000000000000000000000600082015250565b60006110cb600e83610caf565b91506110d682611095565b602082019050919050565b600060208201905081810360008301526110fa816110be565b9050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b600061113b82610d45565b91507fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff820361116d5761116c611101565b5b600182019050919050565b61118181610a97565b82525050565b600060408201905061119c6000830185611178565b6111a960208301846109f4565b939250505056fea264697066735822122081eb840dfe798222e90005a9a64746d2168143d2803b254ef32a58812644019464736f6c634300081c0033","contractName":"OracleTestContract","methodName":"setData"},"destinationNetworkId":{"id":"HardhatTestNetwork2","ledgerType":"ETHEREUM"},"sourceContract":{"contractAbi":[{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"inputs":[],"name":"AccessControlBadConfirmation","type":"error"},{"inputs":[{"internalType":"address","name":"account","type":"address"},{"internalType":"bytes32","name":"neededRole","type":"bytes32"}],"name":"AccessControlUnauthorizedAccount","type":"error"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"bytes32","name":"role","type":"bytes32"},{"indexed":true,"internalType":"bytes32","name":"previousAdminRole","type":"bytes32"},{"indexed":true,"internalType":"bytes32","name":"newAdminRole","type":"bytes32"}],"name":"RoleAdminChanged","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"bytes32","name":"role","type":"bytes32"},{"indexed":true,"internalType":"address","name":"account","type":"address"},{"indexed":true,"internalType":"address","name":"sender","type":"address"}],"name":"RoleGranted","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"bytes32","name":"role","type":"bytes32"},{"indexed":true,"internalType":"address","name":"account","type":"address"},{"indexed":true,"internalType":"address","name":"sender","type":"address"}],"name":"RoleRevoked","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"bytes32","name":"id","type":"bytes32"},{"indexed":false,"internalType":"string","name":"data","type":"string"},{"indexed":false,"internalType":"uint256","name":"nonce","type":"uint256"}],"name":"UpdatedData","type":"event"},{"inputs":[],"name":"DEFAULT_ADMIN_ROLE","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"ORACLE_ROLE","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes32","name":"id","type":"bytes32"}],"name":"getData","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getNonce","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"}],"name":"getRoleAdmin","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"},{"internalType":"address","name":"account","type":"address"}],"name":"grantRole","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"},{"internalType":"address","name":"account","type":"address"}],"name":"hasRole","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"},{"internalType":"address","name":"callerConfirmation","type":"address"}],"name":"renounceRole","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"},{"internalType":"address","name":"account","type":"address"}],"name":"revokeRole","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"string","name":"data","type":"string"}],"name":"setData","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bytes4","name":"interfaceId","type":"bytes4"}],"name":"supportsInterface","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"}],"contractAddress":"0x5FbDB2315678afecb367f032d93F642f64180aa3","contractBytecode":"0x6080604052600060025534801561001557600080fd5b506100296000801b3361006060201b60201c565b5061005a7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef13361006060201b60201c565b506101cf565b6000610072838361015d60201b60201c565b61015257600160008085815260200190815260200160002060000160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055506100ef6101c760201b60201c565b73ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16847f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d60405160405180910390a460019050610157565b600090505b92915050565b600080600084815260200190815260200160002060000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b600033905090565b6111e6806101de6000396000f3fe608060405234801561001057600080fd5b50600436106100a95760003560e01c806347064d6a1161007157806347064d6a1461016457806354f6127f1461018057806391d14854146101b0578063a217fddf146101e0578063d087d288146101fe578063d547741f1461021c576100a9565b806301ffc9a7146100ae57806307e2cea5146100de578063248a9ca3146100fc5780632f2ff15d1461012c57806336568abe14610148575b600080fd5b6100c860048036038101906100c39190610987565b610238565b6040516100d591906109cf565b60405180910390f35b6100e66102b2565b6040516100f39190610a03565b60405180910390f35b61011660048036038101906101119190610a4a565b6102d6565b6040516101239190610a03565b60405180910390f35b61014660048036038101906101419190610ad5565b6102f5565b005b610162600480360381019061015d9190610ad5565b610317565b005b61017e60048036038101906101799190610c5b565b610392565b005b61019a60048036038101906101959190610a4a565b61047c565b6040516101a79190610d23565b60405180910390f35b6101ca60048036038101906101c59190610ad5565b61057f565b6040516101d791906109cf565b60405180910390f35b6101e86105e9565b6040516101f59190610a03565b60405180910390f35b6102066105f0565b6040516102139190610d5e565b60405180910390f35b61023660048036038101906102319190610ad5565b6105fa565b005b60007f7965db0b000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff191614806102ab57506102aa8261061c565b5b9050919050565b7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef181565b6000806000838152602001908152602001600020600101549050919050565b6102fe826102d6565b61030781610686565b610311838361069a565b50505050565b61031f61078b565b73ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614610383576040517f6697b23200000000000000000000000000000000000000000000000000000000815260040160405180910390fd5b61038d8282610793565b505050565b7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef16103bc81610686565b6000826040516020016103cf9190610d23565b6040516020818303038152906040528051906020012090506040518060400160405280828152602001848152506001600083815260200190815260200160002060008201518160000155602082015181600101908161042e9190610f85565b5090505061043a610885565b7f5b3a25e3ed3193b2faaddbd057f69843f115c62a4cd660ef6e67bb5397e111bf818460025460405161046f93929190611057565b60405180910390a1505050565b60606000801b6001600084815260200190815260200160002060000154036104d9576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016104d0906110e1565b60405180910390fd5b6001600083815260200190815260200160002060010180546104fa90610da8565b80601f016020809104026020016040519081016040528092919081815260200182805461052690610da8565b80156105735780601f1061054857610100808354040283529160200191610573565b820191906000526020600020905b81548152906001019060200180831161055657829003601f168201915b50505050509050919050565b600080600084815260200190815260200160002060000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b6000801b81565b6000600254905090565b610603826102d6565b61060c81610686565b6106168383610793565b50505050565b60007f01ffc9a7000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916149050919050565b6106978161069261078b565b6108ca565b50565b60006106a6838361057f565b61078057600160008085815260200190815260200160002060000160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555061071d61078b565b73ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16847f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d60405160405180910390a460019050610785565b600090505b92915050565b600033905090565b600061079f838361057f565b1561087a57600080600085815260200190815260200160002060000160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555061081761078b565b73ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16847ff6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b60405160405180910390a46001905061087f565b600090505b92915050565b7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef16108af81610686565b600260008154809291906108c290611130565b919050555050565b6108d4828261057f565b6109175780826040517fe2517d3f00000000000000000000000000000000000000000000000000000000815260040161090e929190611187565b60405180910390fd5b5050565b6000604051905090565b600080fd5b600080fd5b60007fffffffff0000000000000000000000000000000000000000000000000000000082169050919050565b6109648161092f565b811461096f57600080fd5b50565b6000813590506109818161095b565b92915050565b60006020828403121561099d5761099c610925565b5b60006109ab84828501610972565b91505092915050565b60008115159050919050565b6109c9816109b4565b82525050565b60006020820190506109e460008301846109c0565b92915050565b6000819050919050565b6109fd816109ea565b82525050565b6000602082019050610a1860008301846109f4565b92915050565b610a27816109ea565b8114610a3257600080fd5b50565b600081359050610a4481610a1e565b92915050565b600060208284031215610a6057610a5f610925565b5b6000610a6e84828501610a35565b91505092915050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000610aa282610a77565b9050919050565b610ab281610a97565b8114610abd57600080fd5b50565b600081359050610acf81610aa9565b92915050565b60008060408385031215610aec57610aeb610925565b5b6000610afa85828601610a35565b9250506020610b0b85828601610ac0565b9150509250929050565b600080fd5b600080fd5b6000601f19601f8301169050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b610b6882610b1f565b810181811067ffffffffffffffff82111715610b8757610b86610b30565b5b80604052505050565b6000610b9a61091b565b9050610ba68282610b5f565b919050565b600067ffffffffffffffff821115610bc657610bc5610b30565b5b610bcf82610b1f565b9050602081019050919050565b82818337600083830152505050565b6000610bfe610bf984610bab565b610b90565b905082815260208101848484011115610c1a57610c19610b1a565b5b610c25848285610bdc565b509392505050565b600082601f830112610c4257610c41610b15565b5b8135610c52848260208601610beb565b91505092915050565b600060208284031215610c7157610c70610925565b5b600082013567ffffffffffffffff811115610c8f57610c8e61092a565b5b610c9b84828501610c2d565b91505092915050565b600081519050919050565b600082825260208201905092915050565b60005b83811015610cde578082015181840152602081019050610cc3565b60008484015250505050565b6000610cf582610ca4565b610cff8185610caf565b9350610d0f818560208601610cc0565b610d1881610b1f565b840191505092915050565b60006020820190508181036000830152610d3d8184610cea565b905092915050565b6000819050919050565b610d5881610d45565b82525050565b6000602082019050610d736000830184610d4f565b92915050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b60006002820490506001821680610dc057607f821691505b602082108103610dd357610dd2610d79565b5b50919050565b60008190508160005260206000209050919050565b60006020601f8301049050919050565b600082821b905092915050565b600060088302610e3b7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff82610dfe565b610e458683610dfe565b95508019841693508086168417925050509392505050565b6000819050919050565b6000610e82610e7d610e7884610d45565b610e5d565b610d45565b9050919050565b6000819050919050565b610e9c83610e67565b610eb0610ea882610e89565b848454610e0b565b825550505050565b600090565b610ec5610eb8565b610ed0818484610e93565b505050565b5b81811015610ef457610ee9600082610ebd565b600181019050610ed6565b5050565b601f821115610f3957610f0a81610dd9565b610f1384610dee565b81016020851015610f22578190505b610f36610f2e85610dee565b830182610ed5565b50505b505050565b600082821c905092915050565b6000610f5c60001984600802610f3e565b1980831691505092915050565b6000610f758383610f4b565b9150826002028217905092915050565b610f8e82610ca4565b67ffffffffffffffff811115610fa757610fa6610b30565b5b610fb18254610da8565b610fbc828285610ef8565b600060209050601f831160018114610fef5760008415610fdd578287015190505b610fe78582610f69565b86555061104f565b601f198416610ffd86610dd9565b60005b8281101561102557848901518255600182019150602085019450602081019050611000565b86831015611042578489015161103e601f891682610f4b565b8355505b6001600288020188555050505b505050505050565b600060608201905061106c60008301866109f4565b818103602083015261107e8185610cea565b905061108d6040830184610d4f565b949350505050565b7f44617461206e6f7420666f756e64000000000000000000000000000000000000600082015250565b60006110cb600e83610caf565b91506110d682611095565b602082019050919050565b600060208201905081810360008301526110fa816110be565b9050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b600061113b82610d45565b91507fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff820361116d5761116c611101565b5b600182019050919050565b61118181610a97565b82525050565b600060408201905061119c6000830185611178565b6111a960208301846109f4565b939250505056fea264697066735822122081eb840dfe798222e90005a9a64746d2168143d2803b254ef32a58812644019464736f6c634300081c0033","contractName":"OracleTestContract","methodName":"getData","params":["0xd2a21947eed980d6266fd60e26f24379032c4fa65ed8c63b323e040ea2b57536"]},"sourceNetworkId":{"id":"HardhatTestNetwork1","ledgerType":"ETHEREUM"},"taskType":"READ_AND_UPDATE"}
+[2025-05-22T22:09:03.931Z] INFO (executeTask()): executeTask(), executing task execution endpoint
+[2025-05-22T22:09:03.931Z] INFO (OracleManager): OracleManager#executeTask(): Executing task with id b299bfa9-e9fa-4cf3-b52e-1495b1c2fd86
+[2025-05-22T22:09:03.931Z] DEBUG (OracleManager): OracleManager#processTask: Processing task b299bfa9-e9fa-4cf3-b52e-1495b1c2fd86
+[2025-05-22T22:09:03.931Z] DEBUG (OracleManager): OracleManager#relayOperation: Relaying operation 4a1099c0-5d65-4afb-8c84-d03fb36b4703 to network {"id":"HardhatTestNetwork1","ledgerType":"ETHEREUM"}
+[2025-05-22T22:09:03.931Z] DEBUG (OracleManager): OracleManager#getOracleExecutionLayer(), Getting Oracle Execution Layer...
+[2025-05-22T22:09:03.931Z] DEBUG (OracleManager): OracleManager#getNetworkOracle(), Getting Oracle for Network ID: {"id":"HardhatTestNetwork1","ledgerType":"ETHEREUM"}
+[2025-05-22T22:09:03.944Z] DEBUG (OracleManager): OracleManager#relayOperation: Operation 4a1099c0-5d65-4afb-8c84-d03fb36b4703 relayed successfully
+[2025-05-22T22:09:03.944Z] DEBUG (OracleManager): OracleManager#relayOperation: Relaying operation 2c6345c1-fd4f-4ef0-a298-1b2ec85d78f0 to network {"id":"HardhatTestNetwork2","ledgerType":"ETHEREUM"}
+[2025-05-22T22:09:03.944Z] DEBUG (OracleManager): OracleManager#getOracleExecutionLayer(), Getting Oracle Execution Layer...
+[2025-05-22T22:09:03.944Z] DEBUG (OracleManager): OracleManager#getNetworkOracle(), Getting Oracle for Network ID: {"id":"HardhatTestNetwork2","ledgerType":"ETHEREUM"}
+[2025-05-22T22:09:03.999Z] DEBUG (OracleManager): OracleManager#relayOperation: Operation 2c6345c1-fd4f-4ef0-a298-1b2ec85d78f0 relayed successfully
+[2025-05-22T22:09:04.000Z] DEBUG (OracleManager): OracleManager#processTask: Task b299bfa9-e9fa-4cf3-b52e-1495b1c2fd86 processed.
+[2025-05-22T22:09:04.000Z] INFO (OracleManager): OracleManager#executeTask(): Task executed successfully
+[2025-05-22T22:09:06.230Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'e1d7fd500e2187ef71b34b3c189baece',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '51f0388f18783524',
+  kind: 0,
+  timestamp: 1747951746230000,
+  duration: 18.09,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-22T22:09:06.230Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-22T22:09:09.006Z] DEBUG (OracleExecuteTaskEndpointV1): post - /api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/execute
+[2025-05-22T22:09:09.006Z] DEBUG (OracleExecuteTaskEndpointV1): reqBody:  {
+  sourceNetworkId: { id: 'HardhatTestNetwork2', ledgerType: 'ETHEREUM' },
+  sourceContract: {
+    contractAbi: [
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object]
+    ],
+    contractName: 'OracleTestContract',
+    contractBytecode: '0x6080604052600060025534801561001557600080fd5b506100296000801b3361006060201b60201c565b5061005a7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef13361006060201b60201c565b506101cf565b6000610072838361015d60201b60201c565b61015257600160008085815260200190815260200160002060000160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055506100ef6101c760201b60201c565b73ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16847f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d60405160405180910390a460019050610157565b600090505b92915050565b600080600084815260200190815260200160002060000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b600033905090565b6111e6806101de6000396000f3fe608060405234801561001057600080fd5b50600436106100a95760003560e01c806347064d6a1161007157806347064d6a1461016457806354f6127f1461018057806391d14854146101b0578063a217fddf146101e0578063d087d288146101fe578063d547741f1461021c576100a9565b806301ffc9a7146100ae57806307e2cea5146100de578063248a9ca3146100fc5780632f2ff15d1461012c57806336568abe14610148575b600080fd5b6100c860048036038101906100c39190610987565b610238565b6040516100d591906109cf565b60405180910390f35b6100e66102b2565b6040516100f39190610a03565b60405180910390f35b61011660048036038101906101119190610a4a565b6102d6565b6040516101239190610a03565b60405180910390f35b61014660048036038101906101419190610ad5565b6102f5565b005b610162600480360381019061015d9190610ad5565b610317565b005b61017e60048036038101906101799190610c5b565b610392565b005b61019a60048036038101906101959190610a4a565b61047c565b6040516101a79190610d23565b60405180910390f35b6101ca60048036038101906101c59190610ad5565b61057f565b6040516101d791906109cf565b60405180910390f35b6101e86105e9565b6040516101f59190610a03565b60405180910390f35b6102066105f0565b6040516102139190610d5e565b60405180910390f35b61023660048036038101906102319190610ad5565b6105fa565b005b60007f7965db0b000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff191614806102ab57506102aa8261061c565b5b9050919050565b7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef181565b6000806000838152602001908152602001600020600101549050919050565b6102fe826102d6565b61030781610686565b610311838361069a565b50505050565b61031f61078b565b73ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614610383576040517f6697b23200000000000000000000000000000000000000000000000000000000815260040160405180910390fd5b61038d8282610793565b505050565b7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef16103bc81610686565b6000826040516020016103cf9190610d23565b6040516020818303038152906040528051906020012090506040518060400160405280828152602001848152506001600083815260200190815260200160002060008201518160000155602082015181600101908161042e9190610f85565b5090505061043a610885565b7f5b3a25e3ed3193b2faaddbd057f69843f115c62a4cd660ef6e67bb5397e111bf818460025460405161046f93929190611057565b60405180910390a1505050565b60606000801b6001600084815260200190815260200160002060000154036104d9576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016104d0906110e1565b60405180910390fd5b6001600083815260200190815260200160002060010180546104fa90610da8565b80601f016020809104026020016040519081016040528092919081815260200182805461052690610da8565b80156105735780601f1061054857610100808354040283529160200191610573565b820191906000526020600020905b81548152906001019060200180831161055657829003601f168201915b50505050509050919050565b600080600084815260200190815260200160002060000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b6000801b81565b6000600254905090565b610603826102d6565b61060c81610686565b6106168383610793565b50505050565b60007f01ffc9a7000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916149050919050565b6106978161069261078b565b6108ca565b50565b60006106a6838361057f565b61078057600160008085815260200190815260200160002060000160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555061071d61078b565b73ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16847f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d60405160405180910390a460019050610785565b600090505b92915050565b600033905090565b600061079f838361057f565b1561087a57600080600085815260200190815260200160002060000160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555061081761078b565b73ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16847ff6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b60405160405180910390a46001905061087f565b600090505b92915050565b7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef16108af81610686565b600260008154809291906108c290611130565b919050555050565b6108d4828261057f565b6109175780826040517fe2517d3f00000000000000000000000000000000000000000000000000000000815260040161090e929190611187565b60405180910390fd5b5050565b6000604051905090565b600080fd5b600080fd5b60007fffffffff0000000000000000000000000000000000000000000000000000000082169050919050565b6109648161092f565b811461096f57600080fd5b50565b6000813590506109818161095b565b92915050565b60006020828403121561099d5761099c610925565b5b60006109ab84828501610972565b91505092915050565b60008115159050919050565b6109c9816109b4565b82525050565b60006020820190506109e460008301846109c0565b92915050565b6000819050919050565b6109fd816109ea565b82525050565b6000602082019050610a1860008301846109f4565b92915050565b610a27816109ea565b8114610a3257600080fd5b50565b600081359050610a4481610a1e565b92915050565b600060208284031215610a6057610a5f610925565b5b6000610a6e84828501610a35565b91505092915050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000610aa282610a77565b9050919050565b610ab281610a97565b8114610abd57600080fd5b50565b600081359050610acf81610aa9565b92915050565b60008060408385031215610aec57610aeb610925565b5b6000610afa85828601610a35565b9250506020610b0b85828601610ac0565b9150509250929050565b600080fd5b600080fd5b6000601f19601f8301169050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b610b6882610b1f565b810181811067ffffffffffffffff82111715610b8757610b86610b30565b5b80604052505050565b6000610b9a61091b565b9050610ba68282610b5f565b919050565b600067ffffffffffffffff821115610bc657610bc5610b30565b5b610bcf82610b1f565b9050602081019050919050565b82818337600083830152505050565b6000610bfe610bf984610bab565b610b90565b905082815260208101848484011115610c1a57610c19610b1a565b5b610c25848285610bdc565b509392505050565b600082601f830112610c4257610c41610b15565b5b8135610c52848260208601610beb565b91505092915050565b600060208284031215610c7157610c70610925565b5b600082013567ffffffffffffffff811115610c8f57610c8e61092a565b5b610c9b84828501610c2d565b91505092915050565b600081519050919050565b600082825260208201905092915050565b60005b83811015610cde578082015181840152602081019050610cc3565b60008484015250505050565b6000610cf582610ca4565b610cff8185610caf565b9350610d0f818560208601610cc0565b610d1881610b1f565b840191505092915050565b60006020820190508181036000830152610d3d8184610cea565b905092915050565b6000819050919050565b610d5881610d45565b82525050565b6000602082019050610d736000830184610d4f565b92915050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b60006002820490506001821680610dc057607f821691505b602082108103610dd357610dd2610d79565b5b50919050565b60008190508160005260206000209050919050565b60006020601f8301049050919050565b600082821b905092915050565b600060088302610e3b7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff82610dfe565b610e458683610dfe565b95508019841693508086168417925050509392505050565b6000819050919050565b6000610e82610e7d610e7884610d45565b610e5d565b610d45565b9050919050565b6000819050919050565b610e9c83610e67565b610eb0610ea882610e89565b848454610e0b565b825550505050565b600090565b610ec5610eb8565b610ed0818484610e93565b505050565b5b81811015610ef457610ee9600082610ebd565b600181019050610ed6565b5050565b601f821115610f3957610f0a81610dd9565b610f1384610dee565b81016020851015610f22578190505b610f36610f2e85610dee565b830182610ed5565b50505b505050565b600082821c905092915050565b6000610f5c60001984600802610f3e565b1980831691505092915050565b6000610f758383610f4b565b9150826002028217905092915050565b610f8e82610ca4565b67ffffffffffffffff811115610fa757610fa6610b30565b5b610fb18254610da8565b610fbc828285610ef8565b600060209050601f831160018114610fef5760008415610fdd578287015190505b610fe78582610f69565b86555061104f565b601f198416610ffd86610dd9565b60005b8281101561102557848901518255600182019150602085019450602081019050611000565b86831015611042578489015161103e601f891682610f4b565b8355505b6001600288020188555050505b505050505050565b600060608201905061106c60008301866109f4565b818103602083015261107e8185610cea565b905061108d6040830184610d4f565b949350505050565b7f44617461206e6f7420666f756e64000000000000000000000000000000000000600082015250565b60006110cb600e83610caf565b91506110d682611095565b602082019050919050565b600060208201905081810360008301526110fa816110be565b9050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b600061113b82610d45565b91507fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff820361116d5761116c611101565b5b600182019050919050565b61118181610a97565b82525050565b600060408201905061119c6000830185611178565b6111a960208301846109f456'... 122 more characters,
+    contractAddress: '0x8464135c8F25Da09e49BC8782676a84730C318bC',
+    methodName: 'getData',
+    params: [
+      '0xd2a21947eed980d6266fd60e26f24379032c4fa65ed8c63b323e040ea2b57536'
+    ]
+  },
+  taskType: 'READ'
+}
+[2025-05-22T22:09:09.006Z] INFO (BLODispatcher): Oracle Execute Task request: {"sourceContract":{"contractAbi":[{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"inputs":[],"name":"AccessControlBadConfirmation","type":"error"},{"inputs":[{"internalType":"address","name":"account","type":"address"},{"internalType":"bytes32","name":"neededRole","type":"bytes32"}],"name":"AccessControlUnauthorizedAccount","type":"error"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"bytes32","name":"role","type":"bytes32"},{"indexed":true,"internalType":"bytes32","name":"previousAdminRole","type":"bytes32"},{"indexed":true,"internalType":"bytes32","name":"newAdminRole","type":"bytes32"}],"name":"RoleAdminChanged","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"bytes32","name":"role","type":"bytes32"},{"indexed":true,"internalType":"address","name":"account","type":"address"},{"indexed":true,"internalType":"address","name":"sender","type":"address"}],"name":"RoleGranted","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"bytes32","name":"role","type":"bytes32"},{"indexed":true,"internalType":"address","name":"account","type":"address"},{"indexed":true,"internalType":"address","name":"sender","type":"address"}],"name":"RoleRevoked","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"bytes32","name":"id","type":"bytes32"},{"indexed":false,"internalType":"string","name":"data","type":"string"},{"indexed":false,"internalType":"uint256","name":"nonce","type":"uint256"}],"name":"UpdatedData","type":"event"},{"inputs":[],"name":"DEFAULT_ADMIN_ROLE","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"ORACLE_ROLE","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes32","name":"id","type":"bytes32"}],"name":"getData","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getNonce","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"}],"name":"getRoleAdmin","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"},{"internalType":"address","name":"account","type":"address"}],"name":"grantRole","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"},{"internalType":"address","name":"account","type":"address"}],"name":"hasRole","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"},{"internalType":"address","name":"callerConfirmation","type":"address"}],"name":"renounceRole","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"},{"internalType":"address","name":"account","type":"address"}],"name":"revokeRole","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"string","name":"data","type":"string"}],"name":"setData","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bytes4","name":"interfaceId","type":"bytes4"}],"name":"supportsInterface","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"}],"contractAddress":"0x8464135c8F25Da09e49BC8782676a84730C318bC","contractBytecode":"0x6080604052600060025534801561001557600080fd5b506100296000801b3361006060201b60201c565b5061005a7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef13361006060201b60201c565b506101cf565b6000610072838361015d60201b60201c565b61015257600160008085815260200190815260200160002060000160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055506100ef6101c760201b60201c565b73ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16847f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d60405160405180910390a460019050610157565b600090505b92915050565b600080600084815260200190815260200160002060000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b600033905090565b6111e6806101de6000396000f3fe608060405234801561001057600080fd5b50600436106100a95760003560e01c806347064d6a1161007157806347064d6a1461016457806354f6127f1461018057806391d14854146101b0578063a217fddf146101e0578063d087d288146101fe578063d547741f1461021c576100a9565b806301ffc9a7146100ae57806307e2cea5146100de578063248a9ca3146100fc5780632f2ff15d1461012c57806336568abe14610148575b600080fd5b6100c860048036038101906100c39190610987565b610238565b6040516100d591906109cf565b60405180910390f35b6100e66102b2565b6040516100f39190610a03565b60405180910390f35b61011660048036038101906101119190610a4a565b6102d6565b6040516101239190610a03565b60405180910390f35b61014660048036038101906101419190610ad5565b6102f5565b005b610162600480360381019061015d9190610ad5565b610317565b005b61017e60048036038101906101799190610c5b565b610392565b005b61019a60048036038101906101959190610a4a565b61047c565b6040516101a79190610d23565b60405180910390f35b6101ca60048036038101906101c59190610ad5565b61057f565b6040516101d791906109cf565b60405180910390f35b6101e86105e9565b6040516101f59190610a03565b60405180910390f35b6102066105f0565b6040516102139190610d5e565b60405180910390f35b61023660048036038101906102319190610ad5565b6105fa565b005b60007f7965db0b000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff191614806102ab57506102aa8261061c565b5b9050919050565b7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef181565b6000806000838152602001908152602001600020600101549050919050565b6102fe826102d6565b61030781610686565b610311838361069a565b50505050565b61031f61078b565b73ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614610383576040517f6697b23200000000000000000000000000000000000000000000000000000000815260040160405180910390fd5b61038d8282610793565b505050565b7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef16103bc81610686565b6000826040516020016103cf9190610d23565b6040516020818303038152906040528051906020012090506040518060400160405280828152602001848152506001600083815260200190815260200160002060008201518160000155602082015181600101908161042e9190610f85565b5090505061043a610885565b7f5b3a25e3ed3193b2faaddbd057f69843f115c62a4cd660ef6e67bb5397e111bf818460025460405161046f93929190611057565b60405180910390a1505050565b60606000801b6001600084815260200190815260200160002060000154036104d9576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016104d0906110e1565b60405180910390fd5b6001600083815260200190815260200160002060010180546104fa90610da8565b80601f016020809104026020016040519081016040528092919081815260200182805461052690610da8565b80156105735780601f1061054857610100808354040283529160200191610573565b820191906000526020600020905b81548152906001019060200180831161055657829003601f168201915b50505050509050919050565b600080600084815260200190815260200160002060000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b6000801b81565b6000600254905090565b610603826102d6565b61060c81610686565b6106168383610793565b50505050565b60007f01ffc9a7000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916149050919050565b6106978161069261078b565b6108ca565b50565b60006106a6838361057f565b61078057600160008085815260200190815260200160002060000160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555061071d61078b565b73ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16847f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d60405160405180910390a460019050610785565b600090505b92915050565b600033905090565b600061079f838361057f565b1561087a57600080600085815260200190815260200160002060000160008473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555061081761078b565b73ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16847ff6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b60405160405180910390a46001905061087f565b600090505b92915050565b7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef16108af81610686565b600260008154809291906108c290611130565b919050555050565b6108d4828261057f565b6109175780826040517fe2517d3f00000000000000000000000000000000000000000000000000000000815260040161090e929190611187565b60405180910390fd5b5050565b6000604051905090565b600080fd5b600080fd5b60007fffffffff0000000000000000000000000000000000000000000000000000000082169050919050565b6109648161092f565b811461096f57600080fd5b50565b6000813590506109818161095b565b92915050565b60006020828403121561099d5761099c610925565b5b60006109ab84828501610972565b91505092915050565b60008115159050919050565b6109c9816109b4565b82525050565b60006020820190506109e460008301846109c0565b92915050565b6000819050919050565b6109fd816109ea565b82525050565b6000602082019050610a1860008301846109f4565b92915050565b610a27816109ea565b8114610a3257600080fd5b50565b600081359050610a4481610a1e565b92915050565b600060208284031215610a6057610a5f610925565b5b6000610a6e84828501610a35565b91505092915050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000610aa282610a77565b9050919050565b610ab281610a97565b8114610abd57600080fd5b50565b600081359050610acf81610aa9565b92915050565b60008060408385031215610aec57610aeb610925565b5b6000610afa85828601610a35565b9250506020610b0b85828601610ac0565b9150509250929050565b600080fd5b600080fd5b6000601f19601f8301169050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b610b6882610b1f565b810181811067ffffffffffffffff82111715610b8757610b86610b30565b5b80604052505050565b6000610b9a61091b565b9050610ba68282610b5f565b919050565b600067ffffffffffffffff821115610bc657610bc5610b30565b5b610bcf82610b1f565b9050602081019050919050565b82818337600083830152505050565b6000610bfe610bf984610bab565b610b90565b905082815260208101848484011115610c1a57610c19610b1a565b5b610c25848285610bdc565b509392505050565b600082601f830112610c4257610c41610b15565b5b8135610c52848260208601610beb565b91505092915050565b600060208284031215610c7157610c70610925565b5b600082013567ffffffffffffffff811115610c8f57610c8e61092a565b5b610c9b84828501610c2d565b91505092915050565b600081519050919050565b600082825260208201905092915050565b60005b83811015610cde578082015181840152602081019050610cc3565b60008484015250505050565b6000610cf582610ca4565b610cff8185610caf565b9350610d0f818560208601610cc0565b610d1881610b1f565b840191505092915050565b60006020820190508181036000830152610d3d8184610cea565b905092915050565b6000819050919050565b610d5881610d45565b82525050565b6000602082019050610d736000830184610d4f565b92915050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b60006002820490506001821680610dc057607f821691505b602082108103610dd357610dd2610d79565b5b50919050565b60008190508160005260206000209050919050565b60006020601f8301049050919050565b600082821b905092915050565b600060088302610e3b7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff82610dfe565b610e458683610dfe565b95508019841693508086168417925050509392505050565b6000819050919050565b6000610e82610e7d610e7884610d45565b610e5d565b610d45565b9050919050565b6000819050919050565b610e9c83610e67565b610eb0610ea882610e89565b848454610e0b565b825550505050565b600090565b610ec5610eb8565b610ed0818484610e93565b505050565b5b81811015610ef457610ee9600082610ebd565b600181019050610ed6565b5050565b601f821115610f3957610f0a81610dd9565b610f1384610dee565b81016020851015610f22578190505b610f36610f2e85610dee565b830182610ed5565b50505b505050565b600082821c905092915050565b6000610f5c60001984600802610f3e565b1980831691505092915050565b6000610f758383610f4b565b9150826002028217905092915050565b610f8e82610ca4565b67ffffffffffffffff811115610fa757610fa6610b30565b5b610fb18254610da8565b610fbc828285610ef8565b600060209050601f831160018114610fef5760008415610fdd578287015190505b610fe78582610f69565b86555061104f565b601f198416610ffd86610dd9565b60005b8281101561102557848901518255600182019150602085019450602081019050611000565b86831015611042578489015161103e601f891682610f4b565b8355505b6001600288020188555050505b505050505050565b600060608201905061106c60008301866109f4565b818103602083015261107e8185610cea565b905061108d6040830184610d4f565b949350505050565b7f44617461206e6f7420666f756e64000000000000000000000000000000000000600082015250565b60006110cb600e83610caf565b91506110d682611095565b602082019050919050565b600060208201905081810360008301526110fa816110be565b9050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b600061113b82610d45565b91507fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff820361116d5761116c611101565b5b600182019050919050565b61118181610a97565b82525050565b600060408201905061119c6000830185611178565b6111a960208301846109f4565b939250505056fea264697066735822122081eb840dfe798222e90005a9a64746d2168143d2803b254ef32a58812644019464736f6c634300081c0033","contractName":"OracleTestContract","methodName":"getData","params":["0xd2a21947eed980d6266fd60e26f24379032c4fa65ed8c63b323e040ea2b57536"]},"sourceNetworkId":{"id":"HardhatTestNetwork2","ledgerType":"ETHEREUM"},"taskType":"READ"}
+[2025-05-22T22:09:09.007Z] INFO (executeTask()): executeTask(), executing task execution endpoint
+[2025-05-22T22:09:09.007Z] INFO (OracleManager): OracleManager#executeTask(): Executing task with id 0888f7b5-1e76-488b-9d95-ebdca73f3ca4
+[2025-05-22T22:09:09.007Z] DEBUG (OracleManager): OracleManager#processTask: Processing task 0888f7b5-1e76-488b-9d95-ebdca73f3ca4
+[2025-05-22T22:09:09.007Z] DEBUG (OracleManager): OracleManager#relayOperation: Relaying operation 3b4c86ab-4cfb-4eee-8e38-63541f786bbf to network {"id":"HardhatTestNetwork2","ledgerType":"ETHEREUM"}
+[2025-05-22T22:09:09.007Z] DEBUG (OracleManager): OracleManager#getOracleExecutionLayer(), Getting Oracle Execution Layer...
+[2025-05-22T22:09:09.007Z] DEBUG (OracleManager): OracleManager#getNetworkOracle(), Getting Oracle for Network ID: {"id":"HardhatTestNetwork2","ledgerType":"ETHEREUM"}
+[2025-05-22T22:09:09.013Z] DEBUG (OracleManager): OracleManager#relayOperation: Operation 3b4c86ab-4cfb-4eee-8e38-63541f786bbf relayed successfully
+[2025-05-22T22:09:09.013Z] DEBUG (OracleManager): OracleManager#processTask: Task 0888f7b5-1e76-488b-9d95-ebdca73f3ca4 processed.
+[2025-05-22T22:09:09.013Z] INFO (OracleManager): OracleManager#executeTask(): Task executed successfully
+[2025-05-22T22:09:11.320Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '0d9a9d5b3dd836cd269959c5710102f1',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'f6f4273f56bbef71',
+  kind: 0,
+  timestamp: 1747951751320000,
+  duration: 18.148,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-22T22:09:11.320Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-22T22:09:16.415Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '5232bc027ab838e58b9a4b467db73d19',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '0963e6bd5a752044',
+  kind: 0,
+  timestamp: 1747951756416000,
+  duration: 35.188,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-22T22:09:16.416Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-22T22:09:21.509Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '0f30cc5f24f51944a0d687162058e948',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'a96bd2be89ac2eba',
+  kind: 0,
+  timestamp: 1747951761509000,
+  duration: 17.779,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-22T22:09:21.509Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-22T22:09:26.606Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'd162d1b0cca684a161b4f0f8fb4c4aac',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '445c05894d17f452',
+  kind: 0,
+  timestamp: 1747951766607000,
+  duration: 145.822,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-22T22:09:26.607Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-22T22:09:31.731Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '1ab8b1d9986d0b7e0398fb02cec192aa',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'cba138a23dcbb81a',
+  kind: 0,
+  timestamp: 1747951771731000,
+  duration: 35.125,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-22T22:09:31.731Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-22T22:09:36.826Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'c2c4885597da1fb661cafe69ec0a0434',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '66201f568e47404d',
+  kind: 0,
+  timestamp: 1747951776826000,
+  duration: 11.834,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-22T22:09:36.826Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-22T22:09:41.913Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '254c8d06b461351e1bdfc5151e317d63',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'b83e806b1e6fc694',
+  kind: 0,
+  timestamp: 1747951781913000,
+  duration: 9.912,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-22T22:09:41.913Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-22T22:09:46.997Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '0ad67016c849122a883bd69545622a0a',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'd6221ba7d7f8c43f',
+  kind: 0,
+  timestamp: 1747951786998000,
+  duration: 17.285,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-22T22:09:46.998Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-22T22:09:52.097Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '9718f6c8da20ce40caa8c90fd33efd87',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '9e5b0ca66d3c376c',
+  kind: 0,
+  timestamp: 1747951792097000,
+  duration: 11.833,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-22T22:09:52.097Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-22T22:09:57.187Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '6a6067f032707414a9fb77e34b8623a0',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'c00adfb3526bc282',
+  kind: 0,
+  timestamp: 1747951797187000,
+  duration: 24.802,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-22T22:09:57.188Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-22T22:10:02.282Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'f759fe0c925165a39cfca5f31e596821',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '45ecdf4fb4c7c575',
+  kind: 0,
+  timestamp: 1747951802282000,
+  duration: 9.155,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-22T22:10:02.282Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-22T22:10:07.381Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '7eda2a238d3e3a0c39bbe994fd04e293',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '573063ab832a6994',
+  kind: 0,
+  timestamp: 1747951807381000,
+  duration: 12.048,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-22T22:10:07.381Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-22T22:10:12.491Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '9bb5c8c2f08b5760e1dc4d151935ea10',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '2196c7cadb1fd00f',
+  kind: 0,
+  timestamp: 1747951812491000,
+  duration: 9.341,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-22T22:10:12.491Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-22T22:10:17.606Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'c4d1f49e9c54bc687c97de4873c43f26',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'e730a43f6ccd2725',
+  kind: 0,
+  timestamp: 1747951817606000,
+  duration: 9.207,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-22T22:10:17.606Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-22T22:10:21.611Z] INFO (api-server): Shutting down API server ...
+[2025-05-22T22:10:21.611Z] INFO (api-server): Starting async-exit-hook for cmd-api-server ...
+[2025-05-22T22:10:21.611Z] INFO (api-server): Shutting down API server ...
+[2025-05-22T22:10:21.611Z] INFO (api-server): Started async-exit-hook for cmd-api-server OK
+[2025-05-22T22:10:21.611Z] DEBUG (SATPGateway): Entering SATPGateway#shutdown()
+[2025-05-22T22:10:21.611Z] DEBUG (SATPGateway): Shutting down Gateway Application
+[2025-05-22T22:10:21.611Z] DEBUG (SATPGateway): Shutting down BLO
+[2025-05-22T22:10:21.612Z] INFO (BLODispatcher): Stopping requests
+[2025-05-22T22:10:21.612Z] INFO (BLODispatcher): Get SATP Manager request
+[2025-05-22T22:10:21.612Z] INFO (api-server): Disconnecting SocketIO connections...
+[2025-05-22T22:10:21.612Z] INFO (api-server): SocketIO connections disconnect OK
+[2025-05-22T22:10:21.612Z] INFO (api-server): Stopping 1 WS plugin(s)...
+[2025-05-22T22:10:21.612Z] DEBUG (SATPGateway): Entering SATPGateway#shutdown()
+[2025-05-22T22:10:21.612Z] DEBUG (SATPGateway): Shutting down Gateway Application
+[2025-05-22T22:10:21.612Z] DEBUG (SATPGateway): Shutting down BLO
+[2025-05-22T22:10:21.612Z] INFO (BLODispatcher): Stopping requests
+[2025-05-22T22:10:21.612Z] INFO (BLODispatcher): Get SATP Manager request
+[2025-05-22T22:10:21.612Z] INFO (api-server): Disconnecting SocketIO connections...
+[2025-05-22T22:10:21.612Z] INFO (api-server): SocketIO connections disconnect OK
+[2025-05-22T22:10:21.612Z] INFO (api-server): Stopping 1 WS plugin(s)...
+[2025-05-22T22:10:21.613Z] INFO (SATPManager): SATPManager#getSATPSessionStatus(), Getting SATP Session Status...
+[2025-05-22T22:10:21.613Z] INFO (SATPManager): SATPManager#getSATPSessionStatus(), Getting SATP Session Status...
+[2025-05-22T22:10:21.613Z] INFO (SATPGateway): All sessions already concluded
+[2025-05-22T22:10:21.613Z] INFO (SATPGateway): All sessions already concluded
+[2025-05-22T22:10:21.613Z] INFO (BLODispatcher): Get SATP Manager request
+[2025-05-22T22:10:21.613Z] INFO (BLODispatcher): Get SATP Manager request
+[2025-05-22T22:10:21.613Z] DEBUG (SATPGateway): Shutting down monitor service
+[2025-05-22T22:10:21.613Z] INFO (MonitorService): Shutting down MonitorService...
+[2025-05-22T22:10:21.613Z] INFO (MonitorService): MonitorService shutdown complete
+[2025-05-22T22:10:21.613Z] DEBUG (SATPGateway): Shutting down monitor service
+[2025-05-22T22:10:21.613Z] INFO (MonitorService): Shutting down MonitorService...
+[2025-05-22T22:10:21.613Z] INFO (MonitorService): MonitorService shutdown complete
+[2025-05-22T22:10:21.613Z] DEBUG (SATPGateway): Monitor service shut down
+[2025-05-22T22:10:21.613Z] DEBUG (SATPGateway): Shutting down Gateway Coordinator
+[2025-05-22T22:10:21.613Z] DEBUG (SATPGateway): Entering SATPGateway#shutdownGOLServer()
+[2025-05-22T22:10:21.614Z] DEBUG (SATPGateway): Monitor service shut down
+[2025-05-22T22:10:21.614Z] DEBUG (SATPGateway): Shutting down Gateway Coordinator
+[2025-05-22T22:10:21.614Z] DEBUG (SATPGateway): Entering SATPGateway#shutdownGOLServer()
+[2025-05-22T22:10:21.614Z] INFO (SATPGateway): GOL server shut down
+[2025-05-22T22:10:21.614Z] INFO (SATPGateway): GOL server shut down
+[2025-05-22T22:10:21.614Z] DEBUG (SATPGateway): Running shutdown hooks
+[2025-05-22T22:10:21.614Z] DEBUG (SATPGateway): Oracle Manager shut down
+[2025-05-22T22:10:21.614Z] DEBUG (OracleManager): OracleManager#shutdown: Shutting down all listeners.
+[2025-05-22T22:10:21.614Z] INFO (OracleSchedulerManager): OracleSchedulerManager#clearAllListeners(): Clearing 0 pollers
+[2025-05-22T22:10:21.614Z] INFO (OracleSchedulerManager): OracleSchedulerManager#clearAllListeners(): Clearing 0 event listeners
+[2025-05-22T22:10:21.614Z] INFO (OracleSchedulerManager): OracleSchedulerManager#clearAllListeners(): All listeners cleared
+[2025-05-22T22:10:21.614Z] INFO (SATPGateway): Shutting down Gateway Connection Manager
+[2025-05-22T22:10:21.614Z] INFO (GatewayOrchestrator): GatewayOrchestrator#disconnectAll(), Disconnecting from mockID
+[2025-05-22T22:10:21.614Z] DEBUG (SATPGateway): Running shutdown hooks
+[2025-05-22T22:10:21.615Z] DEBUG (SATPGateway): Oracle Manager shut down
+[2025-05-22T22:10:21.615Z] DEBUG (OracleManager): OracleManager#shutdown: Shutting down all listeners.
+[2025-05-22T22:10:21.615Z] INFO (OracleSchedulerManager): OracleSchedulerManager#clearAllListeners(): Clearing 0 pollers
+[2025-05-22T22:10:21.615Z] INFO (OracleSchedulerManager): OracleSchedulerManager#clearAllListeners(): Clearing 0 event listeners
+[2025-05-22T22:10:21.615Z] INFO (OracleSchedulerManager): OracleSchedulerManager#clearAllListeners(): All listeners cleared
+[2025-05-22T22:10:21.615Z] INFO (SATPGateway): Shutting down Gateway Connection Manager
+[2025-05-22T22:10:21.615Z] INFO (SATPGateway): Closed 1 connections
+[2025-05-22T22:10:21.615Z] INFO (SATPGateway): Gateway Coordinator shut down
+[2025-05-22T22:10:21.615Z] DEBUG (SATPGateway): Destroying local repository...
+[2025-05-22T22:10:21.615Z] INFO (SATPGateway): Closed 0 connections
+[2025-05-22T22:10:21.615Z] INFO (SATPGateway): Gateway Coordinator shut down
+[2025-05-22T22:10:21.615Z] DEBUG (SATPGateway): Destroying local repository...
+[2025-05-22T22:10:21.616Z] INFO (SATPGateway): Local repository destroyed
+[2025-05-22T22:10:21.616Z] DEBUG (SATPGateway): Destroying remote repository...
+[2025-05-22T22:10:21.616Z] INFO (SATPGateway): Local repository destroyed
+[2025-05-22T22:10:21.616Z] DEBUG (SATPGateway): Destroying remote repository...
+[2025-05-22T22:10:21.616Z] INFO (SATPGateway): Remote repository destroyed
+[2025-05-22T22:10:21.616Z] INFO (SATPGateway): Remote repository destroyed
+[2025-05-22T22:10:21.616Z] INFO (api-server): Stopped 1 WS plugin(s) OK
+[2025-05-22T22:10:21.616Z] INFO (api-server): Closing Cacti HTTP server of the API...
+[2025-05-22T22:10:21.616Z] INFO (api-server): Stopped 1 WS plugin(s) OK
+[2025-05-22T22:10:21.616Z] INFO (api-server): Fastify plugin list: 'root 53 ms\n' +
+  '├── bound _after 2 ms\n' +
+  '├─┬ fastifyConnectPlugin 1 ms\n' +
+  '│ └── bound _after 0 ms\n' +
+  '└── bound _after 0 ms\n'
+[2025-05-22T22:10:21.616Z] INFO (api-server): Closing Cacti CRPC HTTP server ...
+[2025-05-22T22:10:21.617Z] INFO (api-server): Closed Cacti CRPC HTTP server OK
+[2025-05-22T22:10:21.618Z] INFO (api-server): Draining Cacti gRPC server ...
+[2025-05-22T22:10:21.618Z] INFO (api-server): Drained Cacti gRPC server OK
+[2025-05-22T22:10:21.618Z] INFO (api-server): Trying to shut down Cacti gRPC server ...
+[2025-05-22T22:10:21.618Z] INFO (api-server): Close HTTP server of the API OK
+[2025-05-22T22:10:21.618Z] INFO (api-server): Fastify plugin list: 'root 53 ms\n' +
+  '├── bound _after 2 ms\n' +
+  '├─┬ fastifyConnectPlugin 1 ms\n' +
+  '│ └── bound _after 0 ms\n' +
+  '└── bound _after 0 ms\n'
+[2025-05-22T22:10:21.618Z] INFO (api-server): Closing Cacti CRPC HTTP server ...
+[2025-05-22T22:10:21.618Z] INFO (api-server): Closed Cacti CRPC HTTP server OK
+[2025-05-22T22:10:21.618Z] INFO (api-server): Draining Cacti gRPC server ...
+[2025-05-22T22:10:21.618Z] INFO (api-server): Drained Cacti gRPC server OK
+[2025-05-22T22:10:21.618Z] INFO (api-server): Trying to shut down Cacti gRPC server ...
+[2025-05-22T22:10:21.619Z] INFO (api-server): Shut down Cacti gRPC server OK
+[2025-05-22T22:10:21.619Z] INFO (api-server): Shut down Cacti gRPC server OK
+[2025-05-22T22:10:21.619Z] INFO (api-server): Concluded async-exit-hook for cmd-api-server ...
