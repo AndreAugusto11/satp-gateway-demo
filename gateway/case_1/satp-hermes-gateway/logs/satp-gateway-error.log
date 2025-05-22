@@ -1,21 +1,21 @@
-(node:7) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(node:6) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-(node:7) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
-Trace: [2025-05-22T14:37:28.690Z] TRACE (GatewayOrchestrator): Entering #getGatewaySeeds()
+(node:6) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+Trace: [2025-05-22T15:18:57.430Z] TRACE (GatewayOrchestrator): Entering #getGatewaySeeds()
     at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
     at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
     at getGatewaySeeds (/opt/cacti/satp-hermes/index.js:1004408:12)
     at new GatewayOrchestrator (/opt/cacti/satp-hermes/index.js:1003278:68)
     at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002158:40)
     at launchGateway (/opt/cacti/satp-hermes/index.js:1001989:21)
-Trace: [2025-05-22T14:37:28.690Z] TRACE (GatewayOrchestrator): Entering GatewayOrchestrator#addGateways()
+Trace: [2025-05-22T15:18:57.430Z] TRACE (GatewayOrchestrator): Entering GatewayOrchestrator#addGateways()
     at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
     at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
     at GatewayOrchestrator.addGateways (/opt/cacti/satp-hermes/index.js:1003550:21)
     at new GatewayOrchestrator (/opt/cacti/satp-hermes/index.js:1003284:14)
     at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002158:40)
     at launchGateway (/opt/cacti/satp-hermes/index.js:1001989:21)
-Trace: [2025-05-22T14:37:28.699Z] TRACE (SATPManager): Signer logger level: TRACE
+Trace: [2025-05-22T15:18:57.437Z] TRACE (SATPManager): Signer logger level: TRACE
     at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
     at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
     at new SATPService (/opt/cacti/satp-hermes/index.js:991523:21)
@@ -27,7 +27,7 @@ Trace: [2025-05-22T14:37:28.699Z] TRACE (SATPManager): Signer logger level: TRAC
     at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
     at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002191:30)
     at launchGateway (/opt/cacti/satp-hermes/index.js:1001989:21)
-Trace: [2025-05-22T14:37:28.699Z] TRACE (SATPManager): Signer logger level: TRACE
+Trace: [2025-05-22T15:18:57.437Z] TRACE (SATPManager): Signer logger level: TRACE
     at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
     at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
     at new SATPService (/opt/cacti/satp-hermes/index.js:991523:21)
@@ -39,7 +39,7 @@ Trace: [2025-05-22T14:37:28.699Z] TRACE (SATPManager): Signer logger level: TRAC
     at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
     at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002191:30)
     at launchGateway (/opt/cacti/satp-hermes/index.js:1001989:21)
-Trace: [2025-05-22T14:37:28.699Z] TRACE (SATPManager): Signer logger level: TRACE
+Trace: [2025-05-22T15:18:57.437Z] TRACE (SATPManager): Signer logger level: TRACE
     at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
     at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
     at new SATPService (/opt/cacti/satp-hermes/index.js:991523:21)
@@ -51,7 +51,7 @@ Trace: [2025-05-22T14:37:28.699Z] TRACE (SATPManager): Signer logger level: TRAC
     at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
     at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002191:30)
     at launchGateway (/opt/cacti/satp-hermes/index.js:1001989:21)
-Trace: [2025-05-22T14:37:28.699Z] TRACE (SATPManager): Signer logger level: TRACE
+Trace: [2025-05-22T15:18:57.437Z] TRACE (SATPManager): Signer logger level: TRACE
     at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
     at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
     at new SATPService (/opt/cacti/satp-hermes/index.js:991523:21)
@@ -63,7 +63,7 @@ Trace: [2025-05-22T14:37:28.699Z] TRACE (SATPManager): Signer logger level: TRAC
     at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
     at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002191:30)
     at launchGateway (/opt/cacti/satp-hermes/index.js:1001989:21)
-Trace: [2025-05-22T14:37:28.699Z] TRACE (SATPManager): Signer logger level: TRACE
+Trace: [2025-05-22T15:18:57.437Z] TRACE (SATPManager): Signer logger level: TRACE
     at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
     at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
     at new SATPService (/opt/cacti/satp-hermes/index.js:991523:21)
@@ -75,7 +75,7 @@ Trace: [2025-05-22T14:37:28.699Z] TRACE (SATPManager): Signer logger level: TRAC
     at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
     at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002191:30)
     at launchGateway (/opt/cacti/satp-hermes/index.js:1001989:21)
-Trace: [2025-05-22T14:37:28.700Z] TRACE (SATPManager): Signer logger level: TRACE
+Trace: [2025-05-22T15:18:57.437Z] TRACE (SATPManager): Signer logger level: TRACE
     at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
     at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
     at new SATPService (/opt/cacti/satp-hermes/index.js:991523:21)
@@ -87,7 +87,7 @@ Trace: [2025-05-22T14:37:28.700Z] TRACE (SATPManager): Signer logger level: TRAC
     at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
     at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002191:30)
     at launchGateway (/opt/cacti/satp-hermes/index.js:1001989:21)
-Trace: [2025-05-22T14:37:28.700Z] TRACE (SATPManager): Signer logger level: TRACE
+Trace: [2025-05-22T15:18:57.438Z] TRACE (SATPManager): Signer logger level: TRACE
     at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
     at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
     at new SATPService (/opt/cacti/satp-hermes/index.js:991523:21)
@@ -99,7 +99,7 @@ Trace: [2025-05-22T14:37:28.700Z] TRACE (SATPManager): Signer logger level: TRAC
     at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
     at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002191:30)
     at launchGateway (/opt/cacti/satp-hermes/index.js:1001989:21)
-Trace: [2025-05-22T14:37:28.700Z] TRACE (SATPManager): Signer logger level: TRACE
+Trace: [2025-05-22T15:18:57.438Z] TRACE (SATPManager): Signer logger level: TRACE
     at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
     at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
     at new SATPService (/opt/cacti/satp-hermes/index.js:991523:21)
@@ -111,7 +111,7 @@ Trace: [2025-05-22T14:37:28.700Z] TRACE (SATPManager): Signer logger level: TRAC
     at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
     at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002191:30)
     at launchGateway (/opt/cacti/satp-hermes/index.js:1001989:21)
-Trace: [2025-05-22T14:37:28.701Z] TRACE (SATPHandler-Stage0): Initialized stage-0-handler
+Trace: [2025-05-22T15:18:57.438Z] TRACE (SATPHandler-Stage0): Initialized stage-0-handler
     at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
     at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
     at new Stage0SATPHandler (/opt/cacti/satp-hermes/index.js:989416:21)
@@ -122,7 +122,7 @@ Trace: [2025-05-22T14:37:28.701Z] TRACE (SATPHandler-Stage0): Initialized stage-
     at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
     at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002191:30)
     at launchGateway (/opt/cacti/satp-hermes/index.js:1001989:21)
-Trace: [2025-05-22T14:37:28.701Z] TRACE (SATPHandler-Stage1): Initialized stage-1-handler
+Trace: [2025-05-22T15:18:57.438Z] TRACE (SATPHandler-Stage1): Initialized stage-1-handler
     at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
     at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
     at new Stage1SATPHandler (/opt/cacti/satp-hermes/index.js:989593:21)
@@ -133,7 +133,7 @@ Trace: [2025-05-22T14:37:28.701Z] TRACE (SATPHandler-Stage1): Initialized stage-
     at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
     at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002191:30)
     at launchGateway (/opt/cacti/satp-hermes/index.js:1001989:21)
-Trace: [2025-05-22T14:37:28.701Z] TRACE (SATPHandler-Stage2): Initialized stage-2-handler
+Trace: [2025-05-22T15:18:57.439Z] TRACE (SATPHandler-Stage2): Initialized stage-2-handler
     at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
     at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
     at new Stage2SATPHandler (/opt/cacti/satp-hermes/index.js:989763:21)
@@ -144,7 +144,7 @@ Trace: [2025-05-22T14:37:28.701Z] TRACE (SATPHandler-Stage2): Initialized stage-
     at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
     at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002191:30)
     at launchGateway (/opt/cacti/satp-hermes/index.js:1001989:21)
-Trace: [2025-05-22T14:37:28.701Z] TRACE (SATPHandler-Stage3): Initialized stage-3-handler
+Trace: [2025-05-22T15:18:57.439Z] TRACE (SATPHandler-Stage3): Initialized stage-3-handler
     at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
     at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
     at new Stage3SATPHandler (/opt/cacti/satp-hermes/index.js:989873:21)
@@ -155,24 +155,24 @@ Trace: [2025-05-22T14:37:28.701Z] TRACE (SATPHandler-Stage3): Initialized stage-
     at new BLODispatcher (/opt/cacti/satp-hermes/index.js:985639:24)
     at new SATPGateway (/opt/cacti/satp-hermes/index.js:1002191:30)
     at launchGateway (/opt/cacti/satp-hermes/index.js:1001989:21)
-Trace: [2025-05-22T14:37:28.702Z] TRACE (SATPGateway): Entering SATPGateway#startup()
+Trace: [2025-05-22T15:18:57.439Z] TRACE (SATPGateway): Entering SATPGateway#startup()
     at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
     at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
     at SATPGateway.startup (/opt/cacti/satp-hermes/index.js:1002370:21)
     at launchGateway (/opt/cacti/satp-hermes/index.js:1001992:23)
-Trace: [2025-05-22T14:37:28.705Z] TRACE (SATPGateway): Entering SATPGateway#startupGOLServer()
+Trace: [2025-05-22T15:18:57.442Z] TRACE (SATPGateway): Entering SATPGateway#startupGOLServer()
     at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
     at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
     at SATPGateway.startupGOLServer (/opt/cacti/satp-hermes/index.js:1002445:21)
     at SATPGateway.startup (/opt/cacti/satp-hermes/index.js:1002374:18)
     at launchGateway (/opt/cacti/satp-hermes/index.js:1001992:23)
-Trace: [2025-05-22T14:37:28.783Z] TRACE (SATPGateway): Entering SATPGateway#getOrCreateHttpServer()
+Trace: [2025-05-22T15:18:57.550Z] TRACE (SATPGateway): Entering SATPGateway#getOrCreateHttpServer()
     at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
     at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
     at SATPGateway.getOrCreateHttpServer (/opt/cacti/satp-hermes/index.js:1002379:21)
     at launchGateway (/opt/cacti/satp-hermes/index.js:1001995:27)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-Trace: [2025-05-22T14:37:30.186Z] TRACE (SATPGateway): Entering SATPGateway#getOrCreateWebServices()
+Trace: [2025-05-22T15:18:58.382Z] TRACE (SATPGateway): Entering SATPGateway#getOrCreateWebServices()
     at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
     at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
     at SATPGateway.getOrCreateWebServices (/opt/cacti/satp-hermes/index.js:1002233:21)
@@ -184,8 +184,8 @@ Trace: [2025-05-22T14:37:30.186Z] TRACE (SATPGateway): Entering SATPGateway#getO
     at async ApiServer.start (/opt/cacti/satp-hermes/index.js:3684:36)
     at async SATPGateway.getOrCreateHttpServer (/opt/cacti/satp-hermes/index.js:1002416:9)
     at async launchGateway (/opt/cacti/satp-hermes/index.js:1001995:13)
-[2025-05-22T14:37:30.188Z] WARN (AuthorizerFactory): The API server configuration specified no authorization protocol. All endpoints are exposed and unprotected. Do not use this in production!
-Trace: [2025-05-22T14:37:30.189Z] TRACE (SATPGateway): Entering SATPGateway#getOrCreateWebServices()
+[2025-05-22T15:18:58.383Z] WARN (AuthorizerFactory): The API server configuration specified no authorization protocol. All endpoints are exposed and unprotected. Do not use this in production!
+Trace: [2025-05-22T15:18:58.384Z] TRACE (SATPGateway): Entering SATPGateway#getOrCreateWebServices()
     at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
     at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
     at SATPGateway.getOrCreateWebServices (/opt/cacti/satp-hermes/index.js:1002233:21)
@@ -195,7 +195,7 @@ Trace: [2025-05-22T14:37:30.189Z] TRACE (SATPGateway): Entering SATPGateway#getO
     at async ApiServer.start (/opt/cacti/satp-hermes/index.js:3684:36)
     at async SATPGateway.getOrCreateHttpServer (/opt/cacti/satp-hermes/index.js:1002416:9)
     at async launchGateway (/opt/cacti/satp-hermes/index.js:1001995:13)
-Trace: [2025-05-22T14:37:30.189Z] TRACE (SATPGateway): Entering SATPGateway#getOrCreateWebServices()
+Trace: [2025-05-22T15:18:58.384Z] TRACE (SATPGateway): Entering SATPGateway#getOrCreateWebServices()
     at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
     at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
     at SATPGateway.getOrCreateWebServices (/opt/cacti/satp-hermes/index.js:1002233:21)
@@ -206,7 +206,7 @@ Trace: [2025-05-22T14:37:30.189Z] TRACE (SATPGateway): Entering SATPGateway#getO
     at async ApiServer.start (/opt/cacti/satp-hermes/index.js:3684:36)
     at async SATPGateway.getOrCreateHttpServer (/opt/cacti/satp-hermes/index.js:1002416:9)
     at async launchGateway (/opt/cacti/satp-hermes/index.js:1001995:13)
-Trace: [2025-05-22T14:37:43.456Z] TRACE (SATPGateway): Entering SATPGateway#verifySessionsState()
+Trace: [2025-05-22T15:20:03.649Z] TRACE (SATPGateway): Entering SATPGateway#verifySessionsState()
     at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
     at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
     at SATPGateway.verifySessionsState (/opt/cacti/satp-hermes/index.js:1002625:21)
@@ -215,7 +215,7 @@ Trace: [2025-05-22T14:37:43.456Z] TRACE (SATPGateway): Entering SATPGateway#veri
     at Array.map (<anonymous>)
     at ApiServer.shutdown (/opt/cacti/satp-hermes/index.js:3869:14)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-Trace: [2025-05-22T14:37:43.457Z] TRACE (SATPGateway): Entering SATPGateway#verifySessionsState()
+Trace: [2025-05-22T15:20:03.650Z] TRACE (SATPGateway): Entering SATPGateway#verifySessionsState()
     at Logger.trace (/opt/cacti/satp-hermes/index.js:207295:24)
     at Logger.trace (/opt/cacti/satp-hermes/index.js:189974:22)
     at SATPGateway.verifySessionsState (/opt/cacti/satp-hermes/index.js:1002625:21)
@@ -224,4 +224,4 @@ Trace: [2025-05-22T14:37:43.457Z] TRACE (SATPGateway): Entering SATPGateway#veri
     at Array.map (<anonymous>)
     at ApiServer.shutdown (/opt/cacti/satp-hermes/index.js:3869:14)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-[2025-05-22T14:37:43.462Z] ERROR (GatewayOrchestrator): Disconnect All Not implemented
+[2025-05-22T15:20:03.652Z] ERROR (GatewayOrchestrator): Disconnect All Not implemented

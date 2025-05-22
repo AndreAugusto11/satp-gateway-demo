@@ -1,0 +1,4 @@
+2025-05-22 15:22:02,180 INFO Set uid to user 0 succeeded
+2025-05-22 15:22:02,182 INFO supervisord started with pid 1
+2025-05-22 15:22:03,184 INFO spawned: 'satp-gateway' with pid 7
+2025-05-22 15:22:04,186 INFO success: satp-gateway entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

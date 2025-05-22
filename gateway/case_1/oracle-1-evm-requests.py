@@ -39,7 +39,7 @@ def execute_update(file_path):
         params = json.load(file)
 
     req_params = {
-        'destinationNetworkId': { 'id': 'EthereumLedgerTestNetwork', 'ledgerType': 'ETHEREUM' },
+        'destinationNetworkId': { 'id': 'HardhatTestNetwork1', 'ledgerType': 'ETHEREUM' },
         'destinationContract': {
             "contractAbi": params["abi"],
             "contractName": params["contractName"],
@@ -68,7 +68,7 @@ def execute_read(file_path):
         params = json.load(file)
 
     req_params = {
-        'sourceNetworkId': { 'id': 'EthereumLedgerTestNetwork', 'ledgerType': 'ETHEREUM' },
+        'sourceNetworkId': { 'id': 'HardhatTestNetwork1', 'ledgerType': 'ETHEREUM' },
         'sourceContract': {
             "contractAbi": params["abi"],
             "contractName": params["contractName"],
@@ -87,11 +87,11 @@ if __name__ == "__main__":
     print(f"First request will write '{TEST_DATA}' to the blockchain...")
     sleep(5)
 
-    update_response = execute_update("../EVM/artifacts/contracts/OracleTestContract.sol/OracleTestContract.json")
+    update_response = execute_update("../../EVM/artifacts/contracts/OracleTestContract.sol/OracleTestContract.json")
     print("Response:", update_response)
 
     print("Waiting for 5 seconds before reading the data...")
     sleep(5)
 
-    read_response = execute_read("../EVM/artifacts/contracts/OracleTestContract.sol/OracleTestContract.json")
+    read_response = execute_read("../../EVM/artifacts/contracts/OracleTestContract.sol/OracleTestContract.json")
     print("Read Response:", read_response)

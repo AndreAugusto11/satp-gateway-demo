@@ -44,7 +44,7 @@
     "oracleConfig": [
       {
         "networkIdentification": {
-          "id": "EthereumLedgerTestNetwork",
+          "id": "HardhatTestNetwork1",
           "ledgerType": "ETHEREUM"
         },
         "signingCredential": {
