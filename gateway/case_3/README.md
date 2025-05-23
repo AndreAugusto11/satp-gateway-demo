@@ -1,10 +1,22 @@
-# Case 2: Using the Gateway as Middleware for READ_AND_WRITE in EVM-based blockchains
+# Case 3: Registering a Polling Task to Periodically READ from EVM-based Blockchain
 
-This test case demonstrates how the Gateway can act as a middleware to support READ and WRITE operations on 2 EVM-based blockchains. It builds on the previous example (case 1) by introducing a more dynamic interaction flow, where contract state is read and immediately written to another blockchain. Contrarily to the previous case, this test case does not require a separate request to trigger the contract functions. Instead, it directly interacts with the EVM-based blockchain through the Gateway.
+This test case showcases how the **Gateway** can be used to register a **polling task** that automatically reads data from a smart contract at a fixed interval — in this case, **every 5 seconds**. This feature enables continuous monitoring of blockchain state without requiring repeated manual requests.
 
 For this, we will use the `OracleTestContract` contract, which is a simple contract that allows us to store and retrieve data. The contract has two functions:
-- `setData`: This function allows us to set data in the contract. It takes a string as input and stores it in the contract.
-- `getData`: This function allows us to retrieve data from the contract based on its hash. It returns the string stored in the contract with the corresponding Id.
+
+* **`setData(string memory data)`** – Stores data on-chain and associates it with a `bytes32` ID.
+* **`getData(bytes32 id)`** – Retrieves data from the contract by its ID.
+
+In this scenario, we:
+
+1. Register a **polling task** via the Gateway that attempts to read from the contract.
+2. Initially observe **failed** `getData` calls (because no data is stored yet).
+3. Trigger a **write** using `setData` to update the contract.
+4. See the polling task begin to **succeed** on each interval.
+5. Check the status of the task, including historical output.
+6. Finally, unregister the task to stop polling.
+
+---
 
 ## Setup Instructions
 
@@ -16,9 +28,11 @@ In terminal 1, from this directory:
 docker compose up
 ```
 
-This will start the Gateway with the corresponding configuration file located in `./config/config-oracle-2-evm-requests.json`.
+This will start the Gateway with the corresponding configuration file located in `./config/config-oracle-1-evm-requests.json`.
 
-### 2. Start the Hardhat EVM Blockchains
+---
+
+### 2. Start the Hardhat EVM Blockchain
 
 In terminal 2, from the `~/EVM` directory:
 
@@ -26,48 +40,102 @@ In terminal 2, from the `~/EVM` directory:
 npx hardhat node --hostname 0.0.0.0 --port 8545
 ```
 
-In terminal 3, from the `~/EVM` directory:
-
-```bash
-npx hardhat node --hostname 0.0.0.0 --port 8546
-```
-
 > ⚠️ Make sure to use `--hostname 0.0.0.0` on both cases so that the Gateway (inside Docker) can access the local Hardhat node.
-
-### 3. Deploy the Smart Contract
-
-In terminal 4, from the `~/EVM` directory:
-
-```bash
-npx hardhat ignition deploy ./ignition/modules/OracleTestContract.js --network hardhat1
-npx hardhat ignition deploy ./ignition/modules/OracleTestContract.js --network hardhat2
-```
-
-> This deploys the `OracleTestContract` to the running Hardhat networks (`hardhat1` and `hardhat2` should be configured in `hardhat.config.js` to point to `http://0.0.0.0:8545` and `http://0.0.0.0:8545` respectively).
-
-
-### 4. Run the Oracle Interaction Script
-
-In terminal 5, from this directory:
-
-```bash
-python3 oracle-2-evm-requests.py
-```
-
-> This script sends POST requests to the Gateway to trigger contract `setData` and `getData` functions via `/oracle/execute`.
 
 ---
 
-## Result
+### 3. Deploy the Smart Contract
 
-Check the logs in terminal 5 where you executed the `oracle-2-evm-requests.py` script. You should see the following:
-1. The response from the Gateway confirming the read and write task.
-2. The response from the Gateway confirming the read result from the second EVM-based blockchain (i.e., to where the data was written to).
+In terminal 3, from the `~/EVM` directory:
 
-```shell
-COMPLETE
+```bash
+npx hardhat ignition deploy ./ignition/modules/OracleTestContract.js --network hardhat1
 ```
 
-Also check the logs in terminals 2 and 3 where you started the Hardhat nodes. You should see logs confirming the read operation and the transaction (write) to the second EVM-based blockchain.
+> This deploys the `OracleTestContract` to the running Hardhat network (`hardhat1` should be configured in `hardhat.config.js` to point to `http://0.0.0.0:8545`).
+
+---
+
+### 4. Register the Polling Task
+
+In terminal 4, from this directory:
+
+```bash
+python3 oracle-evm-register-poller.py
+```
+
+> This script registers a polling task that reads from `getData` every 5 seconds via the Gateway's `/oracle/register` endpoint.
+
+---
+
+### 5. Observe Failing Reads (Expected)
+
+Check terminal 2 (Hardhat logs). You should see repeated failed `getData` calls due to the fact that no data is yet stored in the contract.
+
+---
+
+### 6. Trigger a Write to the Contract
+
+In terminal 5, run:
+
+```bash
+python3 oracle-evm-execute-update.py
+```
+
+> This sends a request to the Gateway to invoke `setData`, storing new data in the contract.
+
+---
+
+### 7. Observe Successful Reads
+
+Now return to terminal 2. The previously failing `getData` calls should start succeeding every 5 seconds, reflecting the new contract state.
+
+---
+
+### 8. Get Task Status
+
+In terminal 6, from this directory:
+
+```bash
+python3 oracle-evm-check-status.py
+```
+
+> This queries the Gateway's `/oracle/status` endpoint to inspect the current polling task. You should see:
+
+* Status: `ACTIVE`
+* Output history from each execution
+
+---
+
+### 9. Unregister the Task
+
+In terminal 7:
+
+```bash
+python3 oracle-evm-unregister.py
+```
+
+> This stops the polling task by calling the `/oracle/unregister` endpoint.
+
+---
+
+### Final Check: Task Status
+
+Re-run the status script:
+
+```bash
+python3 oracle-evm-check-status.py
+```
+
+You should now see:
+
+* Status: `INACTIVE`
+* Historical outputs available in the `outputs` field
+
+---
+
+## ✅ Summary
+
+This case demonstrates the Gateway’s polling capability to monitor blockchain state at regular intervals, enabling near-real-time integration with smart contracts. This is especially useful for automation, data feeds, and triggering external events when on-chain state changes. Note that the use of different `taskType` values (e.g., `READ`, `UPDATE`, `READ_AND_UPDATE`) can be used to customize the behavior of the polling task (e.g., every 5 seconds read data from the source chain contract and write it to the destination chain contract).
 
 Finally, you can access the `./satp-hermes-gateway/logs/` directory to see the logs generated by the Gateway. The logs will contain detailed information about the requests and responses, including any errors or warnings that may have occurred during the process.

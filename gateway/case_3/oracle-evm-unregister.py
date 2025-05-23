@@ -3,7 +3,7 @@ import requests
 import json
 from time import sleep
 
-def get_status_oracle(params):
+def unregister_oracle(params):
     """
     Calls the /api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/execute endpoint
     with the given params as JSON body.
@@ -14,14 +14,14 @@ def get_status_oracle(params):
     Returns:
         dict: The JSON response from the endpoint.
     """
-    url = "http://localhost:4010/api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/status"
+    url = "http://localhost:4010/api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/unregister"
     headers = {"Content-Type": "application/json"}
-    response = requests.get(url, params=params, headers=headers)
+    response = requests.post(url, params=params, headers=headers)
     response.raise_for_status()
     return response.json()
 
 
-def get_status(task_id):
+def unregister(task_id):
     """
     Calls the /api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/execute endpoint
     with the given file as JSON body.
@@ -37,8 +37,8 @@ def get_status(task_id):
         'taskID': task_id,
     }
 
-    return get_status_oracle(req_params)
+    return unregister_oracle(req_params)
 
 if __name__ == "__main__":
-    response = get_status("62b1e62d-c698-4962-b0dc-3d7240559acd")
+    response = unregister("62b1e62d-c698-4962-b0dc-3d7240559acd")
     print("Response:", response)

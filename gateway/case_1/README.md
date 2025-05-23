@@ -3,8 +3,10 @@
 This example demonstrates how to use the Gateway as a middleware layer to perform both READ and WRITE operations on an EVM-based blockchain (specifically, Hardhat). The scenario shows interaction with a simple smart contract through the Gateway's `/oracle/execute` endpoint.
 
 For this, we will use the `OracleTestContract` contract, which is a simple contract that allows us to store and retrieve data. The contract has two functions:
-- `setData`: This function allows us to set data in the contract. It takes a string as input and stores it in the contract.
-- `getData`: This function allows us to retrieve data from the contract based on its hash. It returns the string stored in the contract with the corresponding Id.
+
+* **`setData(string memory data)`** – Stores data on-chain and associates it with a `bytes32` ID.
+* **`getData(bytes32 id)`** – Retrieves data from the contract by its ID.
+
 
 ## Setup Instructions
 
