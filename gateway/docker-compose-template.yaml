@@ -4,7 +4,7 @@ services:
   satp-hermes-gateway:
     image: aaugusto11/cacti-satp-hermes-gateway:deb9e0962-2025-05-23
     volumes:
-      - ./config/<CHOOSE_CORRECT_FILE>.json:/opt/cacti/satp-hermes/config/config.json
+      - ./config/:/opt/cacti/satp-hermes/config/
       - ./satp-hermes-gateway/logs:/opt/cacti/satp-hermes/logs
     ports:
       - 3010:3010/tcp # SERVER_PORT
