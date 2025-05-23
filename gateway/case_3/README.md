@@ -9,7 +9,7 @@ For this, we will use the `OracleTestContract` contract, which is a simple contr
 
 ---
 
-## 🔁 Flow Summary
+## Flow Summary
 
 1. Register a **polling task** via the Gateway that attempts to read from the contract.
 2. Initially observe **failed** `getData` calls (because no data is stored yet).

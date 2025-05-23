@@ -18,7 +18,7 @@ In terminal 1, from this directory:
 docker compose up
 ```
 
-This will start the Gateway with the corresponding configuration file located in `./config/config-oracle-1-evm-requests.json`.
+This will start the Gateway with the corresponding configuration file located in `./config/config-oracle-execute-manual-read-and-write.json`.
 
 ### 2. Start the Hardhat EVM Blockchain
 
@@ -45,7 +45,7 @@ npx hardhat ignition deploy ./ignition/modules/OracleTestContract.js --network h
 In terminal 4, from this directory:
 
 ```bash
-python3 oracle-1-evm-requests.py
+python3 oracle-execute-manual-read-and-write.py
 ```
 
 > This script sends POST requests to the Gateway to trigger contract `setData` and `getData` functions via `/oracle/execute`.
@@ -54,7 +54,7 @@ python3 oracle-1-evm-requests.py
 
 ## Result
 
-Check the logs in terminal 4 where you executed the `oracle-1-evm-requests.py` script. You should see the following:
+Check the logs in terminal 4 where you executed the `oracle-execute-manual-read-and-write.py` script. You should see the following:
 1. The response from the Gateway confirming the transaction (write) to the EVM-based blockchain.
 2. The response from the Gateway confirming the read result from the EVM-based blockchain.
 

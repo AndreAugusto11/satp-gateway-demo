@@ -52,7 +52,7 @@ npx hardhat ignition deploy ./ignition/modules/OracleTestContract.js --network h
 In terminal 5, from this directory:
 
 ```bash
-python3 oracle-2-evm-requests.py
+python3 oracle-execute-auto-read-and-write.py
 ```
 
 > This script sends POST requests to the Gateway to trigger contract `setData` and `getData` functions via `/oracle/execute`.
@@ -61,7 +61,7 @@ python3 oracle-2-evm-requests.py
 
 ## Result
 
-Check the logs in terminal 5 where you executed the `oracle-2-evm-requests.py` script. You should see the following:
+Check the logs in terminal 5 where you executed the `oracle-execute-auto-read-and-write.py` script. You should see the following:
 1. The response from the Gateway confirming the read and write task.
 2. The response from the Gateway confirming the read result from the second EVM-based blockchain (i.e., to where the data was written to).
 
