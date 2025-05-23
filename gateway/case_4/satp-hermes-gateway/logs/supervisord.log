@@ -1,0 +1,14 @@
+2025-05-23 21:54:17,559 INFO Set uid to user 0 succeeded
+2025-05-23 21:54:17,562 INFO supervisord started with pid 1
+2025-05-23 21:54:18,564 INFO spawned: 'satp-gateway' with pid 7
+2025-05-23 21:54:19,566 INFO success: satp-gateway entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-23 22:02:02,080 WARN received SIGTERM indicating exit request
+2025-05-23 22:02:02,081 INFO waiting for satp-gateway to die
+2025-05-23 22:02:02,130 WARN stopped: satp-gateway (exit status 143)
+2025-05-23 22:02:05,538 INFO Set uid to user 0 succeeded
+2025-05-23 22:02:05,540 INFO supervisord started with pid 1
+2025-05-23 22:02:06,542 INFO spawned: 'satp-gateway' with pid 7
+2025-05-23 22:02:07,543 INFO success: satp-gateway entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-05-23 22:05:30,038 WARN received SIGTERM indicating exit request
+2025-05-23 22:05:30,039 INFO waiting for satp-gateway to die
+2025-05-23 22:05:30,075 WARN stopped: satp-gateway (exit status 143)

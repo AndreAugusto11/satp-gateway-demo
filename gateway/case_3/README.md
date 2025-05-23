@@ -7,7 +7,9 @@ For this, we will use the `OracleTestContract` contract, which is a simple contr
 * **`setData(string memory data)`** – Stores data on-chain and associates it with a `bytes32` ID.
 * **`getData(bytes32 id)`** – Retrieves data from the contract by its ID.
 
-In this scenario, we:
+---
+
+## 🔁 Flow Summary
 
 1. Register a **polling task** via the Gateway that attempts to read from the contract.
 2. Initially observe **failed** `getData` calls (because no data is stored yet).
