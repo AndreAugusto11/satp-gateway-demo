@@ -1979,3 +1979,2203 @@
 [2025-05-22T22:07:57.060Z] INFO (api-server): Shut down Cacti gRPC server OK
 [2025-05-22T22:07:57.060Z] INFO (api-server): Shut down Cacti gRPC server OK
 [2025-05-22T22:07:57.060Z] INFO (api-server): Concluded async-exit-hook for cmd-api-server ...
+[2025-05-24T09:36:26.234Z] DEBUG (SATP-Gateway): Checking for configuration file...
+[2025-05-24T09:36:26.235Z] DEBUG (SATP-Gateway): Reading configuration from: /config/config.json
+[2025-05-24T09:36:26.238Z] DEBUG (SATP-Gateway): Configuration read OK
+[2025-05-24T09:36:26.238Z] DEBUG (SATP-Gateway): Validating SATP Gateway instanceId...
+[2025-05-24T09:36:26.239Z] DEBUG (SATP-Gateway): SATP Gateway instanceId is valid.
+[2025-05-24T09:36:26.239Z] DEBUG (SATP-Gateway): Validating SATP Gateway Identity...
+[2025-05-24T09:36:26.239Z] DEBUG (SATP-Gateway): Valid SATP Gateway Identity
+[2025-05-24T09:36:26.239Z] DEBUG (SATP-Gateway): Validating SATP Counter Party Gateways...
+[2025-05-24T09:36:26.239Z] DEBUG (SATP-Gateway): Valid SATP Counter Party Gateways
+[2025-05-24T09:36:26.239Z] DEBUG (SATP-Gateway): Validating SATP Log Level...
+[2025-05-24T09:36:26.240Z] DEBUG (SATP-Gateway): SATP Log Level is valid.
+[2025-05-24T09:36:26.240Z] DEBUG (SATP-Gateway): Validating SATP Environment...
+[2025-05-24T09:36:26.240Z] DEBUG (SATP-Gateway): SATP Environment is valid.
+[2025-05-24T09:36:26.240Z] DEBUG (SATP-Gateway): Validating SATP Validation Options...
+[2025-05-24T09:36:26.240Z] DEBUG (SATP-Gateway): SATP Validation Options is valid.
+[2025-05-24T09:36:26.240Z] DEBUG (SATP-Gateway): Validating SATP Privacy Policies...
+[2025-05-24T09:36:26.240Z] DEBUG (SATP-Gateway): SATP Privacy Policies is valid.
+[2025-05-24T09:36:26.240Z] DEBUG (SATP-Gateway): Validating SATP Merge Policies...
+[2025-05-24T09:36:26.240Z] DEBUG (SATP-Gateway): SATP Merge Policies is valid.
+[2025-05-24T09:36:26.240Z] DEBUG (SATP-Gateway): Validating SATP KeyPair...
+[2025-05-24T09:36:26.240Z] DEBUG (SATP-Gateway): SATP KeyPair is valid.
+[2025-05-24T09:36:26.240Z] DEBUG (SATP-Gateway): Validating Cross Chain Config...
+[2025-05-24T09:36:26.241Z] DEBUG (SATP-Gateway): Cross Chain Config is valid.
+[2025-05-24T09:36:26.241Z] DEBUG (SATP-Gateway): Validating Local Repository Config...
+[2025-05-24T09:36:26.241Z] DEBUG (SATP-Gateway): Local Repository Config is valid.
+[2025-05-24T09:36:26.241Z] DEBUG (SATP-Gateway): Validating Remote Repository Config...
+[2025-05-24T09:36:26.241Z] DEBUG (SATP-Gateway): Remote Repository Config is valid.
+[2025-05-24T09:36:26.241Z] DEBUG (SATP-Gateway): Validating SATP Enable Crash Recovery...
+[2025-05-24T09:36:26.241Z] DEBUG (SATP-Gateway): SATP Enable Crash Recovery is valid.
+[2025-05-24T09:36:26.241Z] DEBUG (SATP-Gateway): SATP Bridges Config is valid.
+[2025-05-24T09:36:26.241Z] DEBUG (SATP-Gateway): Validating Ontologies Path...
+[2025-05-24T09:36:26.241Z] DEBUG (SATP-Gateway): SATP Gateway instanceId is valid.
+[2025-05-24T09:36:26.241Z] DEBUG (SATP-Gateway): Creating SATPGatewayConfig...
+[2025-05-24T09:36:26.242Z] DEBUG (SATP-Gateway): SATPGatewayConfig created successfully
+[2025-05-24T09:36:26.252Z] INFO (SATPGateway): Initializing Gateway Coordinator
+[2025-05-24T09:36:26.259Z] INFO (SATPGateway): Gateway's public key: 026553e0bc76e33a745e4d06fcc1e6ea9e6ab2b5e0fac360c38ee4ae673d051dd9
+[2025-05-24T09:36:26.260Z] INFO (SATPGateway): Gateway's claim format: DEFAULT
+[2025-05-24T09:36:26.260Z] INFO (SATPGateway): Initializing gateway connection manager with seed gateways
+[2025-05-24T09:36:26.260Z] INFO (GatewayOrchestrator): Initializing Gateway Connection Manager
+[2025-05-24T09:36:26.260Z] INFO (GatewayOrchestrator): Gateway Coordinator initialized
+[2025-05-24T09:36:26.260Z] INFO (GatewayOrchestrator): Crash recovery set to: false
+[2025-05-24T09:36:26.260Z] INFO (GatewayOrchestrator): Initializing gateway connection manager with  seed gateways
+[2025-05-24T09:36:26.260Z] INFO (GatewayOrchestrator): Gateway Connection Manager bootstrapped with 0 gateways
+[2025-05-24T09:36:26.260Z] INFO (GatewayOrchestrator): Connecting to gateway
+[2025-05-24T09:36:26.260Z] DEBUG (GatewayOrchestrator): Added 0 gateways: 
+[2025-05-24T09:36:26.261Z] INFO (GatewayOrchestrator): GatewayOrchestrator#connectToCounterPartyGateways(), No new gateways to connect to
+[2025-05-24T09:36:26.261Z] INFO (OracleManager): OracleManager#constructor(): Initializing OracleManager
+[2025-05-24T09:36:26.261Z] INFO (OracleSchedulerManager): OracleSchedulerManager#constructor(): Initializing OracleSchedulerManager
+[2025-05-24T09:36:26.262Z] INFO (BLODispatcher): Instantiated BLODispatcher OK
+[2025-05-24T09:36:26.262Z] INFO (SATPManager): Instantiated SATPManager OK
+[2025-05-24T09:36:26.262Z] INFO (SATPLogger): SATPLogger initialized.
+[2025-05-24T09:36:26.262Z] DEBUG (SATPManager): SATPManager#constructor() dbLogger initialized: true
+[2025-05-24T09:36:26.262Z] INFO (MonitorService): Initializing MonitorService...
+[2025-05-24T09:36:26.266Z] INFO (MonitorService): Initialization complete
+[2025-05-24T09:36:26.266Z] INFO (SATPManager): SATPManager#initializeServiceOptions(), Initializing services options...
+[2025-05-24T09:36:26.267Z] INFO (SATPManager): Initializing 8 services options...
+[2025-05-24T09:36:26.267Z] DEBUG (SATPCrossChainManager): SATPCrossChainManager#getClientBridgeManagerInterface(), Getting Bridge Manager Interface...
+[2025-05-24T09:36:26.267Z] DEBUG (SATPCrossChainManager): SATPCrossChainManager#getClientBridgeManagerInterface(), Getting Bridge Manager Interface...
+[2025-05-24T09:36:26.267Z] DEBUG (SATPCrossChainManager): SATPCrossChainManager#getClientBridgeManagerInterface(), Getting Bridge Manager Interface...
+[2025-05-24T09:36:26.267Z] DEBUG (SATPCrossChainManager): SATPCrossChainManager#getClientBridgeManagerInterface(), Getting Bridge Manager Interface...
+[2025-05-24T09:36:26.267Z] DEBUG (SATPCrossChainManager): SATPCrossChainManager#getClientBridgeManagerInterface(), Getting Bridge Manager Interface...
+[2025-05-24T09:36:26.267Z] DEBUG (SATPCrossChainManager): SATPCrossChainManager#getClientBridgeManagerInterface(), Getting Bridge Manager Interface...
+[2025-05-24T09:36:26.267Z] DEBUG (SATPCrossChainManager): SATPCrossChainManager#getClientBridgeManagerInterface(), Getting Bridge Manager Interface...
+[2025-05-24T09:36:26.267Z] DEBUG (SATPCrossChainManager): SATPCrossChainManager#getClientBridgeManagerInterface(), Getting Bridge Manager Interface...
+[2025-05-24T09:36:26.267Z] INFO (SATPManager): SATPManager#initializeServices(), Initializing services...
+[2025-05-24T09:36:26.269Z] INFO (SATPManager): SATPManager#initializeHandlerOptions(), Initializing handlers options...
+[2025-05-24T09:36:26.269Z] DEBUG (SATPCrossChainManager): SATPCrossChainManager#getClientBridgeManagerInterface(), Getting Bridge Manager Interface...
+[2025-05-24T09:36:26.269Z] DEBUG (SATPCrossChainManager): SATPCrossChainManager#getClientBridgeManagerInterface(), Getting Bridge Manager Interface...
+[2025-05-24T09:36:26.269Z] DEBUG (SATPCrossChainManager): SATPCrossChainManager#getClientBridgeManagerInterface(), Getting Bridge Manager Interface...
+[2025-05-24T09:36:26.269Z] DEBUG (SATPCrossChainManager): SATPCrossChainManager#getClientBridgeManagerInterface(), Getting Bridge Manager Interface...
+[2025-05-24T09:36:26.269Z] INFO (SATPManager): SATPManager#initializeHandlers(), Initializing handlers...
+[2025-05-24T09:36:26.270Z] DEBUG (SATPCrossChainManager): SATPCrossChainManager#getClientBridgeManagerInterface(), Getting Bridge Manager Interface...
+[2025-05-24T09:36:26.270Z] INFO (SATPGateway): CrashManager is disabled!
+[2025-05-24T09:36:26.270Z] INFO (SATP-Gateway): Starting SATP Gateway...
+[2025-05-24T09:36:26.270Z] INFO (SATPGateway): SATPGateway#createDBRepository(): Creating migration source
+[2025-05-24T09:36:26.271Z] DEBUG (SATPCrossChainManager): SATPCrossChainManager#deployCCMechanisms(), Deploying Cross Chain Mechanisms...
+[2025-05-24T09:36:26.271Z] DEBUG (SATPCrossChainManager): SATPCrossChainManager#deployBridgeFromConfig(), Deploying Bridge...
+[2025-05-24T09:36:26.271Z] DEBUG (GatewayOrchestrator): Creating clients for gateway {"address":"http://localhost","connectedDLTs":[],"gatewayClientPort":3011,"gatewayOapiPort":4010,"gatewayServerPort":3010,"id":"mockID","name":"CustomGateway","proofID":"mockProofID10","pubKey":"026553e0bc76e33a745e4d06fcc1e6ea9e6ab2b5e0fac360c38ee4ae673d051dd9","version":[{"Architecture":"v02","Core":"v02","Crash":"v02"}]}
+[2025-05-24T09:36:26.272Z] DEBUG (GatewayOrchestrator): Transport:http://localhost:3010/stage-0
+[2025-05-24T09:36:26.272Z] DEBUG (GatewayOrchestrator): Creating stage 0 service client, with transport:  { unary: [AsyncFunction: unary], stream: [AsyncFunction: stream] }
+[2025-05-24T09:36:26.273Z] DEBUG (GatewayOrchestrator): Creating stage 1 service client, with transport:  { unary: [AsyncFunction: unary], stream: [AsyncFunction: stream] }
+[2025-05-24T09:36:26.273Z] DEBUG (GatewayOrchestrator): Creating stage 2 service client, with transport:  { unary: [AsyncFunction: unary], stream: [AsyncFunction: stream] }
+[2025-05-24T09:36:26.274Z] DEBUG (GatewayOrchestrator): Creating stage 3 service client, with transport:  { unary: [AsyncFunction: unary], stream: [AsyncFunction: stream] }
+[2025-05-24T09:36:26.274Z] INFO (GatewayOrchestrator): Created channel to gateway mockID 
+ reachable DLTs: 
+[2025-05-24T09:36:26.274Z] INFO (SATPGateway): Starting GOL server
+[2025-05-24T09:36:26.275Z] INFO (GatewayOrchestrator): Setting up routes for stage /stage-0
+[2025-05-24T09:36:26.278Z] INFO (GatewayOrchestrator): Setting up routes for stage /stage-1
+[2025-05-24T09:36:26.278Z] INFO (GatewayOrchestrator): Setting up routes for stage /stage-2
+[2025-05-24T09:36:26.278Z] INFO (GatewayOrchestrator): Setting up routes for stage /stage-3
+[2025-05-24T09:36:26.281Z] DEBUG (MonitorService): Created metric: satp.active_sessions
+[2025-05-24T09:36:26.281Z] INFO (SATPGateway): SATPGateway#createDBRepository(): Created migration source: {}
+[2025-05-24T09:36:26.284Z] DEBUG (SATPCrossChainManager): SATPCrossChainManager#deployOracleFromConfig(), Deploying Oracles...
+[2025-05-24T09:36:26.284Z] DEBUG (OracleManager): OracleManager#deployOracle(), Deploying Oracle...
+[2025-05-24T09:36:26.284Z] DEBUG (OracleManager): OracleManager#deployOracle(), Oracle Network Options: {"networkIdentification":{"id":"HardhatTestNetwork1","ledgerType":"ETHEREUM"},"signingCredential":{"ethAccount":"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266","secret":"0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80","type":"PRIVATE_KEY_HEX"},"connectorOptions":{"rpcApiHttpHost":"http://host.docker.internal:8545"},"claimFormats":[2],"gasConfig":{"gas":"6721975","gasPrice":"20000000000"}}
+[2025-05-24T09:36:26.284Z] DEBUG (OracleManager): OracleManager#deployOracle(), Deploying Ethereum Oracle...
+[2025-05-24T09:36:26.284Z] DEBUG (OracleManager): OracleManager#deployOracle(), Ethereum Oracle Network Options: {"networkIdentification":{"id":"HardhatTestNetwork1","ledgerType":"ETHEREUM"},"signingCredential":{"ethAccount":"0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266","secret":"0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80","type":"PRIVATE_KEY_HEX"},"connectorOptions":{"rpcApiHttpHost":"http://host.docker.internal:8545"},"claimFormats":[2],"gasConfig":{"gas":"6721975","gasPrice":"20000000000"}}
+[2025-05-24T09:36:26.299Z] DEBUG (MonitorService): Created metric: satp.transfer.count
+[2025-05-24T09:36:26.304Z] DEBUG (MonitorService): Created metric: satp.transfer.success
+[2025-05-24T09:36:26.304Z] DEBUG (MonitorService): Created metric: satp.transfer.failure
+[2025-05-24T09:36:26.304Z] INFO (SATPManager): SATPManager#initializeMonitorService() Monitoring service initialized
+[2025-05-24T09:36:26.305Z] INFO (SATPGateway): GOL server started and listening on 0.0.0.0:3010
+[2025-05-24T09:36:26.380Z] INFO (SATP-Gateway): Gateway OpenAPI Server Active
+[2025-05-24T09:36:29.412Z] INFO (config-service): Configuration validation OK.
+[2025-05-24T09:36:29.421Z] INFO (api-server): Registered async-exit-hook for cmd-api-server shutdown.
+[2025-05-24T09:36:29.422Z] DEBUG (api-server): pluginsPath: '/tmp/org/hyperledger/cactus/plugins'
+[2025-05-24T09:36:29.422Z] INFO (api-server): Setting tls.DEFAULT_MAX_VERSION to TLSv1.3...
+[2025-05-24T09:36:29.422Z] INFO (api-server): getOrInitPluginRegistry() re-using injected one...
+[2025-05-24T09:36:29.422Z] DEBUG (api-server): Installing crpc services of IPluginCrpcService instances...
+[2025-05-24T09:36:29.423Z] DEBUG (api-server): ApiServer#startCrpcServer() skipping @hyperledger/cactus-plugin-satp-hermes instance
+[2025-05-24T09:36:29.423Z] DEBUG (api-server): ApiServer#registerCrpcServices()} Obtained 0 Crpc registrations.
+[2025-05-24T09:36:29.423Z] DEBUG (api-server): ApiServer#registerCrpcServices()} expressConnectMiddleware() routes handler
+[2025-05-24T09:36:29.423Z] INFO (api-server): Registered 0 Crpc services OK
+[2025-05-24T09:36:29.425Z] DEBUG (AuthorizerFactory): Instantiated AuthorizerFactory OK
+[2025-05-24T09:36:29.425Z] DEBUG (AuthorizerFactory): Initializing AuthorizerFactory...
+[2025-05-24T09:36:29.425Z] INFO (BLODispatcher): BLODispatcher#getOrCreateWebServices(), Registering webservices on instanceId=mockID
+[2025-05-24T09:36:29.426Z] DEBUG (AuthorizerFactory): Initialized AuthorizerFactory OK
+[2025-05-24T09:36:29.427Z] INFO (api-server): Starting to install web services...
+[2025-05-24T09:36:29.427Z] INFO (api-server): openApiValidationOffPkgs:  []
+[2025-05-24T09:36:29.427Z] INFO (BLODispatcher): BLODispatcher#getOrCreateWebServices(), Registering webservices on instanceId=mockID
+[2025-05-24T09:36:29.427Z] DEBUG (api-server): Skipped OpenAPI validator install {"pkgName":"@hyperledger/cactus-plugin-satp-hermes","hasSpec":false,"oApiValidationOn":true}
+[2025-05-24T09:36:29.427Z] INFO (BLODispatcher): BLODispatcher#getOrCreateWebServices(), Registering webservices on instanceId=mockID
+[2025-05-24T09:36:29.428Z] DEBUG (SATPGateway): Registering service /api/v1/@hyperledger/cactus-plugin-satp-hermes/status
+[2025-05-24T09:36:29.428Z] DEBUG (SATPGateway): Registering service /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+[2025-05-24T09:36:29.428Z] DEBUG (SATPGateway): Registering service /api/v1/@hyperledger/cactus-plugin-satp-hermes/integrations
+[2025-05-24T09:36:29.428Z] DEBUG (SATPGateway): Registering service /api/v1/@hyperledger/cactus-plugin-satp-hermes/get-sessions-ids
+[2025-05-24T09:36:29.429Z] DEBUG (SATPGateway): Registering service /api/v1/@hyperledger/cactus-plugin-satp-hermes/approve-address
+[2025-05-24T09:36:29.429Z] DEBUG (SATPGateway): Registering service /api/v1/@hyperledger/cactus-plugin-satp-hermes/transact
+[2025-05-24T09:36:29.429Z] DEBUG (SATPGateway): Registering service /api/v1/@hyperledger/cactus-plugin-satp-hermes/add-counterparty-gateway
+[2025-05-24T09:36:29.429Z] DEBUG (SATPGateway): Registering service /api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/execute
+[2025-05-24T09:36:29.429Z] DEBUG (SATPGateway): Registering service /api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/register
+[2025-05-24T09:36:29.429Z] DEBUG (SATPGateway): Registering service /api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/unregister
+[2025-05-24T09:36:29.429Z] DEBUG (SATPGateway): Registering service /api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/status
+[2025-05-24T09:36:29.431Z] INFO (api-server): Installed 1 web service(s) OK
+[2025-05-24T09:36:29.431Z] INFO (api-server): Endpoint={path=/api/v1/@hyperledger/cactus-plugin-satp-hermes/status}
+[2025-05-24T09:36:29.431Z] INFO (api-server): Endpoint={path=/api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck}
+[2025-05-24T09:36:29.431Z] INFO (api-server): Endpoint={path=/api/v1/@hyperledger/cactus-plugin-satp-hermes/integrations}
+[2025-05-24T09:36:29.431Z] INFO (api-server): Endpoint={path=/api/v1/@hyperledger/cactus-plugin-satp-hermes/get-sessions-ids}
+[2025-05-24T09:36:29.431Z] INFO (api-server): Endpoint={path=/api/v1/@hyperledger/cactus-plugin-satp-hermes/approve-address}
+[2025-05-24T09:36:29.431Z] INFO (api-server): Endpoint={path=/api/v1/@hyperledger/cactus-plugin-satp-hermes/transact}
+[2025-05-24T09:36:29.431Z] INFO (api-server): Endpoint={path=/api/v1/@hyperledger/cactus-plugin-satp-hermes/add-counterparty-gateway}
+[2025-05-24T09:36:29.431Z] INFO (api-server): Endpoint={path=/api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/execute}
+[2025-05-24T09:36:29.431Z] INFO (api-server): Endpoint={path=/api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/register}
+[2025-05-24T09:36:29.431Z] INFO (api-server): Endpoint={path=/api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/unregister}
+[2025-05-24T09:36:29.431Z] INFO (api-server): Endpoint={path=/api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/status}
+[2025-05-24T09:36:29.431Z] INFO (api-server): Cactus API net.AddressInfo { address: '0.0.0.0', family: 'IPv4', port: 4010 }
+[2025-05-24T09:36:29.433Z] DEBUG (api-server): Installing gRPC services of IPluginGrpcService instances...
+[2025-05-24T09:36:29.433Z] DEBUG (api-server): ApiServer#startGrpcServer() skipping @hyperledger/cactus-plugin-satp-hermes instance
+[2025-05-24T09:36:29.433Z] DEBUG (api-server): ApiServer#startGrpcServer() Installed all IPluginGrpcService instances OK
+[2025-05-24T09:36:29.466Z] INFO (api-server): ApiServer#startGrpcServer() gRPC server bound to port 42273 OK
+[2025-05-24T09:36:29.467Z] INFO (api-server): ApiServer#startGrpcServer() boundGrpcHostPort=127.0.0.1:42273
+[2025-05-24T09:36:29.467Z] DEBUG (api-server): Installing crpc services of IPluginCrpcService instances...
+[2025-05-24T09:36:29.467Z] DEBUG (api-server): ApiServer#startCrpcServer() skipping @hyperledger/cactus-plugin-satp-hermes instance
+[2025-05-24T09:36:29.467Z] DEBUG (api-server): ApiServer#registerCrpcServices()} Obtained 0 Crpc registrations.
+[2025-05-24T09:36:29.467Z] DEBUG (api-server): ApiServer#startCrpcServer() Registering 0 CRPC routes handler(s).
+[2025-05-24T09:36:29.472Z] DEBUG (api-server): ApiServer#registerCrpcServices()} expressConnectMiddleware() routes handler
+[2025-05-24T09:36:29.472Z] DEBUG (api-server): ApiServer#startCrpcServer() Fastify CRPC service registration OK
+[2025-05-24T09:36:29.474Z] DEBUG (api-server): ApiServer#startCrpcServer() Fastify listen() crpcUrl: http://127.0.0.1:39551
+[2025-05-24T09:36:29.474Z] DEBUG (api-server): ApiServer#startCrpcServer() server is listening at { address: '127.0.0.1', family: 'IPv4', port: 39551 } []
+[2025-05-24T09:36:29.474Z] DEBUG (api-server): Cacti CRPC reachable http://127.0.0.1:39551
+[2025-05-24T09:36:29.474Z] INFO (api-server): Cactus gRPC reachable 127.0.0.1:42273
+[2025-05-24T09:36:29.474Z] INFO (api-server): Cactus API reachable http://0.0.0.0:4010
+[2025-05-24T09:36:29.474Z] INFO (SATP-Gateway): SATP Gateway started successfully
+[2025-05-24T09:36:29.479Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '1ff87e6bd9195659bedde0f0bf86f1b0',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'c06965e3ea08a894',
+  kind: 0,
+  timestamp: 1748079389480000,
+  duration: 293.584,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:36:29.481Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:36:34.575Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'ccaf5373a2be8e353c11aaa4f8cff4cc',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '01d5a00174abd995',
+  kind: 0,
+  timestamp: 1748079394575000,
+  duration: 17.636,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:36:34.576Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:36:39.669Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '26158921886d0ea49ede7c610bc5563a',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '4aabd31cfc19489c',
+  kind: 0,
+  timestamp: 1748079399669000,
+  duration: 19.223,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:36:39.669Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:36:44.769Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'a8d1bcd4efb670710663ac82b1d90eb0',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'bd2ffc507f877192',
+  kind: 0,
+  timestamp: 1748079404769000,
+  duration: 42.621,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:36:44.770Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:36:49.855Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '7b46668a361ace5d7a4ada6e9c2f81a0',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '5d854dd463d2591f',
+  kind: 0,
+  timestamp: 1748079409856000,
+  duration: 17.148,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:36:49.856Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:36:54.946Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '653dcb656a0a05fe1784843e41de2da0',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '278f4983f0635097',
+  kind: 0,
+  timestamp: 1748079414946000,
+  duration: 24.188,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:36:54.946Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:37:00.038Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '4077a3a8767e11a6ec7b53b48f99102b',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '7170b44ee538a5ab',
+  kind: 0,
+  timestamp: 1748079420038000,
+  duration: 32.954,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:37:00.038Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:37:05.126Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'ab5ee4a5e1ce0f0aaf09dfcb5abeb228',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '364f66abcfb114ec',
+  kind: 0,
+  timestamp: 1748079425127000,
+  duration: 16.685,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:37:05.127Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:37:10.228Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'd535b8a0a31a866a9d50f9d618471e4c',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'c6171e67437887bf',
+  kind: 0,
+  timestamp: 1748079430228000,
+  duration: 150.892,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:37:10.229Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:37:15.339Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'cf06de68e3b2b763c1cbd1dae9e0b197',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '664b01c69d083fc6',
+  kind: 0,
+  timestamp: 1748079435339000,
+  duration: 31.585,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:37:15.339Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:37:20.434Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '1bc2dd2789419827dabaa490054794ad',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '0957d2428108eac3',
+  kind: 0,
+  timestamp: 1748079440434000,
+  duration: 10.397,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:37:20.434Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:37:25.533Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'ad20e85dc3f2beadfd8b5d265dfb8cc7',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'bb8234c83806590d',
+  kind: 0,
+  timestamp: 1748079445533000,
+  duration: 29.461,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:37:25.533Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:37:30.622Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '516efc58b289e149b752b8a90eb97a16',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '3a59cf3447343c41',
+  kind: 0,
+  timestamp: 1748079450623000,
+  duration: 14.653,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:37:30.623Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:37:35.743Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '3b0d56a51ddc2bc438bc9e3c8ff99f55',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'ad651629c48e48ce',
+  kind: 0,
+  timestamp: 1748079455743000,
+  duration: 21.187,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:37:35.744Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:37:40.839Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '40aa1d2f6a1eaf98c12103d7e94b9884',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '31ba1b0de6f5fcb1',
+  kind: 0,
+  timestamp: 1748079460839000,
+  duration: 9.729,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:37:40.839Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:37:45.946Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '31ba0bad07a68dcfcada37f9df9ef625',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '36b6ae3dd1f21e1c',
+  kind: 0,
+  timestamp: 1748079465946000,
+  duration: 21.59,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:37:45.946Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:37:51.039Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'fdb9686bc296d17aa6da7533602b4a08',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'ef3d07f4e2da81a4',
+  kind: 0,
+  timestamp: 1748079471039000,
+  duration: 13.829,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:37:51.039Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:37:56.135Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '6a77f428cb5d26023f4ed53c69fbe13b',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'de126c31a0371c3c',
+  kind: 0,
+  timestamp: 1748079476135000,
+  duration: 15.637,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:37:56.136Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:38:01.234Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'c3df50f825e2f336dc62c67433763f95',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'c2a24d287d33e9ac',
+  kind: 0,
+  timestamp: 1748079481234000,
+  duration: 9.618,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:38:01.234Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:38:06.338Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'b804a73209458e14e060cea24107b150',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '9a4f70eabb138c24',
+  kind: 0,
+  timestamp: 1748079486339000,
+  duration: 9.474,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:38:06.339Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:38:11.429Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '15352aad247210c284f6f56beff97e9e',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '13c2776550592805',
+  kind: 0,
+  timestamp: 1748079491429000,
+  duration: 8.777,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:38:11.429Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:38:16.521Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '5e993151ba7cd3fd61baa30a70f62356',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'ec321f0e1a3cda33',
+  kind: 0,
+  timestamp: 1748079496522000,
+  duration: 11.726,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:38:16.522Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:38:21.623Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'bb6422ee74000aa1be64f0e29c84e0ad',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '53b978859fcff379',
+  kind: 0,
+  timestamp: 1748079501623000,
+  duration: 9.969,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:38:21.624Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:38:26.716Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '99aff5c093f575667fb242eb13cd0fff',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'c0c09bc4b9573dca',
+  kind: 0,
+  timestamp: 1748079506716000,
+  duration: 9.563,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:38:26.716Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:38:31.817Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'fb5c93f3d9e63aa003b7d642fee7da49',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '7078d83872989022',
+  kind: 0,
+  timestamp: 1748079511817000,
+  duration: 9.774,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:38:31.817Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:38:36.900Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'a49e8d9bd40c6ed8580fc451c939fe8a',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '75e95b111c8d6d2f',
+  kind: 0,
+  timestamp: 1748079516900000,
+  duration: 9.522,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:38:36.901Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:38:42.005Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'fed3404c2eb343648ee63abd861f4c4c',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'baab1c5762520a23',
+  kind: 0,
+  timestamp: 1748079522005000,
+  duration: 10.689,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:38:42.005Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:38:47.093Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '96c7890a893ad6d98a74332b0b3c5a10',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '60e597d873372bf2',
+  kind: 0,
+  timestamp: 1748079527093000,
+  duration: 10.137,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:38:47.093Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:38:52.205Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'd0ae9ebb5dffb7d522585f5e9ccdd3c6',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'eabf58d767fed90c',
+  kind: 0,
+  timestamp: 1748079532205000,
+  duration: 9.613,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:38:52.205Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:38:57.302Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'a1ba8c102cf843e783df8e1deed07c83',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'd735a0d37ef4626a',
+  kind: 0,
+  timestamp: 1748079537302000,
+  duration: 13.011,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:38:57.302Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:39:02.395Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'c05e35dc06e8a993bc5514f5cf4020eb',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '2125a2980f1ef781',
+  kind: 0,
+  timestamp: 1748079542395000,
+  duration: 10.053,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:39:02.395Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:39:07.487Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '1e210d9b994f09335a8c03bb8464608f',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'cd468b7c1ecd1439',
+  kind: 0,
+  timestamp: 1748079547487000,
+  duration: 12.92,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:39:07.487Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:39:12.586Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'e7346a27e57cfb37a094e54569ff9258',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '6d5e576799e702e1',
+  kind: 0,
+  timestamp: 1748079552586000,
+  duration: 12.301,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:39:12.587Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:39:17.676Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '96c3115333904679af9966157c7df3c0',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'a6e496df99ac12ad',
+  kind: 0,
+  timestamp: 1748079557676000,
+  duration: 10.312,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:39:17.676Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:39:22.772Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '85abe61b2d0725b86b43e7871a011eb8',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'fc93725e74f3c9e8',
+  kind: 0,
+  timestamp: 1748079562772000,
+  duration: 9.723,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:39:22.773Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:39:27.870Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '2e02fb0e0bcbe05fbe6a753786ac3666',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'a379cba40a23e766',
+  kind: 0,
+  timestamp: 1748079567870000,
+  duration: 9.316,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:39:27.870Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:39:32.963Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'e22a0476b604933338eb00d972c7f9f8',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '14aa1858cdd054bf',
+  kind: 0,
+  timestamp: 1748079572963000,
+  duration: 10.31,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:39:32.963Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:39:38.065Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '4a7b6e858253960d43579e46f72cbd87',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'c64d7918ce8818f4',
+  kind: 0,
+  timestamp: 1748079578065000,
+  duration: 11.125,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:39:38.065Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:39:43.156Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '5d867a5f55d9e04f991abd225557b333',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '5d9935d32f94950a',
+  kind: 0,
+  timestamp: 1748079583156000,
+  duration: 12.952,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:39:43.156Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:39:48.249Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'bef28d87b12858b88ab68b0a56e0aada',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '2ea5bdc553bf5850',
+  kind: 0,
+  timestamp: 1748079588249000,
+  duration: 9.994,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:39:48.250Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:39:53.347Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '591b893bd8830b58c12e8a8156432e9f',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'e9325c6a2dda0d24',
+  kind: 0,
+  timestamp: 1748079593347000,
+  duration: 9.093,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:39:53.347Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:39:58.434Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'eeee5c7e53cea954c71826f48de14832',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'c6d84ea31763730f',
+  kind: 0,
+  timestamp: 1748079598434000,
+  duration: 9.895,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:39:58.434Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:40:03.526Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'da8693e476210be00dfc2542d06f2357',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '742e447d5cdd574a',
+  kind: 0,
+  timestamp: 1748079603526000,
+  duration: 15.796,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:40:03.526Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:40:08.615Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'e952633deff57ad4f0b7fbecdf8dc981',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '1b512d8d6cd2eb4f',
+  kind: 0,
+  timestamp: 1748079608616000,
+  duration: 12.436,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:40:08.616Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:40:13.707Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '9b0b252cadcb374418b5da5c4b3d81fc',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '99cc8b6d9489a3a5',
+  kind: 0,
+  timestamp: 1748079613707000,
+  duration: 14.481,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:40:13.707Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:40:18.802Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '06f335d4266fe1f25344e2e7224876ae',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '3572bacdd99e2b4f',
+  kind: 0,
+  timestamp: 1748079618802000,
+  duration: 9.187,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:40:18.802Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:40:23.894Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'c761908cb0e1cd4d51e8684c768d212f',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '504aba42d1670546',
+  kind: 0,
+  timestamp: 1748079623894000,
+  duration: 9.877,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:40:23.894Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:40:28.980Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '246cb7c0bfd54bf23f805548221aa944',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'a680370362956165',
+  kind: 0,
+  timestamp: 1748079628980000,
+  duration: 8.484,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:40:28.980Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:40:34.072Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'df625e5f69b1586997d5ee426f4d9322',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '6620c6f7ea8cfb5d',
+  kind: 0,
+  timestamp: 1748079634072000,
+  duration: 11.964,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:40:34.072Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:40:39.160Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '53df7d9450e1416d7903a0f48ef6f94e',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '2c2897a9b5a7f7ed',
+  kind: 0,
+  timestamp: 1748079639160000,
+  duration: 10.282,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:40:39.161Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:40:44.265Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'bc3652c01217a7203109573ee7897989',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'e217f42b3e6c54a5',
+  kind: 0,
+  timestamp: 1748079644265000,
+  duration: 9.861,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:40:44.265Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:40:49.360Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'ff8b33311a0db626e5120001b8ee1e8f',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '91e8f48ef6938501',
+  kind: 0,
+  timestamp: 1748079649360000,
+  duration: 11.262,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:40:49.360Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:40:54.450Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'a6020d00ad93ea18257e4c5d2fb4f74e',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '21e604f807a00b3d',
+  kind: 0,
+  timestamp: 1748079654450000,
+  duration: 10.462,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:40:54.450Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:40:59.544Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '8a7c7522ceee749bd8432139785c26dd',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '122004310920ee69',
+  kind: 0,
+  timestamp: 1748079659545000,
+  duration: 10.228,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:40:59.545Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:41:04.634Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '486dfd9ba1cb2b2cba7172a726b73a7a',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'fa3894b47fc583fb',
+  kind: 0,
+  timestamp: 1748079664634000,
+  duration: 12.976,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:41:04.634Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:41:09.736Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '4f437455cafb462e7478d5e335d4e516',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'f74072d792862e86',
+  kind: 0,
+  timestamp: 1748079669736000,
+  duration: 9.898,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:41:09.736Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:41:14.833Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '2fae7d0558432adfb5192b85b58e9cb1',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'b5444be918227331',
+  kind: 0,
+  timestamp: 1748079674833000,
+  duration: 66.513,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:41:14.833Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:41:19.921Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'd909a6d3736edc9abd0eaa2ecf55ba02',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '57aa1caee762340a',
+  kind: 0,
+  timestamp: 1748079679921000,
+  duration: 10.029,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:41:19.921Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:41:25.006Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'c4046f80d79684e617c1fc0877c85d6f',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '64c3fc2d6093ad96',
+  kind: 0,
+  timestamp: 1748079685006000,
+  duration: 9.428,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:41:25.006Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:41:30.103Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '64e63bbde39527fffccb92f75abc808b',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'c2e1add87885b12f',
+  kind: 0,
+  timestamp: 1748079690103000,
+  duration: 15.7,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:41:30.104Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:41:35.190Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '72bf9dd72fb03ccdf700cb546c095569',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'a2a832093bb4e987',
+  kind: 0,
+  timestamp: 1748079695190000,
+  duration: 9.916,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:41:35.190Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:41:40.286Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '12fc5184779ef5a48e4c7fd62a6855a7',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '67c65bf9b748dd79',
+  kind: 0,
+  timestamp: 1748079700286000,
+  duration: 14.815,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:41:40.286Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:41:45.387Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '57afed33ca6e251472a47fde0394b576',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: 'd9a8a2fb17e3c1c8',
+  kind: 0,
+  timestamp: 1748079705387000,
+  duration: 9.618,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:41:45.387Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:41:50.479Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'c1f32b5a43347574229d9b409dcd7df8',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '5439624a38df4cde',
+  kind: 0,
+  timestamp: 1748079710479000,
+  duration: 10.258,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:41:50.479Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:41:55.580Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'c024ef683c2b903f71a7e31bd3d7533c',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '97f07c51e38a49d3',
+  kind: 0,
+  timestamp: 1748079715581000,
+  duration: 13.399,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:41:55.581Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:42:00.666Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: 'b3323040a7c1fb591ff43e1612083354',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '2b3aa512b85c8881',
+  kind: 0,
+  timestamp: 1748079720666000,
+  duration: 10.582,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:42:00.666Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:42:05.754Z] DEBUG (HealthCheckEndpointV1): get - /api/v1/@hyperledger/cactus-plugin-satp-hermes/healthcheck
+{
+  resource: {
+    attributes: {
+      'service.name': 'unknown_service:/usr/local/bin/node',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '1.30.1'
+    }
+  },
+  instrumentationScope: {
+    name: 'SATPManager#healthCheck',
+    version: undefined,
+    schemaUrl: undefined
+  },
+  traceId: '23798c4e2997ecb11c97982c19e9fe59',
+  parentId: undefined,
+  traceState: undefined,
+  name: 'generateSpanID',
+  id: '565436b7521a402c',
+  kind: 0,
+  timestamp: 1748079725754000,
+  duration: 13.542,
+  attributes: {},
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+[2025-05-24T09:42:05.755Z] DEBUG (getHealthCheckService()): { status: 'AVAILABLE' }
+[2025-05-24T09:42:10.761Z] INFO (api-server): Shutting down API server ...
+[2025-05-24T09:42:10.762Z] INFO (api-server): Starting async-exit-hook for cmd-api-server ...
+[2025-05-24T09:42:10.762Z] INFO (api-server): Shutting down API server ...
+[2025-05-24T09:42:10.762Z] INFO (api-server): Started async-exit-hook for cmd-api-server OK
+[2025-05-24T09:42:10.762Z] DEBUG (SATPGateway): Entering SATPGateway#shutdown()
+[2025-05-24T09:42:10.762Z] DEBUG (SATPGateway): Shutting down Gateway Application
+[2025-05-24T09:42:10.762Z] DEBUG (SATPGateway): Shutting down BLO
+[2025-05-24T09:42:10.762Z] INFO (BLODispatcher): Stopping requests
+[2025-05-24T09:42:10.762Z] INFO (BLODispatcher): Get SATP Manager request
+[2025-05-24T09:42:10.762Z] INFO (api-server): Disconnecting SocketIO connections...
+[2025-05-24T09:42:10.763Z] INFO (api-server): SocketIO connections disconnect OK
+[2025-05-24T09:42:10.763Z] INFO (api-server): Stopping 1 WS plugin(s)...
+[2025-05-24T09:42:10.763Z] DEBUG (SATPGateway): Entering SATPGateway#shutdown()
+[2025-05-24T09:42:10.763Z] DEBUG (SATPGateway): Shutting down Gateway Application
+[2025-05-24T09:42:10.763Z] DEBUG (SATPGateway): Shutting down BLO
+[2025-05-24T09:42:10.763Z] INFO (BLODispatcher): Stopping requests
+[2025-05-24T09:42:10.763Z] INFO (BLODispatcher): Get SATP Manager request
+[2025-05-24T09:42:10.763Z] INFO (api-server): Disconnecting SocketIO connections...
+[2025-05-24T09:42:10.763Z] INFO (api-server): SocketIO connections disconnect OK
+[2025-05-24T09:42:10.763Z] INFO (api-server): Stopping 1 WS plugin(s)...
+[2025-05-24T09:42:10.763Z] INFO (SATPManager): SATPManager#getSATPSessionStatus(), Getting SATP Session Status...
+[2025-05-24T09:42:10.763Z] INFO (SATPManager): SATPManager#getSATPSessionStatus(), Getting SATP Session Status...
+[2025-05-24T09:42:10.763Z] INFO (SATPGateway): All sessions already concluded
+[2025-05-24T09:42:10.763Z] INFO (SATPGateway): All sessions already concluded
+[2025-05-24T09:42:10.763Z] INFO (BLODispatcher): Get SATP Manager request
+[2025-05-24T09:42:10.763Z] INFO (BLODispatcher): Get SATP Manager request
+[2025-05-24T09:42:10.763Z] DEBUG (SATPGateway): Shutting down monitor service
+[2025-05-24T09:42:10.763Z] INFO (MonitorService): Shutting down MonitorService...
+[2025-05-24T09:42:10.764Z] INFO (MonitorService): MonitorService shutdown complete
+[2025-05-24T09:42:10.764Z] DEBUG (SATPGateway): Shutting down monitor service
+[2025-05-24T09:42:10.764Z] INFO (MonitorService): Shutting down MonitorService...
+[2025-05-24T09:42:10.764Z] INFO (MonitorService): MonitorService shutdown complete
+[2025-05-24T09:42:10.764Z] DEBUG (SATPGateway): Monitor service shut down
+[2025-05-24T09:42:10.764Z] DEBUG (SATPGateway): Shutting down Gateway Coordinator
+[2025-05-24T09:42:10.764Z] DEBUG (SATPGateway): Entering SATPGateway#shutdownGOLServer()
+[2025-05-24T09:42:10.764Z] DEBUG (SATPGateway): Monitor service shut down
+[2025-05-24T09:42:10.764Z] DEBUG (SATPGateway): Shutting down Gateway Coordinator
+[2025-05-24T09:42:10.764Z] DEBUG (SATPGateway): Entering SATPGateway#shutdownGOLServer()
+[2025-05-24T09:42:10.764Z] INFO (SATPGateway): GOL server shut down
+[2025-05-24T09:42:10.764Z] INFO (SATPGateway): GOL server shut down
+[2025-05-24T09:42:10.765Z] DEBUG (SATPGateway): Running shutdown hooks
+[2025-05-24T09:42:10.765Z] DEBUG (SATPGateway): Oracle Manager shut down
+[2025-05-24T09:42:10.765Z] DEBUG (OracleManager): OracleManager#shutdown: Shutting down all listeners.
+[2025-05-24T09:42:10.765Z] INFO (OracleSchedulerManager): OracleSchedulerManager#clearAllListeners(): Clearing 0 pollers
+[2025-05-24T09:42:10.765Z] INFO (OracleSchedulerManager): OracleSchedulerManager#clearAllListeners(): Clearing 0 event listeners
+[2025-05-24T09:42:10.765Z] INFO (OracleSchedulerManager): OracleSchedulerManager#clearAllListeners(): All listeners cleared
+[2025-05-24T09:42:10.765Z] INFO (SATPGateway): Shutting down Gateway Connection Manager
+[2025-05-24T09:42:10.765Z] INFO (GatewayOrchestrator): GatewayOrchestrator#disconnectAll(), Disconnecting from mockID
+[2025-05-24T09:42:10.765Z] DEBUG (SATPGateway): Running shutdown hooks
+[2025-05-24T09:42:10.765Z] DEBUG (SATPGateway): Oracle Manager shut down
+[2025-05-24T09:42:10.765Z] DEBUG (OracleManager): OracleManager#shutdown: Shutting down all listeners.
+[2025-05-24T09:42:10.765Z] INFO (OracleSchedulerManager): OracleSchedulerManager#clearAllListeners(): Clearing 0 pollers
+[2025-05-24T09:42:10.765Z] INFO (OracleSchedulerManager): OracleSchedulerManager#clearAllListeners(): Clearing 0 event listeners
+[2025-05-24T09:42:10.765Z] INFO (OracleSchedulerManager): OracleSchedulerManager#clearAllListeners(): All listeners cleared
+[2025-05-24T09:42:10.765Z] INFO (SATPGateway): Shutting down Gateway Connection Manager
+[2025-05-24T09:42:10.765Z] INFO (SATPGateway): Closed 1 connections
+[2025-05-24T09:42:10.765Z] INFO (SATPGateway): Gateway Coordinator shut down
+[2025-05-24T09:42:10.765Z] DEBUG (SATPGateway): Destroying local repository...
+[2025-05-24T09:42:10.765Z] INFO (SATPGateway): Closed 0 connections
+[2025-05-24T09:42:10.765Z] INFO (SATPGateway): Gateway Coordinator shut down
+[2025-05-24T09:42:10.765Z] DEBUG (SATPGateway): Destroying local repository...
+[2025-05-24T09:42:10.766Z] INFO (SATPGateway): Local repository destroyed
+[2025-05-24T09:42:10.766Z] DEBUG (SATPGateway): Destroying remote repository...
+[2025-05-24T09:42:10.766Z] INFO (SATPGateway): Local repository destroyed
+[2025-05-24T09:42:10.766Z] DEBUG (SATPGateway): Destroying remote repository...
+[2025-05-24T09:42:10.766Z] INFO (SATPGateway): Remote repository destroyed
+[2025-05-24T09:42:10.766Z] INFO (SATPGateway): Remote repository destroyed
+[2025-05-24T09:42:10.766Z] INFO (api-server): Stopped 1 WS plugin(s) OK
+[2025-05-24T09:42:10.766Z] INFO (api-server): Closing Cacti HTTP server of the API...
+[2025-05-24T09:42:10.766Z] INFO (api-server): Stopped 1 WS plugin(s) OK
+[2025-05-24T09:42:10.767Z] INFO (api-server): Fastify plugin list: 'root 56 ms\n' +
+  '├── bound _after 2 ms\n' +
+  '├─┬ fastifyConnectPlugin 1 ms\n' +
+  '│ └── bound _after 0 ms\n' +
+  '└── bound _after 0 ms\n'
+[2025-05-24T09:42:10.767Z] INFO (api-server): Closing Cacti CRPC HTTP server ...
+[2025-05-24T09:42:10.768Z] INFO (api-server): Closed Cacti CRPC HTTP server OK
+[2025-05-24T09:42:10.768Z] INFO (api-server): Draining Cacti gRPC server ...
+[2025-05-24T09:42:10.768Z] INFO (api-server): Drained Cacti gRPC server OK
+[2025-05-24T09:42:10.768Z] INFO (api-server): Trying to shut down Cacti gRPC server ...
+[2025-05-24T09:42:10.769Z] INFO (api-server): Close HTTP server of the API OK
+[2025-05-24T09:42:10.769Z] INFO (api-server): Fastify plugin list: 'root 56 ms\n' +
+  '├── bound _after 2 ms\n' +
+  '├─┬ fastifyConnectPlugin 1 ms\n' +
+  '│ └── bound _after 0 ms\n' +
+  '└── bound _after 0 ms\n'
+[2025-05-24T09:42:10.769Z] INFO (api-server): Closing Cacti CRPC HTTP server ...
+[2025-05-24T09:42:10.769Z] INFO (api-server): Closed Cacti CRPC HTTP server OK
+[2025-05-24T09:42:10.769Z] INFO (api-server): Draining Cacti gRPC server ...
+[2025-05-24T09:42:10.769Z] INFO (api-server): Drained Cacti gRPC server OK
+[2025-05-24T09:42:10.769Z] INFO (api-server): Trying to shut down Cacti gRPC server ...
+[2025-05-24T09:42:10.769Z] INFO (api-server): Shut down Cacti gRPC server OK
+[2025-05-24T09:42:10.769Z] INFO (api-server): Shut down Cacti gRPC server OK
+[2025-05-24T09:42:10.769Z] INFO (api-server): Concluded async-exit-hook for cmd-api-server ...

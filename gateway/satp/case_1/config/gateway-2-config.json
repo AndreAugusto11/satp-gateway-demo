@@ -1,0 +1,119 @@
+{
+  "gid": {
+    "id": "mockID-2",
+    "name": "CustomGateway",
+    "version": [
+      {
+        "Core": "v02",
+        "Architecture": "v02",
+        "Crash": "v02"
+      }
+    ],
+    "connectedDLTs": [
+      {
+        "id": "HardhatTestNetwork2",
+        "ledgerType": "ETHEREUM"
+      }
+    ],
+    "proofID": "mockProofID11",
+    "address": "http://satp-hermes-gateway-2",
+    "gatewayClientPort": 3011,
+    "gatewayServerPort": 3010,
+    "gatewayOapiPort": 4010,
+    "pubKey": "02f9ae5c4a7eeae0728053cf2f39356854aaabaffe31b33d64f322d8c3756e63b7"
+  },
+  "logLevel": "TRACE",
+  "counterPartyGateways": [
+    {
+      "id": "mockID-1",
+      "name": "CustomGateway",
+      "version": [
+        {
+          "Core": "v02",
+          "Architecture": "v02",
+          "Crash": "v02"
+        }
+      ],
+      "connectedDLTs": [
+        {
+          "id": "HardhatTestNetwork1",
+          "ledgerType": "ETHEREUM"
+        }
+      ],
+      "proofID": "mockProofID10",
+      "address": "http://satp-hermes-gateway-1",
+      "gatewayClientPort": 3011,
+      "gatewayServerPort": 3010,
+      "gatewayOapiPort": 4010,
+      "pubKey": "027d68a6e9cc32c615f3f7336302fd5e1f82ab3a9db4ac149e0222a47588939a2e"
+    }
+  ],
+  "localRepository": {
+    "client": "pg",
+    "connection": {
+      "host": "local-postgres",
+      "user": "user123123",
+      "password": "password",
+      "database": "my_database",
+      "port": 5432,
+      "ssl": false
+    },
+    "pool": {
+      "max": 20,
+      "acquireTimeoutMillis": 60000,
+      "createTimeoutMillis": 30000,
+      "idleTimeoutMillis": 600000,
+      "propagateCreateError": false
+    }
+  },
+  "remoteRepository": {
+    "client": "pg",
+    "connection": {
+      "host": "remote-postgres",
+      "user": "user123123",
+      "password": "password",
+      "database": "my_database",
+      "port": 5432,
+      "ssl": false
+    },
+    "pool": {
+      "max": 20,
+      "acquireTimeoutMillis": 60000,
+      "createTimeoutMillis": 30000,
+      "idleTimeoutMillis": 600000,
+      "propagateCreateError": false
+    }
+  },
+  "environment": "development",
+  "ccConfig": {
+    "bridgeConfig": [
+      {
+        "networkIdentification": {
+          "id": "HardhatTestNetwork2",
+          "ledgerType": "ETHEREUM"
+        },
+        "signingCredential": {
+          "ethAccount": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+          "secret": "0x59c6995e998f97a5a0044966f0945389dc9e86dae88c7a8412f4603b6b78690d",
+          "type": "PRIVATE_KEY_HEX"
+        },
+        "gasConfig": {
+          "gas": "6721975",
+          "gasPrice": "20000000000"
+        },
+        "connectorOptions": {
+          "rpcApiHttpHost": "http://host.docker.internal:8546"
+        },
+        "claimFormats": [
+          1
+        ]
+      }
+    ]
+  },
+  "keyPair": {
+    "privateKey": "5e31641088c7a8c6951a7067feba6bb84bcea64cdcaa65413f47a78f20d850d5",
+    "publicKey": "02f9ae5c4a7eeae0728053cf2f39356854aaabaffe31b33d64f322d8c3756e63b7"
+  },
+  "enableCrashRecovery": false,
+  "ontologyPath": "/opt/cacti/satp-hermes/ontologies"
+}

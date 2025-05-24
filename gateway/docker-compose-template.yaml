@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   satp-hermes-gateway:
-    image: aaugusto11/cacti-satp-hermes-gateway:deb9e0962-2025-05-23
+    image: aaugusto11/cacti-satp-hermes-gateway:ed371241a-2025-05-24
     volumes:
       - ./config/:/opt/cacti/satp-hermes/config/
       - ./satp-hermes-gateway/logs:/opt/cacti/satp-hermes/logs

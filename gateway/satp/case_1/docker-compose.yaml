@@ -1,10 +1,10 @@
 version: "3.8"
 
 services:
-  satp-hermes-gateway:
+  satp-hermes-gateway-1:
     image: aaugusto11/cacti-satp-hermes-gateway:ed371241a-2025-05-24
     volumes:
-      - ./config:/opt/cacti/satp-hermes/config/
+      - ./config/gateway-1-config.json:/opt/cacti/satp-hermes/config/config.json
       - ./satp-hermes-gateway/logs:/opt/cacti/satp-hermes/logs
     ports:
       - 3010:3010/tcp # SERVER_PORT
@@ -12,6 +12,19 @@ services:
       - 4010:4010/tcp # OAPI_PORT
     extra_hosts:
       - "host.docker.internal:host-gateway"
+
+  satp-hermes-gateway-2:
+    image: aaugusto11/cacti-satp-hermes-gateway:ed371241a-2025-05-24
+    volumes:
+      - ./config/gateway-2-config.json:/opt/cacti/satp-hermes/config/config.json
+      - ./satp-hermes-gateway/logs:/opt/cacti/satp-hermes/logs
+    ports:
+      - 3110:3010/tcp # SERVER_PORT
+      - 3111:3011/tcp # CLIENT_PORT
+      - 4110:4010/tcp # OAPI_PORT
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
   local-postgres:
     image: postgres:17.2
     environment:
