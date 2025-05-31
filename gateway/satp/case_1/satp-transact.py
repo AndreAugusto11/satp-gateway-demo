@@ -63,5 +63,12 @@ def transact():
     
 
 if __name__ == "__main__":
-    update_response = transact()
-    print("Response:", update_response)
+    try:
+        update_response = transact()
+        # Print only the SESSION_ID if present, else print the whole response
+        if isinstance(update_response, dict) and 'SESSION_ID' in update_response:
+            print(json.dumps({'SESSION_ID': update_response['SESSION_ID']}))
+        else:
+            print(json.dumps(update_response))
+    except Exception as e:
+        print(json.dumps({'error': str(e)}))
