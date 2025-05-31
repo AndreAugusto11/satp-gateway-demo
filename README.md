@@ -72,9 +72,18 @@ Failure to reset the environment between cases may lead to unexpected behavior d
 
 ---
 
+
 ## Setup & Running
 
-Each case includes its own `README.md` with instructions for how to:
+You can use the provided `Makefile` to automate setup and environment preparation for the demo. Run:
+
+```bash
+make help
+```
+
+to see available targets for building, deploying, and running the demo cases.
+
+Each case also includes its own `README.md` with instructions for how to:
 
 * Start the services via `docker-compose`
 * Deploy contracts

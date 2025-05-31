@@ -4,6 +4,24 @@ This test case demonstrates how the Gateway can run the Secure Asset Transfer Pr
 
 For this, we will use the `SATPTokenContract` contract, which is a simple contract that resembles a token contract following the ERC20 standard.
 
+
+## Terminal Overview
+
+Before starting, here is a summary of what each terminal will be used for in this case:
+
+- **Terminal 1:** Run the Gateway (Docker Compose)
+- **Terminal 2:** Start Hardhat EVM Blockchain 1 (port 8545)
+- **Terminal 3:** Start Hardhat EVM Blockchain 2 (port 8546)
+- **Terminal 4:** Deploy the SATPTokenContract to both blockchains
+- **Terminal 5:** Run SATP protocol scripts (integration checks, transactions, status, audit)
+
+This pattern is similar in other SATP and Oracle cases:
+- **Gateway terminals** (usually Terminal 1): Always run the Gateway via Docker Compose
+- **EVM/Hardhat terminals** (usually Terminals 2, 3): Start one or more local blockchains
+- **Deployment/Script terminals** (Terminals 4+): Deploy contracts and run interaction scripts
+
+Refer to each case's README for the exact mapping and steps.
+
 ## Setup Instructions
 
 ### 1. Start the Hardhat EVM Blockchains
