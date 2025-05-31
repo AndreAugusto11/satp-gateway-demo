@@ -75,20 +75,27 @@ Failure to reset the environment between cases may lead to unexpected behavior d
 
 ## Setup & Running
 
+
+### Running Cases with the Makefile
+
 You can use the provided `Makefile` to automate setup and environment preparation for the demo. Run:
 
 ```bash
 make help
 ```
 
-to see available targets for building, deploying, and running the demo cases.
+to see all available targets for building, deploying, and running the demo cases. The main targets are:
 
-Each case also includes its own `README.md` with instructions for how to:
+- `make run-oracle-case-1` — Oracle Case 1: Manual READ and WRITE
+- `make run-oracle-case-2` — Oracle Case 2: Automatic READ and WRITE
+- `make run-oracle-case-3` — Oracle Case 3: Register polling for periodic READ
+- `make run-oracle-case-4` — Oracle Case 4: Event listening + READ and UPDATE
+- `make run-satp-case-1`   — SATP Case 1: Asset transfer protocol
+- `make run-all-cases`      — Run all cases sequentially with cleanup between each
 
-* Start the services via `docker-compose`
-* Deploy contracts
-* Run gateway/oracle scripts
-* Observe outputs and verify behaviors
+Each case also includes its own `README.md` with step-by-step instructions for manual or advanced usage.
+
+**Note:** `.PHONY` targets are now placed immediately after each script in the Makefile for clarity and maintainability.
 
 ---
 

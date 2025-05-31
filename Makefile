@@ -1,10 +1,8 @@
-.PHONY: clean clean-port-container run-case-1 run-case-2 run-case-3 run-case-4 run-all-cases help setup check-docker check-docker-compose check-hardhat check-python check-nvm check-node install-nvm install-node install-hardhat install-python install-docker install-docker-compose
-
-# Sleep constants
 SHORTWAIT = 1
 MEDIUMWAIT = 3
 LONGWAIT = 6
 
+.PHONY: clean
 clean:
 	# 1. Stop and remove all experiment containers and volumes
 	@echo "Stopping and removing all experiment containers and volumes..."
@@ -26,9 +24,43 @@ clean:
 
 	@echo "Clean complete."
 
+.PHONY: run-satp-case-1
+run-satp-case-1:
+	@echo "Running SATP Case 1: Gateway as Middleware for READ_AND_WRITE in EVM-based blockchains..."
+	$(MAKE) clean-port-container PORT=3010
+	# Start Hardhat EVM Blockchain 1 (port 8545)
+	(cd EVM && npx hardhat node --hostname 0.0.0.0 --port 8545 &)
+	sleep $(MEDIUMWAIT)
+	# Start Hardhat EVM Blockchain 2 (port 8546)
+	(cd EVM && npx hardhat node --hostname 0.0.0.0 --port 8546 &)
+	sleep $(MEDIUMWAIT)
+	# Start the Gateway (Docker Compose)
+	(cd gateway/satp/case_1 && docker compose up -d)
+	sleep $(SHORTWAIT)
+	# (Optional) Check the blockchains to which each Gateway is connected
+	(cd gateway/satp/case_1 && python3 satp-evm-get-integrations.py)
+	sleep $(SHORTWAIT)
+	# Deploy the SATPTokenContract to both blockchains
+	(cd EVM && node scripts/SATPTokenContract.js)
+	sleep $(SHORTWAIT)
+	# Run the SATP protocol script (integration checks, transactions, status, audit)
+	(cd gateway/satp/case_1 && python3 satp-transact.py > gateway/satp/case_1/session_output.json)
+	sleep $(SHORTWAIT)
+	@if [ -s gateway/satp/case_1/session_output.json ]; then \
+  export SESSION_ID=$$(cat gateway/satp/case_1/session_output.json | python3 -c "import sys, json; d=json.load(sys.stdin); print(d.get('SESSION_ID','')) if isinstance(d, dict) else print('')"); \
+  if [ "$$SESSION_ID" != "" ]; then \
+	(cd gateway/satp/case_1 && python3 satp-evm-check-status.py $$SESSION_ID); \
+	sleep $(SHORTWAIT); \
+	(cd gateway/satp/case_1 && python3 satp-evm-perform-audit.py); \
+  else \
+	echo "SESSION_ID not found in output, skipping status/audit checks."; \
+  fi \
+else \
+  echo "satp-transact did not produce output, skipping status/audit checks."; \
+fi
 
-
-run-case-1:
+.PHONY: run-oracle-case-1
+run-oracle-case-1:
 	@echo "Running Oracle Case 1: Gateway as Middleware for READ and WRITE in EVM-based blockchains..."
 	$(MAKE) clean-port-container PORT=3010
 	(cd gateway/oracle/case_1 && docker compose up -d)
@@ -42,7 +74,8 @@ run-case-1:
 	# Run the Oracle interaction script (read/write via Gateway)
 	(cd gateway/oracle/case_1 && python3 oracle-execute-manual-read-and-write.py)
 
-run-case-2:
+.PHONY: run-oracle-case-2
+run-oracle-case-2:
 	@echo "Running Oracle Case 2: Gateway as Middleware for READ and WRITE on two EVM-based blockchains..."
 	$(MAKE) clean-port-container PORT=3010
 	(cd gateway/oracle/case_2 && docker compose up -d)
@@ -60,7 +93,8 @@ run-case-2:
 	# Run the Oracle interaction script (read/write via Gateway)
 	(cd gateway/oracle/case_2 && python3 oracle-execute-auto-read-and-write.py)
 
-run-case-3:
+.PHONY: run-oracle-case-3
+run-oracle-case-3:
 	@echo "Running Oracle Case 3: Registering a Polling Task to Periodically READ from EVM-based Blockchain..."
 	$(MAKE) clean-port-container PORT=3010
 	(cd gateway/oracle/case_3 && docker compose up -d)
@@ -80,7 +114,8 @@ run-case-3:
 	@echo "- Check polling task status: python3 gateway/oracle/case_3/oracle-evm-check-status.py <TASK_ID>"
 	@echo "- Unregister the polling task: python3 gateway/oracle/case_3/oracle-evm-unregister.py <TASK_ID>"
 
-run-case-4:
+.PHONY: run-oracle-case-4
+run-oracle-case-4:
 	@echo "Running Oracle Case 4: Cross-Chain EVENT_LISTENING with READ_AND_UPDATE Tasks..."
 	$(MAKE) clean-port-container PORT=3010
 	(cd gateway/oracle/case_4 && docker compose up -d)
@@ -103,27 +138,26 @@ run-case-4:
 	@echo "- Check task status: python3 gateway/oracle/case_4/oracle-evm-check-status.py <TASK_ID>"
 	@echo "- Unregister the event listening task: python3 gateway/oracle/case_4/oracle-evm-unregister.py <TASK_ID>"
 
-
-# Run all cases sequentially with wait times (customize as needed)
-
-# Run all cases sequentially, cleaning and waiting between each
 .PHONY: run-all-cases
 run-all-cases:
 	@echo "Running all cases sequentially with cleanup and wait times..."
-	$(MAKE) run-case-1
+	$(MAKE) run-oracle-case-1
 	$(MAKE) clean
-	sleep 3
-	$(MAKE) run-case-2
+	sleep $(SHORTWAIT)
+	$(MAKE) run-oracle-case-2
 	$(MAKE) clean
-	sleep 3
-	$(MAKE) run-case-3
+	sleep $(SHORTWAIT)
+	$(MAKE) run-oracle-case-3
 	$(MAKE) clean
-	sleep 3
-	$(MAKE) run-case-4
+	sleep $(SHORTWAIT)
+	$(MAKE) run-oracle-case-4
+	$(MAKE) clean
+	sleep $(SHORTWAIT)
+	$(MAKE) run-satp-case-1
 	$(MAKE) clean
 	@echo "All cases executed successfully. Cleaned up."
 
-# Show help for all Makefile targets
+# Show help for all Makefile targets 
 .PHONY: help
 help:
 	@echo "Available targets:"
@@ -131,11 +165,11 @@ help:
 	@echo "\nRun 'make <target>' to execute a specific task."
 # Makefile for SATP Gateway Demo
 
-.PHONY: setup check-docker check-docker-compose check-hardhat check-python check-nvm check-node install-nvm install-node install-hardhat install-python install-docker install-docker-compose
-
+.PHONY: setup
 setup: check-docker check-docker-compose check-nvm install-node check-hardhat check-python
 	@echo "All dependencies are installed."
 
+.PHONY: check-docker
 check-docker:
 	@if ! command -v docker >/dev/null 2>&1; then \
 		echo "Docker not found. Please install Docker."; \
@@ -144,6 +178,7 @@ check-docker:
 		echo "Docker is installed."; \
 	fi
 
+.PHONY: check-docker-compose
 check-docker-compose:
 	@if ! command -v docker-compose >/dev/null 2>&1 && ! docker compose version >/dev/null 2>&1; then \
 		echo "Docker Compose not found. Please install Docker Compose."; \
@@ -152,6 +187,7 @@ check-docker-compose:
 		echo "Docker Compose is installed."; \
 	fi
 
+.PHONY: check-nvm
 check-nvm:
 	@if [ -z "$(shell command -v nvm)" ] && [ ! -d "$$HOME/.nvm" ]; then \
 		$(MAKE) install-nvm; \
@@ -159,15 +195,19 @@ check-nvm:
 		echo "nvm is installed."; \
 	fi
 
+.PHONY: install-nvm
 install-nvm:
 	@echo "Installing nvm..." && \
 	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
+.PHONY: install-node
 install-node:
 	@. $$HOME/.nvm/nvm.sh && nvm install 18.19.0 && nvm use 18.19.0 && nvm alias default 18.19.0
 
+.PHONY: check-node
 check-node:
 	@. $$HOME/.nvm/nvm.sh && nvm use 18.19.0 && node -v | grep 'v18.19.0' || $(MAKE) install-node
+.PHONY: check-python
 check-python:
 	@if ! command -v python3 >/dev/null 2>&1; then \
 		echo "Python3 not found. Please install Python >= 3.8."; \
@@ -182,6 +222,7 @@ check-python:
 		echo "Python >= 3.8 is installed."; \
 	fi
 
+.PHONY: clean-port-container
 clean-port-container:
 	@echo "Checking for containers using port $(PORT)..."
 	@container_id=$$(docker ps -q --filter "publish=$(PORT)"); \

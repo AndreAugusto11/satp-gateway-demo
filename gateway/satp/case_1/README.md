@@ -24,18 +24,19 @@ Refer to each case's README for the exact mapping and steps.
 
 ## Setup Instructions
 
+
 ### 1. Start the Hardhat EVM Blockchains
 
-In terminal 2, from the `~/EVM` directory:
+In terminal 2, from this directory (`gateway/satp/case_1`):
 
 ```bash
-npx hardhat node --hostname 0.0.0.0 --port 8545
+cd ../../../EVM && npx hardhat node --hostname 0.0.0.0 --port 8545
 ```
 
-In terminal 3, from the `~/EVM` directory:
+In terminal 3, from this directory (`gateway/satp/case_1`):
 
 ```bash
-npx hardhat node --hostname 0.0.0.0 --port 8546
+cd ../../../EVM && npx hardhat node --hostname 0.0.0.0 --port 8546
 ```
 
 > ⚠️ Make sure to use `--hostname 0.0.0.0` on both cases so that the Gateway (inside Docker) can access the local Hardhat node.
@@ -63,12 +64,13 @@ python3 satp-evm-get-integrations.py
 
 **Expected Result**: The output should show the two EVM blockchains (Hardhat1 and Hardhat2).
 
+
 ### 3. Deploy the Token Smart Contracts
 
-In terminal 4, from the `~/EVM` directory:
+In terminal 4, from this directory (`gateway/satp/case_1`):
 
 ```bash
-node scripts/SATPTokenContract.js
+cd ../../../EVM && node scripts/SATPTokenContract.js
 ```
 
 > This deploys the `SATPTokenContract` to the running Hardhat networks (`hardhat1` and `hardhat2` should be configured in `hardhat.config.js` to point to `http://0.0.0.0:8545` and `http://0.0.0.0:8546` respectively). Additionally, it will perform the necessary contract calls necessary to set up the SATP protocol. Check the file to see the details of the operations performed.
