@@ -1,8 +1,9 @@
-version: "3.8"
+
 
 services:
   satp-hermes-gateway:
     image: aaugusto11/cacti-satp-hermes-gateway:215ad342b-2025-05-29
+    platform: linux/amd64
     volumes:
       - ./config:/opt/cacti/satp-hermes/config/
       - ./satp-hermes-gateway/logs:/opt/cacti/satp-hermes/logs
