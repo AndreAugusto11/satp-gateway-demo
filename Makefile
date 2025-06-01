@@ -36,28 +36,35 @@ run-satp-case-1:
 	sleep $(MEDIUMWAIT)
 	# Start the Gateway (Docker Compose)
 	(cd gateway/satp/case_1 && docker compose up -d)
-	sleep $(SHORTWAIT)
+	sleep $(LONGWAIT)
 	# (Optional) Check the blockchains to which each Gateway is connected
 	(cd gateway/satp/case_1 && python3 satp-evm-get-integrations.py)
 	sleep $(SHORTWAIT)
 	# Deploy the SATPTokenContract to both blockchains
 	(cd EVM && node scripts/SATPTokenContract.js)
+	sleep $(LONGWAIT)
+	# Check the balances of the user and the bridge contract address
+	(cd EVM && node scripts/SATPTokenContract-CheckBalances.js)
+	sleep $(LONGWAIT)
+	# Run the SATP protocol script (transactions, status, audit)
+	@mkdir -p gateway/satp/case_1/outputs
+	(cd gateway/satp/case_1 && python3 satp-transact.py > outputs/session_output.json)
 	sleep $(SHORTWAIT)
-	# Run the SATP protocol script (integration checks, transactions, status, audit)
-	(cd gateway/satp/case_1 && python3 satp-transact.py > gateway/satp/case_1/session_output.json)
-	sleep $(SHORTWAIT)
-	@if [ -s gateway/satp/case_1/session_output.json ]; then \
-  export SESSION_ID=$$(cat gateway/satp/case_1/session_output.json | python3 -c "import sys, json; d=json.load(sys.stdin); print(d.get('SESSION_ID','')) if isinstance(d, dict) else print('')"); \
-  if [ "$$SESSION_ID" != "" ]; then \
-	(cd gateway/satp/case_1 && python3 satp-evm-check-status.py $$SESSION_ID); \
-	sleep $(SHORTWAIT); \
-	(cd gateway/satp/case_1 && python3 satp-evm-perform-audit.py); \
-  else \
-	echo "SESSION_ID not found in output, skipping status/audit checks."; \
-  fi \
-else \
-  echo "satp-transact did not produce output, skipping status/audit checks."; \
-fi
+	@if [ -s gateway/satp/case_1/outputs/session_output.json ]; then \
+		export SESSION_ID=$$(cat gateway/satp/case_1/outputs/session_output.json | python3 -c "import sys, json; d=json.load(sys.stdin); print(d.get('sessionID','')) if isinstance(d, dict) else print('')"); \
+		if [ "$$SESSION_ID" != "" ]; then \
+			(cd gateway/satp/case_1 && python3 satp-evm-check-status.py $$SESSION_ID); \
+			sleep $(SHORTWAIT); \
+			(cd gateway/satp/case_1 && python3 satp-evm-perform-audit.py); \
+		else \
+			echo "SESSION_ID not found in output, skipping status/audit checks."; \
+		fi \
+	else \
+		echo "satp-transact did not produce output, skipping status/audit checks."; \
+	fi
+	sleep $(MEDIUMWAIT)
+	# Check (again) the balances of the user and the bridge contract address
+	(cd EVM && node scripts/SATPTokenContract-CheckBalances.js)
 
 .PHONY: run-oracle-case-1
 run-oracle-case-1:
@@ -108,11 +115,12 @@ run-oracle-case-3:
 	# Register the polling task via Gateway
 	(cd gateway/oracle/case_3 && python3 oracle-evm-register-poller.py)
 	sleep $(SHORTWAIT)
+	@mkdir -p gateway/oracle/case_3/outputs
 	@echo "Now you can:"
 	@echo "- Observe failing reads in Hardhat logs (Terminal 2)"
-	@echo "- Trigger a write to the contract: python3 gateway/oracle/case_3/oracle-evm-execute-update.py"
-	@echo "- Check polling task status: python3 gateway/oracle/case_3/oracle-evm-check-status.py <TASK_ID>"
-	@echo "- Unregister the polling task: python3 gateway/oracle/case_3/oracle-evm-unregister.py <TASK_ID>"
+	@echo "- Trigger a write to the contract: cd gateway/oracle/case_3 && python3 oracle-evm-execute-update.py" and read calls should succeed
+	@echo "- Check polling task status: cd gateway/oracle/case_3 && python3 oracle-evm-check-status.py <TASK_ID> > outputs/task_status_output.json"
+	@echo "- Unregister the polling task: cd gateway/oracle/case_3 && python3 oracle-evm-unregister.py <TASK_ID>"
 
 .PHONY: run-oracle-case-4
 run-oracle-case-4:
@@ -133,10 +141,11 @@ run-oracle-case-4:
 	# Register the event listening task via Gateway
 	(cd gateway/oracle/case_4 && python3 oracle-evm-register-listener.py)
 	sleep $(SHORTWAIT)
+	@mkdir -p gateway/oracle/case_4/outputs
 	@echo "Now you can:"
-	@echo "- Trigger the event in source chain: python3 gateway/oracle/case_4/oracle-evm-execute-update.py"
-	@echo "- Check task status: python3 gateway/oracle/case_4/oracle-evm-check-status.py <TASK_ID>"
-	@echo "- Unregister the event listening task: python3 gateway/oracle/case_4/oracle-evm-unregister.py <TASK_ID>"
+	@echo "- Trigger the event in source chain: cd gateway/oracle/case_4 && python3 oracle-evm-execute-update.py"
+	@echo "- Check task status: cd gateway/oracle/case_4 && python3 oracle-evm-check-status.py <TASK_ID>  > outputs/task_status_output.json"
+	@echo "- Unregister the event listening task: cd gateway/oracle/case_4 && python3 oracle-evm-unregister.py <TASK_ID>"
 
 .PHONY: run-all-cases
 run-all-cases:

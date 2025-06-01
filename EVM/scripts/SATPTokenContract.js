@@ -6,7 +6,7 @@ const SATP_TOKEN_BYTECODE = require("../artifacts/contracts/SATPTokenContract.so
 const SATP_TOKEN_ABI = require("../artifacts/contracts/SATPTokenContract.sol/SATPTokenContract.json")["abi"];
 
 async function main(port) {
-  const provider = new ethers.JsonRpcProvider(`http://localhost:${port}`);
+  const provider = new ethers.JsonRpcProvider(`http://0.0.0.0:${port}`);
   
   // To avoid the same addresses being used in both blockchains, we can adjust the starting index based on the port.
   const START_ADDRESS_INDEX = port === 8545 ? 0 : 4; // Adjust based on the port
@@ -32,33 +32,30 @@ async function main(port) {
   await satpTokenContract.waitForDeployment();
   console.log(`${port} - SATPTokenContract deployed to:`, satpTokenContract.target);
 
-  // Mint tokens to the user address
-  console.log(`${port} - Minting tokens...`);
-  const mintTx = await satpTokenContract.connect(deployer).mint(userAddress, 100);
-  await mintTx.wait();
-
   // Give BRIDGE_ROLE to bridge address so that the bridge can interact with the contract and call functions like mint, burn, etc.
   console.log(`${port} - Giving role to bridge address...`);
   const giveRole2Tx = await satpTokenContract.connect(deployer).giveRole(BRIDGE_ADDRESS);
   await giveRole2Tx.wait();
 
-  // Approve bridge address 2 to spend tokens on behalf of the user
-  console.log(`${port} - Approving address 2...`);
-  const approve2Tx = await satpTokenContract.connect(user).approve(BRIDGE_ADDRESS, 100);
-  await approve2Tx.wait();
-
-  // Check allowance of bridge address given by user
-  console.log(`${port} - Checking allowance...`);
-  const allowance = await satpTokenContract.allowance(
-    userAddress,
-    BRIDGE_ADDRESS
-  );
-  console.log(`${port} - Allowance:`, allowance.toString());
-
-  // Check balance of user
-  console.log(`${port} - Checking balance of user...`);
-  const userBalance = await satpTokenContract.checkBalance(userAddress);
-  console.log(`${port} - User Balance:`, userBalance.toString());
+  if (port === 8545) {
+    // Mint tokens to the user address in the source chain (8545)
+    console.log(`${port} - Minting tokens...`);
+    const mintTx = await satpTokenContract.connect(deployer).mint(userAddress, 100);
+    await mintTx.wait();
+    
+    // Approve bridge address to spend tokens on behalf of the user in the source chain (8545)
+    console.log(`${port} - Approving bridge address...`);
+    const approve2Tx = await satpTokenContract.connect(user).approve(BRIDGE_ADDRESS, 100);
+    await approve2Tx.wait();
+    
+    // Check allowance of bridge address given by user in the source chain (8545)
+    console.log(`${port} - Checking allowance...`);
+    const allowance = await satpTokenContract.allowance(
+      userAddress,
+      BRIDGE_ADDRESS
+    );
+    console.log(`${port} - Allowance:`, allowance.toString());
+  }
 }
 
 main(8545).catch(console.error);

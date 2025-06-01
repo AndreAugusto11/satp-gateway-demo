@@ -15,6 +15,14 @@ Run the following command in this directory to install all required packages:
 npm install
 ```
 
+## Compile all Contracts
+
+Run the following command in this directory to compile all Solidity smart contracts under `/contracts`:
+
+```bash
+npx hardhat compile
+```
+
 ## Running Hardhat Node
 
 To start a local Hardhat node (a test ledger):

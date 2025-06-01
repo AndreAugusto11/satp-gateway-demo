@@ -47,7 +47,7 @@ def register_read(file_path):
             "contractAbi": params["abi"],
             "contractName": params["contractName"],
             "contractBytecode": params["bytecode"],
-            "contractAddress": "0x8464135c8F25Da09e49BC8782676a84730C318bC",
+            "contractAddress": "0xbded0d2bf404bdcba897a74e6657f1f12e5c6fb6",
             "methodName": "setData",
             # not needed because we will write the data read from the source contract
             # we can still pass it but it will overwrite the data read from the source contract
