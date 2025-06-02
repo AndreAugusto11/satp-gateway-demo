@@ -11,8 +11,6 @@ interface SATPTokenContractInterface {
   function mint(address account, uint256 amount) external returns (bool); 
   // burn destroys the given amount of tokens from the owner.
   function burn(address account, uint256 amount) external returns (bool);
-  // assign assigns the given amount of tokens from the owner to the target, without approval.
-  function assign(address from, address recipient, uint256 amount) external returns (bool);
   // checks if the given account has the given role.
-  function hasPermission(address account) external view returns (bool);
+  function hasBridgeRole(address account) external view returns (bool);
 }

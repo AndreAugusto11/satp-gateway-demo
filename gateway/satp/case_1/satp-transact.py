@@ -1,7 +1,6 @@
 
 import requests
 import json
-from time import sleep
 
 def execute_transact(params):
     """
@@ -41,7 +40,7 @@ def transact():
                 "id": "HardhatTestNetwork1",
                 "ledgerType": "ETHEREUM",
             },
-            "tokenType": "NONSTANDARD_FUNGIBLE",
+            "tokenType": "ERC20",
             "amount": "100"
         },
         "receiverAsset": {
@@ -54,13 +53,12 @@ def transact():
                 "id": "HardhatTestNetwork2",
                 "ledgerType": "ETHEREUM",
             },
-            "tokenType": "NONSTANDARD_FUNGIBLE",
+            "tokenType": "ERC20",
             "amount": "100"
         }
     }
 
     return execute_transact(req_params)
-    
 
 if __name__ == "__main__":
     try:

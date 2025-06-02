@@ -33,13 +33,13 @@
             }
         ],
         "assign": [{
-                "functionSignature": "assign(address,address,uint256)",
-                "variables": ["bridge", "receiver", "amount"],
+                "functionSignature": "transfer(address,uint256)",
+                "variables": ["receiver", "amount"],
                 "available": true
             }
         ],
         "checkPermission": [{
-            "functionSignature": "hasPermission(address)",
+            "functionSignature": "hasBridgeRole(address)",
             "variables": ["bridge"],
             "available": true
             } 

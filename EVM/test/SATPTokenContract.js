@@ -7,20 +7,18 @@ const { ethers } = require("hardhat");
 const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000';
 
 describe("SATPTokenContract", function () {
-  const assetId = "satp-asset-1";
 
   async function deploySATPTokenContract() {
     [deployer, user, another] = await ethers.getSigners();
 
     SATPToken = await ethers.getContractFactory("SATPTokenContract");
-    satp = await SATPToken.connect(deployer).deploy(deployer.address, assetId);
+    satp = await SATPToken.connect(deployer).deploy(deployer.address);
 
     return { satp, deployer, user, another };
   };
 
   it("should initialize correctly with correct roles and ID", async function () {
     const { satp, deployer } = await loadFixture(deploySATPTokenContract);
-    expect(await satp.getId()).to.equal(assetId);
     expect(await satp.hasRole(await satp.OWNER_ROLE(), deployer.address)).to.be.true;
     expect(await satp.hasRole(await satp.BRIDGE_ROLE(), deployer.address)).to.be.true;
   });
@@ -47,39 +45,16 @@ describe("SATPTokenContract", function () {
     expect(await satp.balanceOf(user.address)).to.equal(500);
   });
 
-  it("should allow assigning tokens by BRIDGE_ROLE", async function () {
-    const { satp, deployer, user } = await loadFixture(deploySATPTokenContract);
-    await satp.connect(deployer).mint(deployer.address, 1000);
-
-    // Assign 500 tokens from deployer to user
-    await expect(satp.connect(deployer).assign(deployer.address, user.address, 500))
-      .to.emit(satp, "Transfer")
-      .withArgs(deployer.address, user.address, 500);
-
-    expect(await satp.balanceOf(user.address)).to.equal(500);
-    expect(await satp.balanceOf(deployer.address)).to.equal(500);
-  });
-
-  it("should fail assigning tokens if sender is not 'from'", async function () {
-    const { satp, deployer, user, another } = await loadFixture(deploySATPTokenContract);
-    await satp.connect(deployer).mint(user.address, 1000);
-
-    // user tries to assign tokens from `user` to another
-    await expect(
-      satp.connect(deployer).assign(user.address, another.address, 200)
-    ).to.be.revertedWith("The msgSender is not the owner");
-  });
-
   it("should allow giving BRIDGE_ROLE to another address", async function () {
     const { satp, deployer, user } = await loadFixture(deploySATPTokenContract);
-    await satp.connect(deployer).giveRole(user.address);
+    await satp.connect(deployer).giveBridgeRole(user.address);
 
     expect(await satp.hasRole(await satp.BRIDGE_ROLE(), user.address)).to.be.true;
   });
 
   it("should allow new bridge role to mint", async function () {
     const { satp, deployer, user } = await loadFixture(deploySATPTokenContract);
-    await satp.connect(deployer).giveRole(user.address);
+    await satp.connect(deployer).giveBridgeRole(user.address);
     await satp.connect(user).mint(user.address, 777);
 
     expect(await satp.balanceOf(user.address)).to.equal(777);
@@ -134,9 +109,9 @@ describe("SATPTokenContract", function () {
     ).to.be.reverted;
   });
 
-  it("should revert hasPermission if no permission", async function () {
+  it("should revert hasBridgeRole if no permission", async function () {
     const { satp, user } = await loadFixture(deploySATPTokenContract);
-    await expect(satp.connect(user).hasPermission(user.address)).to.be.revertedWithCustomError(
+    await expect(satp.connect(user).hasBridgeRole(user.address)).to.be.revertedWithCustomError(
       satp,
       "noPermission"
     );
@@ -144,6 +119,6 @@ describe("SATPTokenContract", function () {
 
   it("should confirm permission if has BRIDGE_ROLE", async function () {
     const { satp, deployer } = await loadFixture(deploySATPTokenContract);
-    await expect(satp.connect(deployer).hasPermission(deployer.address)).to.eventually.equal(true);
+    await expect(satp.connect(deployer).hasBridgeRole(deployer.address)).to.eventually.equal(true);
   });
 });

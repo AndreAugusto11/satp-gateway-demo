@@ -35,12 +35,12 @@ async function main(port) {
 
   // Check balance of user
   console.log(`${port} - Checking balance of user...`);
-  const userBalance = await satpTokenContract.checkBalance(userAddress);
+  const userBalance = await satpTokenContract.balanceOf(userAddress);
   console.log(`${port} - User Balance:`, userBalance.toString());
   
   // Check balance of bridge address
   console.log(`${port} - Checking balance of bridge address...`);
-  const bridgeBalance = await satpTokenContract.checkBalance(BRIDGE_ADDRESS);
+  const bridgeBalance = await satpTokenContract.balanceOf(BRIDGE_ADDRESS);
   console.log(`${port} - Bridge Contract Balance:`, bridgeBalance.toString());
 }
 

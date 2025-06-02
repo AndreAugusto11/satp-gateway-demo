@@ -28,14 +28,14 @@ async function main(port) {
   // Deploy the SATPTokenContract
   console.log(`${port} - Deploying SATPTokenContract...`);
   const SATPTokenContractFactory = new ethers.ContractFactory(SATP_TOKEN_ABI, SATP_TOKEN_BYTECODE, deployer);
-  const satpTokenContract = await SATPTokenContractFactory.deploy(deployerAddress, "id1");
+  const satpTokenContract = await SATPTokenContractFactory.deploy(deployerAddress);
   await satpTokenContract.waitForDeployment();
   console.log(`${port} - SATPTokenContract deployed to:`, satpTokenContract.target);
 
   // Give BRIDGE_ROLE to bridge address so that the bridge can interact with the contract and call functions like mint, burn, etc.
   console.log(`${port} - Giving role to bridge address...`);
-  const giveRole2Tx = await satpTokenContract.connect(deployer).giveRole(BRIDGE_ADDRESS);
-  await giveRole2Tx.wait();
+  const giveBridgeRole2Tx = await satpTokenContract.connect(deployer).giveBridgeRole(BRIDGE_ADDRESS);
+  await giveBridgeRole2Tx.wait();
 
   if (port === 8545) {
     // Mint tokens to the user address in the source chain (8545)

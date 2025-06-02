@@ -117,7 +117,6 @@ run-oracle-case-3:
 	sleep $(SHORTWAIT)
 	@mkdir -p gateway/oracle/case_3/outputs
 	@echo "Now you can:"
-	@echo "- Observe failing reads in Hardhat logs (Terminal 2)"
 	@echo "- Trigger a write to the contract: cd gateway/oracle/case_3 && python3 oracle-evm-execute-update.py" and read calls should succeed
 	@echo "- Check polling task status: cd gateway/oracle/case_3 && python3 oracle-evm-check-status.py <TASK_ID> > outputs/task_status_output.json"
 	@echo "- Unregister the polling task: cd gateway/oracle/case_3 && python3 oracle-evm-unregister.py <TASK_ID>"
