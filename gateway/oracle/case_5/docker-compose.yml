@@ -1,0 +1,25 @@
+services:
+  satp-hermes-gateway-1:
+    image: kubaya/cacti-satp-hermes-gateway:5f190f37f-2025-08-19
+    privileged: true
+    platform: linux/amd64
+    volumes:
+      - ./config/gateway-fabric-config.json:/opt/cacti/satp-hermes/config/config.json
+      - ./config/fabric-connection-profile.json:/opt/cacti/satp-hermes/config/fabric-connection-profile.json
+      - ./satp-hermes-gateway/gateway-1/logs:/opt/cacti/satp-hermes/logs
+      - ./ontologies/:/opt/cacti/satp-hermes/ontologies/
+      - ../../../fabric-samples:/fabric-samples:ro
+      - ./config/core.yaml:/opt/cacti/satp-hermes/config/core.yaml:ro
+    ports:
+      - "3010:3010"  # SERVER_PORT
+      - "3011:3011"  # CLIENT_PORT  
+      - "4010:4010"  # OAPI_PORT
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - fabric_test 
+    environment:
+      - NODE_ENV=development
+networks:
+  fabric_test:
+    external: true
