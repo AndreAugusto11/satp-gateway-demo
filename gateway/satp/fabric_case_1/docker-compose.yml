@@ -6,7 +6,7 @@ services:
     volumes:
       - ./config/gateway-fabric-config.json:/opt/cacti/satp-hermes/config/config.json
       - ./config/fabric-connection-profile.json:/opt/cacti/satp-hermes/config/fabric-connection-profile.json
-      - ./logs:/opt/cacti/satp-hermes/logs
+      - ./satp-hermes-gateway/gateway-1/logs:/opt/cacti/satp-hermes/logs
       - ./ontologies/:/opt/cacti/satp-hermes/ontologies/
       - ../../../fabric-sample/fabric-samples:/fabric-samples:ro
       - ./config/core.yaml:/opt/cacti/satp-hermes/config/core.yaml:ro
@@ -16,5 +16,10 @@ services:
       - "4010:4010"  # OAPI_PORT
     extra_hosts:
       - "host.docker.internal:host-gateway"
+    networks:
+      - fabric_test 
     environment:
       - NODE_ENV=development
+networks:
+  fabric_test:
+    external: true

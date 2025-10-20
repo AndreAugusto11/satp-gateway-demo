@@ -50,7 +50,7 @@
   ],
   "environment": "development",
   "ccConfig": {
-    "bridgeConfig": [
+    "oracleConfig": [
       {
         "networkIdentification": {
           "id": "FabricLedgerTestNetwork",
@@ -71,6 +71,13 @@
             "CORE_PEER_ADDRESS": "peer0.org1.example.com:7051",
             "CORE_PEER_MSPCONFIG_PATH": "/fabric-samples/test-network/organizations/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp",
             "CORE_PEER_TLS_ROOTCERT_PATH": "/fabric-samples/test-network/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt",
+            "ORDERER_TLS_ROOTCERT_PATH": "/fabric-samples/test-network/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem"
+          },
+          {
+            "CORE_PEER_LOCALMSPID": "Org2MSP",
+            "CORE_PEER_ADDRESS": "peer0.org2.example.com:9051",
+            "CORE_PEER_MSPCONFIG_PATH": "/fabric-samples/test-network/organizations/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp",
+            "CORE_PEER_TLS_ROOTCERT_PATH": "/fabric-samples/test-network/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt",
             "ORDERER_TLS_ROOTCERT_PATH": "/fabric-samples/test-network/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem"
           }
         ],
@@ -167,15 +174,15 @@
           },
           "discoveryOptions": {
             "enabled": true,
-            "asLocalhost": true
+            "asLocalhost": false
           },
           "eventHandlerOptions": {
             "strategy": "NETWORK_SCOPE_ALLFORTX",
             "commitTimeout": 300
           }
         },
-        "coreYamlFilePath": "config/core.yaml",
-        "claimFormats": [2]
+        "claimFormats": [2],
+        "coreYamlFilePath": "config/core.yaml"
       }
     ]
   },
