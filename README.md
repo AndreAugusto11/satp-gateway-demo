@@ -29,7 +29,9 @@ This repository contains a demo implementation of a **SATP (Secure Asset Transfe
 │       ├── case_1/               # Middleware: Manual READ and WRITE
 │       ├── case_2/               # Middleware: Auto READ and WRITE
 │       ├── case_3/               # Register polling for periodic READ
-│       └── case_4/               # Event listening + READ and UPDATE
+│       ├── case_4/               # Event listening + READ and UPDATE
+│       ├── case_5/               # Middleware: Manuel READ and WRITE (Hyperledger Fabric)
+│       └── case_6/               # Register polling for periodic READ and WRITE (Hyperledger Fabric)
 │   └── satp/
 │       └── case_1/               # SATP Protocol: Asset transfer between EVM blockchains
 ```
