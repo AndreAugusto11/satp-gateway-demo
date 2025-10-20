@@ -2,7 +2,6 @@
 import requests
 import json
 from time import sleep
-import sys
 
 # Configuration
 FABRIC_NETWORK_ID = {"id": "FabricLedgerTestNetwork", "ledgerType": "FABRIC_2"}
@@ -323,8 +322,8 @@ if __name__ == "__main__":
             verify_response = read_asset('asset999')
             if verify_response['operations'][0]['status'] == 'FAILED':
                 print("Deletion verified: Asset not found")
-        except:
-            print("Deletion verified: Asset not found")
+        except Exception as e:
+            print(f"Deletion verified: Asset not found - {e}")
     except Exception as e:
         print(f"ERROR: {e}")
     

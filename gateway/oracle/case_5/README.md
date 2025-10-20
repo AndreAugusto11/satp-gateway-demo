@@ -1,17 +1,3 @@
-Para meter o fabric network a correr é necessário fazer clone do repo fabric samples 
-Depois dentro do fabric samples fazer isto
-curl -sSLO https://raw.githubusercontent.com/hyperledger/fabric/main/scripts/install-fabric.sh && chmod +x install-fabric.sh
-
-./install-fabric.sh -h
-
-./install-fabric.sh d s b
-
-
-Depois de se ter instalado dependencies é correr
-./network.sh up createChannel -c mychannel -ca
-
-./network.sh deployCC -ccn basic -ccp ../asset-transfer-basic/chaincode-typescript -ccl typescript
-
 # Fabric Oracle Execute: READ and WRITE Operations on Hyperledger Fabric
 
 This example demonstrates how to use the SATP Hermes Gateway as middleware to perform immediate READ and WRITE operations on Hyperledger Fabric. The test interacts with the `asset-transfer-basic` chaincode through the Gateway's `/oracle/execute` endpoint.
@@ -25,6 +11,24 @@ For this case, we use the standard **`asset-transfer-basic`** chaincode deployed
 * **`GetAllAssets()`** – Retrieves all assets from the ledger
 * **`TransferAsset(id, newOwner)`** – Transfers asset ownership
 * **`DeleteAsset(id)`** – Removes an asset from the ledger
+
+## Requirements
+
+To simulate a Hyperledger Fabric network and run this example, ensure you have cloned the [Hyperledger Fabric Samples repository](https://github.com/hyperledger/fabric-samples).
+
+```bash
+git clone https://github.com/hyperledger/fabric-samples.git
+cd fabric-samples
+```
+
+Then, install the Fabric binaries and Docker images by running:
+
+```bash
+curl -sSLO https://raw.githubusercontent.com/hyperledger/fabric/main/scripts/install-fabric.sh && chmod +x install-fabric.sh
+./install-fabric.sh d s b
+```
+
+This will download the necessary Fabric binaries and Docker images.
 
 ## Terminal Overview
 
@@ -42,7 +46,7 @@ Before starting, here is a summary of what each terminal will be used for:
 In terminal 1, navigate to your Fabric samples directory and start the network:
 ```bash
 cd fabric-samples/test-network
-./network.sh down  # Clean up any existing network
+./network.sh down  # Clean up any existing network if needed
 ./network.sh up createChannel -c mychannel -ca
 ```
 
@@ -61,7 +65,19 @@ This deploys the `asset-transfer-basic` chaincode to the `mychannel` channel wit
 
 ---
 
-### 3. Deploy the Asset-Transfer-Basic Chaincode
+### 3. Copy Required Certificates and Keys to the Gateway Configuration file (config/gateway-fabric-config.json)
+
+#### Option 1: Script-based Retrieval
+
+In terminal 2, navigate to your Fabric samples directory:
+
+```bash
+cd utils
+chmod +x getcert.sh && ./getcert.sh > certs.txt
+```
+And a txt file will be created where you can just copy the keys to the placeholders in [`config/gateway-fabric-config.json`](config/gateway-fabric-config.json).
+
+#### Option 2: Manual Retrieval
 
 In terminal 2, navigate to your Fabric samples directory:
 
@@ -89,12 +105,6 @@ Orderer CA Certificate -> connectionProfile.orderers.orderer.example.com.tlsCACe
 ```bash
 cat organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem
 ```
-
-Instead you can from this directory:
-```bash
-cd config && chmod +x getcert.sh && ./getcert.sh > certs.txt
-```
-And a txt file will be created where you can just copy the keys
 
 ---
 
@@ -133,25 +143,4 @@ This script sends POST requests to the Gateway to trigger chaincode functions vi
 5. **Update Asset** – Updates the asset and verifies the changes
 6. **Transfer Asset** – Transfers ownership and verifies the new owner
 7. **Delete Asset** – Deletes the asset and verifies removal
-
-
-## Verifying Results
-
-### Check Fabric Directly
-
-You can verify operations directly on the Fabric network:
-```bash
-# From the test-network directory
-cd fabric-samples/test-network
-
-# Query all assets
-./network.sh queryCC -C mychannel -n basic -c '{"function":"GetAllAssets","Args":[]}'
-
-# Query a specific asset created by the test
-./network.sh queryCC -C mychannel -n basic -c '{"function":"ReadAsset","Args":["asset100"]}'
-```
-
-### Check Gateway Logs
-
-View detailed Gateway logs in satp-hermes-gateway/gateway-1/logs/satp-gateway-output.log
 
