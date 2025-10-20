@@ -3,7 +3,7 @@
 # Simple script to extract Fabric certificates for manual copy-paste
 # Usage: ./getcert.sh > certs.txt
 
-FABRIC_PATH="../../../../fabric-sample/fabric-samples/test-network"
+FABRIC_PATH="../../../../fabric-samples/test-network"
 
 echo ""
 echo "Fabric Certificate Extractor"

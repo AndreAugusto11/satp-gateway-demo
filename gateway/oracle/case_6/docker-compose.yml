@@ -8,7 +8,7 @@ services:
       - ./config/fabric-connection-profile.json:/opt/cacti/satp-hermes/config/fabric-connection-profile.json
       - ./satp-hermes-gateway/gateway-1/logs:/opt/cacti/satp-hermes/logs
       - ./ontologies/:/opt/cacti/satp-hermes/ontologies/
-      - ../../../fabric-sample/fabric-samples:/fabric-samples:ro
+      - ../../../fabric-samples:/fabric-samples:ro
       - ./config/core.yaml:/opt/cacti/satp-hermes/config/core.yaml:ro
     ports:
       - "3010:3010"  # SERVER_PORT
