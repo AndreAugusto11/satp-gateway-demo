@@ -83,12 +83,12 @@ def get_task_status(task_id):
     return response.json()
 
 
-def test_polling_update_fabric():
+def polling_update_fabric():
     """
-    Test registering a polling UPDATE task on Fabric.
+    Registering a polling UPDATE task on Fabric.
     Updates an asset repeatedly every 5 seconds.
     """
-    print("TEST 1: Polling Mode UPDATE on Fabric")
+    print("Polling Mode UPDATE on Fabric")
     
     asset_id = f'poll-update-asset-{int(time.time())}'
     print(f"\nCreating initial asset '{asset_id}'")
@@ -161,12 +161,12 @@ def test_polling_update_fabric():
     
     assert success_count >= 3, f"Should have at least 3 successful operations, got {success_count}"
     
-    print("TEST 1 PASSED: Polling UPDATE task executed successfully")
+    print("Polling UPDATE task executed successfully")
 
 
-def test_polling_read_fabric():
-    print("TEST 2: Polling Mode READ on Fabric")
-    
+def polling_read_fabric():
+    print("Polling Mode READ on Fabric")
+
     req_params = {
         'sourceNetworkId': FABRIC_NETWORK_ID,
         'sourceContract': {
@@ -223,11 +223,11 @@ def test_polling_read_fabric():
             except:
                 print(f"    Output: {output[:100]}")
     
-    print("TEST 2 PASSED: Polling READ task executed successfully")
+    print("Polling READ task executed successfully")
 
 
-def test_polling_specific_read_fabric():
-    print("TEST 3: Polling Mode READ Specific Asset on Fabric")
+def polling_specific_read_fabric():
+    print("Polling Mode READ Specific Asset on Fabric")
     
     asset_id = f'poll-read-test-{int(time.time())}'
     print(f"\nCreating asset '{asset_id}' to read")
@@ -298,26 +298,26 @@ def test_polling_specific_read_fabric():
             assert asset_data['ID'] == asset_id, "Should read correct asset"
             print(f"    Successfully read asset: {asset_data['ID']}")
     
-    print("TEST 3 PASSED: Polling task read specific asset successfully")
+    print("Polling task read specific asset successfully")
 
 
 if __name__ == "__main__":  
     try:
-        # Test 1: Polling UPDATE
-        test_polling_update_fabric()
+        #Polling UPDATE
+        polling_update_fabric()
         sleep(2)
         
-        # Test 2: Polling READ (all assets)
-        test_polling_read_fabric()
+        #Polling READ (all assets)
+        polling_read_fabric()
         sleep(2)
-        
-        # Test 3: Polling READ (specific asset)
-        test_polling_specific_read_fabric()
-        
+
+        #Polling READ (specific asset)
+        polling_specific_read_fabric()
+
         sys.exit(0)
         
     except AssertionError as e:
-        print(f"\n\nTEST FAILED: {e}")
+        print(f"\n\nFAILED: {e}")
         sys.exit(1)
     except Exception as e:
         print(f"\n\nERROR: {e}")

@@ -16,7 +16,7 @@ Depois de se ter instalado dependencies é correr
 
 This example demonstrates how to use the SATP Hermes Gateway as middleware to perform immediate READ and WRITE operations on Hyperledger Fabric. The test interacts with the `asset-transfer-basic` chaincode through the Gateway's `/oracle/execute` endpoint.
 
-For this test, we use the standard **`asset-transfer-basic`** chaincode deployed on Fabric, which provides functions for managing assets:
+For this case, we use the standard **`asset-transfer-basic`** chaincode deployed on Fabric, which provides functions for managing assets:
 
 * **`InitLedger()`** – Initializes the ledger with sample assets
 * **`CreateAsset(id, color, size, owner, value)`** – Creates a new asset on the ledger
@@ -90,6 +90,11 @@ Orderer CA Certificate -> connectionProfile.orderers.orderer.example.com.tlsCACe
 cat organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem
 ```
 
+Instead you can from this directory:
+```bash
+cd config && chmod +x getcert.sh && ./getcert.sh > certs.txt
+```
+And a txt file will be created where you can just copy the keys
 
 ---
 
@@ -119,15 +124,15 @@ This script sends POST requests to the Gateway to trigger chaincode functions vi
 
 ---
 
-### What Each Test Does
+### What It Does
 
-1. **Test 1: Invalid Function** – Verifies that calling non-existent functions fails gracefully
-2. **Test 2: Create Asset** – Creates a new asset and verifies success
-3. **Test 3: Read Asset** – Reads the created asset and verifies data
-4. **Test 4: Get All Assets** – Retrieves all assets and confirms the created asset is present
-5. **Test 5: Update Asset** – Updates the asset and verifies the changes
-6. **Test 6: Transfer Asset** – Transfers ownership and verifies the new owner
-7. **Test 7: Delete Asset** – Deletes the asset and verifies removal
+1. **Invalid Function** – Verifies that calling non-existent functions fails gracefully
+2. **Create Asset** – Creates a new asset and verifies success
+3. **Read Asset** – Reads the created asset and verifies data
+4. **Get All Assets** – Retrieves all assets and confirms the created asset is present
+5. **Update Asset** – Updates the asset and verifies the changes
+6. **Transfer Asset** – Transfers ownership and verifies the new owner
+7. **Delete Asset** – Deletes the asset and verifies removal
 
 
 ## Verifying Results
