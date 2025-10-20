@@ -7,11 +7,13 @@ This repository contains a demo implementation of a **SATP (Secure Asset Transfe
   - [Table of Contents](#table-of-contents)
   - [Repository Structure](#repository-structure)
   - [Case Descriptions](#case-descriptions)
+    - [Extensions Cases](#extensions-cases)
     - [Oracle Cases (gateway/oracle)](#oracle-cases-gatewayoracle)
-    - [SATP Cases (gateway/satp/)](#satp-cases-satp)
+    - [SATP Cases (gateway/satp/)](#satp-cases-gatewaysatp)
   - [EVM Test Environment](#evm-test-environment)
   - [Important Instructions](#important-instructions)
-  - [Setup & Running](#setup--running)
+  - [Setup \& Running](#setup--running)
+    - [Running Cases with the Makefile](#running-cases-with-the-makefile)
   - [Dependencies](#dependencies)
   - [Contact](#contact)
 
@@ -21,11 +23,13 @@ This repository contains a demo implementation of a **SATP (Secure Asset Transfe
 .
 ├── EVM/                          # Hardhat project for setting up test EVM blockchains
 ├── gateway/
+│   └── extensions/
+│       └── carbon-credit/        # Extending core gateway logic with business-related functionality
 │   └── oracle/
 │       ├── case_1/               # Middleware: Manual READ and WRITE
 │       ├── case_2/               # Middleware: Auto READ and WRITE
 │       ├── case_3/               # Register polling for periodic READ
-│       ├── case_4/               # Event listening + READ and UPDATE
+│       └── case_4/               # Event listening + READ and UPDATE
 │   └── satp/
 │       └── case_1/               # SATP Protocol: Asset transfer between EVM blockchains
 ```
@@ -33,6 +37,11 @@ This repository contains a demo implementation of a **SATP (Secure Asset Transfe
 ---
 
 ## Case Descriptions
+
+### Extensions Cases
+
+These use cases demonstrate the usage of the extensions available in the gateway:
+* **Carbon Credit Extension**: Demonstrates purchasing and retiring carbon credits using the Carbon Credit extension integrated into the gateway. The extension interacts with carbon credit marketplaces on EVM blockchains. At this point, the only maketplace supported is **Toucan Protocol**.
 
 ### Oracle Cases (gateway/oracle)
 
