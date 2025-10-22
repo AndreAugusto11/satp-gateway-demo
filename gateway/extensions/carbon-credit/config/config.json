@@ -17,16 +17,13 @@
   },
   "logLevel": "TRACE",
   "counterPartyGateways": [],
-  "environment": "development",
-  "enableCrashRecovery": false,
-  "ontologyPath": "/opt/cacti/satp-hermes/ontologies",
   "extensions": [
     {
       "name": "CARBON_CREDIT",
       "networksConfig": [
         {
           "network_name": "Polygon",
-          "rpc_url": "http://host.docker.internal:8545"
+          "rpc_url": "http://polygon-fork:8545"
         }
       ],
       "signingCredential": {

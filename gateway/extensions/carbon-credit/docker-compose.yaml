@@ -11,3 +11,7 @@ services:
       - 4010:4010/tcp # OAPI_PORT
     extra_hosts:
       - "host.docker.internal:host-gateway"
+  polygon-fork:
+    image: aaugusto11/polygon-fork-77660000:v1
+    ports:
+      - 8545:8545/tcp

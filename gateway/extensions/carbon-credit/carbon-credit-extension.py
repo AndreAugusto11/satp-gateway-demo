@@ -2,7 +2,7 @@ import requests
 from web3 import Web3
 from eth_utils import to_wei
 
-PROVIDER_CONTAINER_URL = "http://host.docker.internal:8545"
+PROVIDER_CONTAINER_URL = "http://polygon-fork:8545"
 PROVIDER_URL = "http://localhost:8545"
 USER = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
 

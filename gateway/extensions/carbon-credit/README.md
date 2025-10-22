@@ -12,8 +12,8 @@ The main script performs these high-level actions:
 
 ## Flow Summary
 
-1. Start the Gateway (if required for your test environment).
-2. Start a Hardhat node configured to fork Polygon (so impersonation and on-chain queries work).
+1. Start the Gateway and Polygon fork (if applicable) using Docker compose.
+2. Ensure the Gateway config (config/config.json) has the CARBON_CREDIT extension enabled
 3. Use fund-usdc-to-address.py to impersonate and fund the testing account with USDC.
 4. Run carbon-credit-extension.py — it will:
     - call get-available-tco2s,
@@ -22,15 +22,6 @@ The main script performs these high-level actions:
     - call retire_request,
     - verify on-chain retirement certificate amounts.
 5. Inspect printed output and any Gateway / node logs for transaction hashes and verification messages.
-
----
-
-## Terminal Overview
-
-- Terminal 1: Gateway (Docker Compose) — optional, if Gateway endpoints are required by the script.
-- Terminal 2: Hardhat (local fork of Polygon with impersonation enabled)
-- Terminal 3: Run fund-usdc-to-address.py to fund the test account
-- Terminal 4: Run carbon-credit-extension.py and observe outputs (or use same terminal as Terminal 3 if you prefer)
 
 ---
 
@@ -44,25 +35,18 @@ If your test requires the local Gateway, from this directory:
 docker compose up
 ```
 
-This will start the Gateway using your environment config.
+This will start 2 different services.
+
+1. The Gateway using your environment config. There are **2 important files/directories**:
+- [config/config.json](config/config.json) — contains the configuration used to start the Gateway, including RPC URLs, and key pairs.
+  - The extensions section must include the CARBON_CREDIT extension, for the endpoints to be available.
+- [satp-hermes-gateway/logs/](satp-hermes-gateway/logs/) — contains Gateway logs, useful for debugging requests/responses.
+
+2. A Polygon fork using Hardhat (if you used the provided docker-compose.yaml). This is optional if you have your own Hardhat node running.
 
 ---
 
-### 2. Start Hardhat with Polygon fork and impersonation enabled
-
-Start a Hardhat node configured to fork Polygon (RPC URL and block number configured in hardhat.config.js). Ensure the node is reachable from Docker if the Gateway is used (use --hostname 0.0.0.0).
-
-Example (from https://github.com/AndreAugusto11/polygon-fork-77660000):
-
-```bash
-npx hardhat node --network hardhat
-```
-
-Note: for impersonation to work, configure forking in hardhat.config.js (point to a Polygon RPC) or start the node in a way that forks Polygon state.
-
----
-
-### 3. Fund the testing account with USDC (impersonation)
+### 2. Fund the testing account with USDC (impersonation)
 
 Before running the carbon-credit script you must fund the USER/test address with USDC on the fork. Use the provided script:
 
@@ -76,7 +60,7 @@ python3 fund-usdc-to-address.py
 
 ---
 
-### 4. Run the carbon credit extension script
+### 3. Run the carbon credit extension script
 
 From this directory, run:
 
@@ -106,4 +90,4 @@ The script will raise exceptions and exit if:
 
 - Check Hardhat terminal for impersonation and transaction logs.
 - If the script fails when querying balances, ensure the provider URL is correct and the token addresses are in checksum format.
-- Gateway logs (if used) are in ./satp-hermes-gateway/logs/ relative to this directory for request/response details.
+- Gateway logs (if used) are in `./satp-hermes-gateway/logs/` relative to this directory for request/response details.
