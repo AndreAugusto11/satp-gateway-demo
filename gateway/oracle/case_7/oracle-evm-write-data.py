@@ -1,4 +1,3 @@
-
 import requests
 import json
 from time import sleep
@@ -25,19 +24,47 @@ def execute_oracle(params):
     return response.json()
 
 
-def execute_update():
+def write_data(key, data):
+    """
+    Writes data to Fabric ledger with the given key.
+    This emits a 'WriteData' event.
+
+    Args:
+        key (str): The key to write to the ledger.
+        data (str): The data to write.
+
+    Returns:
+        dict: The JSON response from the endpoint.
+    """
     req_params = {
         'destinationNetworkId': FABRIC_NETWORK_ID,
         'destinationContract': {
             'contractName': CONTRACT_NAME,
             'methodName': 'WriteData',
-            'params': ["myKey", "data written"]
+            'params': [key, data]
         },
         'taskType': 'UPDATE'
     }
 
     response = execute_oracle(req_params)
-    print("Data read successfully with response:", response)
+    return response
+
 
 if __name__ == "__main__":
-    execute_update()
+    import sys
+    
+    if len(sys.argv) != 3:
+        print("Usage: python oracle-evm-write-data.py <key> <data>")
+        sys.exit(1)
+    
+    key = sys.argv[1]
+    data = sys.argv[2]
+    
+    try:
+        response = write_data(key, data)
+        print("Data written successfully:")
+        print(json.dumps(response, indent=2))
+    except requests.exceptions.HTTPError as e:
+        print(f"Error writing data: {e}")
+        print(f"Response: {e.response.text}")
+        sys.exit(1)

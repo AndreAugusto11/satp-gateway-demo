@@ -1,4 +1,3 @@
-
 import requests
 import json
 from time import sleep
@@ -25,22 +24,44 @@ def execute_oracle(params):
     return response.json()
 
 
-def execute_update():
+def read_data(key):
+    """
+    Reads data from Fabric ledger for the given key.
+
+    Args:
+        key (str): The key to read from the ledger.
+
+    Returns:
+        dict: The JSON response from the endpoint.
+    """
     req_params = {
-        'destinationNetworkId': FABRIC_NETWORK_ID,
-        'destinationContract': {
+        'sourceNetworkId': FABRIC_NETWORK_ID,
+        'sourceContract': {
             'contractName': CONTRACT_NAME,
             'methodName': 'ReadData',
-            'params': ["newKey"]
+            'params': [key]
         },
-        'taskType': 'UPDATE'
+        'taskType': 'READ'
     }
 
     response = execute_oracle(req_params)
+    return response
 
-    assert "there is no data stored" in str(response), "Expected message for non-existent data"
-
-    print("Data read successfully with response:", response)
 
 if __name__ == "__main__":
-    execute_update()
+    import sys
+    
+    if len(sys.argv) != 2:
+        print("Usage: python oracle-evm-read-data.py <key>")
+        sys.exit(1)
+    
+    key = sys.argv[1]
+    
+    try:
+        response = read_data(key)
+        print("Data read successfully:")
+        print(json.dumps(response, indent=2))
+    except requests.exceptions.HTTPError as e:
+        print(f"Error reading data: {e}")
+        print(f"Response: {e.response.text}")
+        sys.exit(1)

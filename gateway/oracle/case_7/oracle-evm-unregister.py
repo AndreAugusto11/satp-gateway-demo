@@ -1,4 +1,3 @@
-
 import requests
 import json
 from time import sleep
@@ -6,7 +5,7 @@ import sys
 
 def unregister_oracle(params):
     """
-    Calls the /api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/execute endpoint
+    Calls the /api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/unregister endpoint
     with the given params as JSON body.
 
     Args:
@@ -24,21 +23,20 @@ def unregister_oracle(params):
 
 def unregister(task_id):
     """
-    Calls the /api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/execute endpoint
-    with the given file as JSON body.
+    Unregisters an oracle task.
 
     Args:
-        file_path (str): The path to the JSON file to send.
+        task_id (str): The task ID to unregister.
 
     Returns:
         dict: The JSON response from the endpoint.
     """
-
     req_params = {
         'taskID': task_id,
     }
 
     return unregister_oracle(req_params)
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
@@ -47,5 +45,12 @@ if __name__ == "__main__":
 
     task_id = sys.argv[1]
 
-    response = unregister(task_id)
-    print("Response:", response)
+    try:
+        response = unregister(task_id)
+        print("Task unregistered successfully!")
+        print("Response:")
+        print(json.dumps(response, indent=2))
+    except requests.exceptions.HTTPError as e:
+        print(f"Error unregistering task: {e}")
+        print(f"Response: {e.response.text}")
+        sys.exit(1)

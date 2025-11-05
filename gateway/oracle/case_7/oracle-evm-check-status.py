@@ -1,4 +1,3 @@
-
 import requests
 import json
 from time import sleep
@@ -6,7 +5,7 @@ import sys
 
 def get_status_oracle(params):
     """
-    Calls the /api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/execute endpoint
+    Calls the /api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/status endpoint
     with the given params as JSON body.
 
     Args:
@@ -24,21 +23,20 @@ def get_status_oracle(params):
 
 def get_status(task_id):
     """
-    Calls the /api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/execute endpoint
-    with the given file as JSON body.
+    Gets the status of an oracle task.
 
     Args:
-        file_path (str): The path to the JSON file to send.
+        task_id (str): The task ID to check.
 
     Returns:
         dict: The JSON response from the endpoint.
     """
-
     req_params = {
         'taskID': task_id,
     }
 
     return get_status_oracle(req_params)
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
@@ -47,5 +45,11 @@ if __name__ == "__main__":
 
     task_id = sys.argv[1]
 
-    response = get_status(task_id)
-    print("Response:", response)
+    try:
+        response = get_status(task_id)
+        print("Task Status:")
+        print(json.dumps(response, indent=2))
+    except requests.exceptions.HTTPError as e:
+        print(f"Error getting status: {e}")
+        print(f"Response: {e.response.text}")
+        sys.exit(1)

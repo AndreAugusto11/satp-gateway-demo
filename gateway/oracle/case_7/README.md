@@ -1,16 +1,23 @@
-# Fabric Oracle Register: POLLING READ and UPDATE Operations on Hyperledger Fabric
+# Fabric Oracle Event Listener: EVENT_LISTENING Operations on Hyperledger Fabric
 
-This README describes how to run the oracle polling tests that use the SATP Hermes Gateway as middleware to register, poll and unregister tasks against Hyperledger Fabric. The tests exercise the standard `token-erc-20` chaincode through the Gateway plugin endpoints:
+This README describes how to run the oracle event listening tests that use the SATP Hermes Gateway as middleware to register event listeners and automatically execute actions in response to Hyperledger Fabric events. The tests exercise the custom `counter` chaincode through the Gateway plugin endpoints:
 
 - POST /api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/execute
 - POST /api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/register
 - POST /api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/unregister
 - GET  /api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/status
 
-The provided test script `oracle-execute-fabric.py` performs three polling scenarios:
-- polling_update_fabric: creates an asset, registers a POLLING UPDATE task that updates the asset every 5s, waits, then unregisters and asserts multiple successful UPDATE operations were executed.
-- polling_read_fabric: registers a POLLING READ task that calls `GetAllAssets` every 5s, waits, then unregisters and asserts multiple successful READ operations were executed.
-- polling_specific_read_fabric: creates a single asset, registers a POLLING READ task that calls `ReadAsset(<id>)` every 5s, waits, then unregisters and asserts the specific asset was read successfully multiple times.
+## Test Scenario Overview
+
+The test demonstrates event-driven automation:
+
+1. **Verify Initial State**: Confirms that 'newKey' does not exist in the ledger
+2. **Register Event Listener**: Sets up a listener that monitors for 'WriteData' events and automatically calls `WriteDataNoEvent` when the event fires
+3. **Trigger Event**: Calls `WriteData` which stores data and emits a 'WriteData' event
+4. **Wait for Processing**: Allows time for the listener to catch the event and execute the action
+5. **Verify Listener Worked**: Reads 'newKey' to confirm the listener automatically wrote data
+6. **Cleanup**: Unregisters the event listener
+
 
 ## Requirements
 
@@ -34,10 +41,10 @@ This will download the necessary Fabric binaries and Docker images.
 
 Before starting, here is a summary of what each terminal will be used for:
 
-- **Terminal 1:** Start Hyperledger Fabric test network and Deploy the token-erc-20 chaincode
+- **Terminal 1:** Start Hyperledger Fabric test network and Deploy the counter chaincode
 - **Terminal 2:** Retrieve all keys and certificates from Fabric
 - **Terminal 3:** Run the Gateway (Docker Compose)
-- **Terminal 4:** Run the Oracle execute script
+- **Terminal 4:** Run the Oracle test scripts
 
 ## Setup Instructions
 
@@ -54,28 +61,39 @@ This creates a Fabric network with two organizations (Org1 and Org2) and a chann
 
 ---
 
-### 2. Deploy the token-erc-20 Chaincode
+### 2. Deploy the Asset-Transfer-Basic Chaincode
 
 In terminal 1, from the same directory:
 ```bash
-./network.sh deployCC -ccn basic -ccp ../token-erc-20/chaincode-javascript -ccl javascript
+./network.sh deployCC -ccn basic -ccp ../asset-transfer-basic/chaincode-typescript -ccl typescript
 ```
 
-This deploys the `token-erc-20` chaincode to the `mychannel` channel with the contract name `basic`.
+This deploys the `asset-transfer-basic` chaincode to the `mychannel` channel with the contract name `basic`.
+
+### 3. Deploy the Counter Chaincode
+
+In terminal 1, from the same directory:
+```bash
+./network.sh deployCC -ccn counter -ccp /path/to/fabric-contracts/counter-contract/chaincode-javascript -ccl javascript
+```
+
+**Important:** Replace `/path/to/fabric-contracts/counter-contract/chaincode-javascript` with the actual path to the counter chaincode directory.
+
+This deploys the `counter` chaincode to the `mychannel` channel with the contract name `counter`.
 
 ---
 
-### 3. Copy Required Certificates and Keys to the Gateway Configuration file (config/gateway-fabric-config.json)
+### 4. Copy Required Certificates and Keys to the Gateway Configuration file (config/gateway-fabric-config.json)
 
 #### Option 1: Script-based Retrieval
 
-In terminal 2, in this directory, run:
+In terminal 2, navigate to your Fabric samples directory:
 
 ```bash
 cd utils
 chmod +x getcert.sh && ./getcert.sh > certs.txt
 ```
-And a txt file will be created (`./utils/certs.txt`) where you can just copy the keys to the placeholders in [`config/gateway-fabric-config.json`](config/gateway-fabric-config.json).
+And a txt file will be created where you can just copy the keys to the placeholders in [`config/gateway-fabric-config.json`](config/gateway-fabric-config.json).
 
 #### Option 2: Manual Retrieval
 
@@ -108,7 +126,7 @@ cat organizations/ordererOrganizations/example.com/orderers/orderer.example.com/
 
 ---
 
-### 4. Start the Gateway (Docker)
+### 5. Start the Gateway (Docker)
 
 In terminal 3:
 ```bash
@@ -123,6 +141,74 @@ And check if kubaya/cacti-satp-hermes-gateway is healthy, if it procceed
 
 ---
 
-### 5. Run the Oracle Polling Test Script
+### 6. Run the Oracle Event Listener Test
 
-1. Check allowance first and there will be no allowance set yet.
+In terminal 4, you can run the test in two ways:
+
+
+#### Manual Step-by-Step Execution
+
+Run each script individually to understand the flow:
+
+**Step 1: Verify Initial State**
+```bash
+python3 oracle-evm-read-data.py newKey
+```
+Expected: Error message saying "there is no data stored in the ledger with key: newKey"  
+This is correct - the key doesn't exist yet!
+
+**Step 2: Register Event Listener**
+```bash
+python3 oracle-evm-register-listener.py
+```
+Save the `Task_ID` from the output
+
+**Step 3: Trigger the Event**
+```bash
+python3 oracle-evm-write-data.py eventTestKey "data from event listener"
+```
+This calls WriteData which emits the 'WriteData' event.
+
+**Step 4: Wait for Processing**
+```bash
+sleep 10
+```
+Give the listener time to catch the event and execute WriteDataNoEvent.
+
+**Step 5: Check Task Status (Optional)**
+```bash
+python3 oracle-evm-check-status.py <TASK_ID>
+```
+Replace `TASK_ID` with the Task ID from Step 2.
+
+**Step 6: Verify the Listener Worked**
+```bash
+python3 oracle-evm-read-data.py newKey
+```
+Expected: Success! The data should be returned.  
+This proves the event listener caught the event and wrote the data!
+
+**Step 7: Cleanup**
+```bash
+python3 oracle-evm-unregister.py <TASK_ID>
+```
+Replace `<TASK_ID>` with the Task ID from Step 2.
+
+
+---
+
+## Cleanup
+
+To clean up after testing:
+
+```bash
+# Stop the gateway (Terminal 3)
+docker compose down
+
+# Stop the Fabric network (Terminal 1)
+cd fabric-samples/test-network
+./network.sh down
+
+# Optional: Remove Docker network
+docker network rm fabric_test
+```

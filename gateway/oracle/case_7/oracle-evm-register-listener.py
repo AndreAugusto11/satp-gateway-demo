@@ -1,11 +1,10 @@
-
 import requests
 import json
 from time import sleep
 
 # Configuration
 FABRIC_NETWORK_ID = {"id": "FabricLedgerTestNetwork", "ledgerType": "FABRIC_2"}
-CONTRACT_NAME = "basic"
+CONTRACT_NAME = "counter"
 
 
 def register_oracle(params):
@@ -27,6 +26,13 @@ def register_oracle(params):
 
 
 def register_listener():
+    """
+    Registers an event listener that listens for 'WriteData' events
+    and automatically calls WriteDataNoEvent with the event data.
+
+    Returns:
+        dict: The JSON response containing the task ID.
+    """
     req_params = {
         'sourceNetworkId': FABRIC_NETWORK_ID,
         'sourceContract': {
@@ -36,12 +42,11 @@ def register_listener():
         'destinationContract': {
             'contractName': CONTRACT_NAME,
             'methodName': 'WriteDataNoEvent',
-            # not needed because we will write the data read from the source contract
-            # we can still pass it but it will overwrite the data read from the source contract
+            # The 'data' parameter will be auto-filled from the event payload
         },
         'listeningOptions': {
             "eventSignature": "WriteData",
-            "filterParams": ["data"],
+            "filterParams": ["data"],  # Extract 'data' field from event
         },
         'taskType': 'READ_AND_UPDATE',
         'taskMode': 'EVENT_LISTENING',
@@ -51,10 +56,19 @@ def register_listener():
 
 
 if __name__ == "__main__":
-    print(f"First request will register the task in the oracle...the task will be executed whenever there is a new event emitted from the source contract")
-    sleep(5)
-
-    read_response = register_listener()
-    print("Response:", read_response)
-
-    print(f"Task ID: {read_response['taskID']}")
+    print("Registering event listener for 'WriteData' events...")
+    print("When a WriteData event is emitted, the listener will automatically call WriteDataNoEvent")
+    print()
+    
+    try:
+        response = register_listener()
+        print("Event listener registered successfully!")
+        print(f"Task ID: {response.get('taskID')}")
+        print()
+        print("Full response:")
+        print(json.dumps(response, indent=2))
+    except requests.exceptions.HTTPError as e:
+        print(f"Error registering listener: {e}")
+        print(f"Response: {e.response.text}")
+        import sys
+        sys.exit(1)
