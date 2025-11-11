@@ -1,6 +1,6 @@
 # Fabric Oracle Event Listener: EVENT_LISTENING Operations on Hyperledger Fabric
 
-This README describes how to run the oracle event listening tests that use the SATP Hermes Gateway as middleware to register event listeners and automatically execute actions in response to Hyperledger Fabric events. The tests exercise the custom `counter` chaincode through the Gateway plugin endpoints:
+This README describes how to run the oracle event listening tests that use the SATP Hermes Gateway as middleware to register event listeners and automatically execute actions in response to Hyperledger Fabric events. The tests exercise the custom `Counter` chaincode through the Gateway plugin endpoints:
 
 - POST /api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/execute
 - POST /api/v1/@hyperledger/cactus-plugin-satp-hermes/oracle/register
@@ -41,7 +41,7 @@ This will download the necessary Fabric binaries and Docker images.
 
 Before starting, here is a summary of what each terminal will be used for:
 
-- **Terminal 1:** Start Hyperledger Fabric test network and Deploy the counter chaincode
+- **Terminal 1:** Start Hyperledger Fabric test network and Deploy the `Counter` chaincode
 - **Terminal 2:** Retrieve all keys and certificates from Fabric
 - **Terminal 3:** Run the Gateway (Docker Compose)
 - **Terminal 4:** Run the Oracle test scripts
@@ -61,33 +61,22 @@ This creates a Fabric network with two organizations (Org1 and Org2) and a chann
 
 ---
 
-### 2. Deploy the Asset-Transfer-Basic Chaincode
+### 2. Deploy the Counter Chaincode
 
 In terminal 1, from the same directory:
 ```bash
-./network.sh deployCC -ccn basic -ccp ../asset-transfer-basic/chaincode-typescript -ccl typescript
+./network.sh deployCC -ccn counter -ccp ../../fabric-contracts/counter-contract/chaincode-javascript/ -ccl javascript
 ```
-
-This deploys the `asset-transfer-basic` chaincode to the `mychannel` channel with the contract name `basic`.
-
-### 3. Deploy the Counter Chaincode
-
-In terminal 1, from the same directory:
-```bash
-./network.sh deployCC -ccn counter -ccp /path/to/fabric-contracts/counter-contract/chaincode-javascript -ccl javascript
-```
-
-**Important:** Replace `/path/to/fabric-contracts/counter-contract/chaincode-javascript` with the actual path to the counter chaincode directory.
 
 This deploys the `counter` chaincode to the `mychannel` channel with the contract name `counter`.
 
 ---
 
-### 4. Copy Required Certificates and Keys to the Gateway Configuration file (config/gateway-fabric-config.json)
+### 3. Copy Required Certificates and Keys to the Gateway Configuration file (config/gateway-fabric-config.json)
 
 #### Option 1: Script-based Retrieval
 
-In terminal 2, navigate to your Fabric samples directory:
+In terminal 2:
 
 ```bash
 cd utils
@@ -126,29 +115,24 @@ cat organizations/ordererOrganizations/example.com/orderers/orderer.example.com/
 
 ---
 
-### 5. Start the Gateway (Docker)
+### 4. Start the Gateway (Docker)
 
 In terminal 3:
 ```bash
 docker compose up
 ```
-This will start the Gateway with the Fabric configuration file.
+This will start the Gateway with the Fabric configuration file in `config/gateway-fabric-config.json`.
 
 ```bash
 docker ps
 ```
-And check if kubaya/cacti-satp-hermes-gateway is healthy, if it procceed
+And check if `kubaya/cacti-satp-hermes-gateway` is healthy, if it proceed
 
 ---
 
-### 6. Run the Oracle Event Listener Test
+### 5. Run the Oracle Event Listener Test
 
-In terminal 4, you can run the test in two ways:
-
-
-#### Manual Step-by-Step Execution
-
-Run each script individually to understand the flow:
+In terminal 4, you can run the different scripts to perform the test scenario:
 
 **Step 1: Verify Initial State**
 ```bash
@@ -161,7 +145,7 @@ This is correct - the key doesn't exist yet!
 ```bash
 python3 oracle-evm-register-listener.py
 ```
-Save the `Task_ID` from the output
+Save the `Task_ID` from the output, and check that the status is `ACTIVE`. The event listener is listening for 'WriteData' events, and will call `WriteDataNoEvent` when the event is detected with the data from the event.
 
 **Step 3: Trigger the Event**
 ```bash
@@ -192,7 +176,7 @@ This proves the event listener caught the event and wrote the data!
 ```bash
 python3 oracle-evm-unregister.py <TASK_ID>
 ```
-Replace `<TASK_ID>` with the Task ID from Step 2.
+Replace `<TASK_ID>` with the Task ID from Step 2, and check that the status is `INACTIVE`. The event listener has been unregistered, the test is complete.
 
 
 ---
