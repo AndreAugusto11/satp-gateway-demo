@@ -119,7 +119,7 @@ This will start the Gateway with the Fabric configuration file.
 ```bash
 docker ps
 ```
-And check if kubaya/cacti-satp-hermes-gateway is healthy, if it procceed
+And check if kubaya/cacti-satp-hermes-gateway is healthy, if it proceed
 
 ---
 
