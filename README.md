@@ -29,7 +29,10 @@ This repository contains a demo implementation of a **SATP (Secure Asset Transfe
 │       ├── case_1/               # Middleware: Manual READ and WRITE
 │       ├── case_2/               # Middleware: Auto READ and WRITE
 │       ├── case_3/               # Register polling for periodic READ
-│       └── case_4/               # Event listening + READ and UPDATE
+│       ├── case_4/               # Event listening for READ and UPDATE
+│       ├── case_5/               # Middleware: Manuel READ and WRITE (w/ Hyperledger Fabric)
+│       └── case_6/               # Register polling for periodic READ and WRITE (w/ Hyperledger Fabric)
+│       └── case_7/               # Event listening for READ and WRITE (w/ Hyperledger Fabric)
 │   └── satp/
 │       └── case_1/               # SATP Protocol: Asset transfer between EVM blockchains
 ```
@@ -103,6 +106,8 @@ to see all available targets for building, deploying, and running the demo cases
 - `make run-all-cases`      — Run all cases sequentially with cleanup between each
 
 Each case also includes its own `README.md` with step-by-step instructions for manual or advanced usage.
+
+The Hyperledger Fabric cases (gateway/oracle/case_5, case_6, case_7) require additional setup steps as described in their respective READMEs, and therefore cannot be fully automated via the Makefile.
 
 **Note:** `.PHONY` targets are now placed immediately after each script in the Makefile for clarity and maintainability.
 
