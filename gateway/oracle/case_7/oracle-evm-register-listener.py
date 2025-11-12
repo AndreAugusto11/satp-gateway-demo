@@ -1,6 +1,5 @@
 import requests
 import json
-from time import sleep
 
 # Configuration
 FABRIC_NETWORK_ID = {"id": "FabricLedgerTestNetwork", "ledgerType": "FABRIC_2"}
