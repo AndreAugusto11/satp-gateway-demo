@@ -1,3 +1,5 @@
+# ⚠️ This repository has been archived and moved to [Hyperledger Cacti Demos repository](https://github.com/hyperledger-cacti/cacti-demos)
+
 # SATP Gateway Demo
 
 This repository contains a demo implementation of a **SATP (Secure Asset Transfer Protocol) Gateway**, designed to act as middleware between EVM-based blockchains. It supports various interoperability use cases explained below.
