@@ -220,7 +220,7 @@ def polling_read_fabric():
             try:
                 assets = json.loads(output)
                 print(f"    Read {len(assets)} assets")
-            except:
+            except json.JSONDecodeError:
                 print(f"    Output: {output[:100]}")
     
     print("Polling READ task executed successfully")
@@ -272,7 +272,7 @@ def polling_specific_read_fabric():
     sleep(13)
     
     print("\nUnregistering polling task")
-    unregister_response = unregister_oracle(task_id)
+    unregister_oracle(task_id)
     
     # Check status
     print("\nChecking final task status")
